@@ -13,6 +13,10 @@ module.exports = {
       animation: {
         "fade-in-up": "fadeInUp 0.8s ease-out forwards",
         ping: "ping 2s cubic-bezier(0, 0, 0.2, 1) infinite",
+        "left-right-one": "leftRightOne 8s infinite",
+        "left-right-two": "leftRightTwo 8s infinite",
+        "zoom-in-out": "zoomInOut 4s infinite",
+        "zoom-in-out-delayed": "zoomInOut 4s linear 2s infinite",
       },
       keyframes: {
         fadeInUp: {
@@ -43,10 +47,48 @@ module.exports = {
             opacity: "0.3",
           },
         },
+        leftRightOne: {
+          "0%, 100%": {
+            transform: "translateX(0)",
+          },
+          "50%": {
+            transform: "translateX(20px)",
+          },
+        },
+        leftRightTwo: {
+          "0%, 100%": {
+            transform: "translateX(0)",
+          },
+          "50%": {
+            transform: "translateX(-20px)",
+          },
+        },
+        zoomInOut: {
+          "0%, 100%": {
+            transform: "scale(1)",
+          },
+          "50%": {
+            transform: "scale(0.5)",
+          },
+        },
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: {
+          50: "#f0f9ff",
+          500: "#3b82f6",
+          600: "#2563eb",
+        },
+        secondary: {
+          500: "#10b981",
+        },
+        yellow: {
+          400: "#D6F037",
+        },
+        green: {
+          400: "#28F67A",
+        },
       },
     },
   },

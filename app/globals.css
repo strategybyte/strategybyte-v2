@@ -39,6 +39,46 @@
   .delay-500 {
     animation-delay: 500ms;
   }
+
+  /* Responsive margin utilities */
+  @screen sm {
+    .rmb-55 {
+      margin-bottom: 0;
+    }
+  }
+
+  /* Theme button styles */
+  .theme-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .theme-btn:hover span {
+    position: relative;
+    z-index: 10;
+  }
+
+  /* Container utilities */
+  .bordered-x {
+    border-left: 1px solid rgba(75, 85, 99, 0.3);
+    border-right: 1px solid rgba(75, 85, 99, 0.3);
+  }
+
+  .py-100 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .gap-100 {
+    gap: 6rem;
+  }
+
+  @screen lg {
+    .gap-100 {
+      gap: 4rem;
+    }
+  }
 }
 
 /* Custom play button wave animation */

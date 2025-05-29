@@ -1,4 +1,5 @@
 import "./globals.css";
+import "aos/dist/aos.css";
 import { Epilogue } from "next/font/google";
 
 const epilogue = Epilogue({

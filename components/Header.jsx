@@ -1,24 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import {
-  ChevronDownIcon,
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -27,9 +14,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 py-2.5 transition-all duration-500 ${
-          isScrolled ? "bg-white shadow-sm" : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 w-full z-50 py-2.5 transition-all duration-500 bg-transparent`}
       >
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-12 items-center">
@@ -40,16 +25,12 @@ const Header = () => {
                   <img
                     src="/assets/images/logo-black.png"
                     alt="Onovo"
-                    className={`max-w-full h-auto transition-opacity duration-300 ${
-                      isScrolled ? "opacity-100" : "opacity-0"
-                    }`}
+                    className={`max-w-full h-auto transition-opacity duration-300`}
                   />
                   <img
                     src="/assets/images/logo-main.png"
                     alt="Onovo"
-                    className={`max-w-full h-auto absolute top-0 left-0 transition-opacity duration-300 ${
-                      isScrolled ? "opacity-0" : "opacity-100"
-                    }`}
+                    className={`max-w-full h-auto absolute top-0 left-0 transition-opacity duration-300`}
                   />
                 </Link>
               </div>
@@ -63,19 +44,19 @@ const Header = () => {
                 aria-label="Toggle menu"
               >
                 <span
-                  className={`block w-6 h-0.5 transition-all duration-300 relative ${
-                    isScrolled ? "bg-black" : "bg-white"
-                  } ${isMenuOpen ? "rotate-45" : ""}`}
+                  className={`block w-6 h-0.5 transition-all duration-300 relative bg-white ${
+                    isMenuOpen ? "rotate-45" : ""
+                  }`}
                 >
                   <span
-                    className={`block absolute w-6 h-0.5 transition-all duration-300 ${
-                      isScrolled ? "bg-black" : "bg-white"
-                    } ${isMenuOpen ? "opacity-0" : "-translate-y-1.5"}`}
+                    className={`block absolute w-6 h-0.5 transition-all duration-300 bg-white ${
+                      isMenuOpen ? "opacity-0" : "-translate-y-1.5"
+                    }`}
                   ></span>
                   <span
-                    className={`block absolute w-6 h-0.5 transition-all duration-300 ${
-                      isScrolled ? "bg-black" : "bg-white"
-                    } ${isMenuOpen ? "-rotate-90" : "translate-y-1.5"}`}
+                    className={`block absolute w-6 h-0.5 transition-all duration-300 bg-white ${
+                      isMenuOpen ? "-rotate-90" : "translate-y-1.5"
+                    }`}
                   ></span>
                 </span>
               </button>
@@ -85,30 +66,22 @@ const Header = () => {
             <div className="col-span-3 lg:col-span-3 flex justify-end">
               <Link
                 href="/projects"
-                className={`relative inline-flex items-center h-10 px-4 group overflow-hidden transition-colors duration-300 ${
-                  isScrolled ? "text-black" : "text-white"
-                }`}
+                className={`relative inline-flex items-center h-10 px-4 group overflow-hidden transition-colors duration-300`}
               >
                 <span className="relative z-10">
                   <span className="inline-block relative">
                     Showcase
                     <span
-                      className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
-                        isScrolled ? "bg-black" : "bg-white"
-                      }`}
+                      className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full`}
                     ></span>
                   </span>
                 </span>
                 <span className="ml-2 flex items-center justify-center w-4 h-4 relative">
                   <span
-                    className={`block w-3 h-0.5 transition-all duration-300 ${
-                      isScrolled ? "bg-black" : "bg-white"
-                    }`}
+                    className={`block w-3 h-0.5 transition-all duration-300`}
                   ></span>
                   <span
-                    className={`absolute top-1/2 right-0 w-0 h-0 border-l-[3px] border-t-[3px] border-b-[3px] border-transparent transition-all duration-300 ${
-                      isScrolled ? "border-l-black" : "border-l-white"
-                    }`}
+                    className={`absolute top-1/2 right-0 w-0 h-0 border-l-[3px] border-t-[3px] border-b-[3px] border-transparent transition-all duration-300`}
                   ></span>
                 </span>
               </Link>
