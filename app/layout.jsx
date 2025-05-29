@@ -10,7 +10,7 @@ const epilogue = Epilogue({
 });
 
 export const metadata = {
-  title: "Onovo - Creative Portfolio Agency",
+  title: "StrategyByte",
   description:
     "Creative studio at the intersection of art, design and technology",
 };
