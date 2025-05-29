@@ -5,6 +5,7 @@ import Services from "../components/Services";
 import WhyChooseUs from "../components/WhyChooseUs";
 import CaseStudies from "../components/CaseStudies";
 import Testimonials from "../components/Testimonials";
+import Faq from "../components/Faq";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <WhyChooseUs />
         <CaseStudies />
         <Testimonials />
+        <Faq />
       </main>
     </div>
   );

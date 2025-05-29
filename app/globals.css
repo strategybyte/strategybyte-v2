@@ -214,6 +214,177 @@
   .testimonials-two-active .testimonial-item {
     margin-right: 1px;
   }
+
+  /* Accordion styling for FAQ */
+  .accordion-item {
+    border-radius: 7px;
+    margin-bottom: 10px;
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .accordion-item:first-of-type {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+
+  .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+
+  .accordion-item:last-of-type {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+
+  .accordion-item:last-of-type .accordion-button {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+
+  .accordion-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .accordion-item:not(:first-of-type) {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .accordion-button {
+    border: none;
+    font-size: 18px;
+    box-shadow: none;
+    font-weight: 700;
+    line-height: 1.2;
+    align-items: center;
+    color: #fff;
+    background: transparent;
+    padding: 19px 15px 17px 30px;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    transition: all 0.3s ease;
+    display: flex;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .accordion-button {
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 479px) {
+    .accordion-button {
+      padding: 12px 10px 12px 20px;
+    }
+  }
+
+  .accordion-button:after {
+    flex: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -2px;
+    content: "\f054";
+    margin-left: 6px;
+    color: #666;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background: white;
+    line-height: 40px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: "Font Awesome 5 Pro", "FontAwesome";
+    transition: all 0.3s ease;
+  }
+
+  @media only screen and (max-width: 479px) {
+    .accordion-button:after {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+      line-height: 30px;
+    }
+  }
+
+  .accordion-button.collapsed:after {
+    transform: rotate(0deg);
+  }
+
+  .accordion-button:not(.collapsed):after {
+    background: #ff6b35;
+    color: white;
+  }
+
+  .accordion-body {
+    padding: 0 30px 20px;
+    transition: all 0.3s ease;
+  }
+
+  @media only screen and (max-width: 479px) {
+    .accordion-body {
+      font-size: 15px;
+      line-height: 1.6;
+      padding: 0 20px 15px;
+    }
+  }
+
+  .accordion-collapse {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .accordion-collapse:not(.show) {
+    max-height: 0;
+  }
+
+  .accordion-collapse.show {
+    max-height: 500px;
+  }
+
+  /* FAQ Shapes */
+  .faq-shapes .shape {
+    z-index: -2;
+    position: absolute;
+    animation: zoomInOut 5s infinite;
+  }
+
+  @media only screen and (max-width: 1399px) {
+    .faq-shapes .shape {
+      max-width: 5% !important;
+    }
+  }
+
+  .faq-shapes .shape.one {
+    left: 11%;
+    bottom: 25%;
+  }
+
+  .faq-shapes .shape.two {
+    top: 10%;
+    left: 14%;
+    animation-delay: 1s;
+  }
+
+  .faq-shapes .shape.three {
+    top: 10%;
+    right: 20%;
+    animation-delay: 2s;
+  }
+
+  .faq-shapes .shape.four {
+    top: 25%;
+    right: 9%;
+    animation-delay: 3s;
+  }
+
+  .faq-shapes .shape.five {
+    right: 14%;
+    bottom: 20%;
+    animation-delay: 4s;
+  }
 }
 
 @layer utilities {
@@ -281,6 +452,10 @@
 
   .pb-70 {
     padding-bottom: 4.375rem;
+  }
+
+  .pb-90 {
+    padding-bottom: 5.625rem;
   }
 
   .pt-110 {
