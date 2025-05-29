@@ -76,6 +76,93 @@
     color: #ff6b35;
   }
 
+  /* Blog item style-three styling */
+  .blog-item-style-three {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+  }
+
+  .blog-item-style-three .image {
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  .blog-item-style-three .image img {
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease;
+  }
+
+  .blog-item-style-three:hover .image img {
+    transform: scale(1.05);
+  }
+
+  .blog-item-style-three .content {
+    padding: 22px 0 0;
+  }
+
+  .blog-item-style-three .content .blog-meta {
+    margin-bottom: 5px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .blog-item-style-three .content .blog-meta li {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .blog-item-style-three .content .blog-meta li a {
+    color: #ff6b35;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .blog-item-style-three .content .blog-meta li a:hover {
+    color: #fff;
+  }
+
+  .blog-item-style-three .content h5 {
+    letter-spacing: 0;
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .blog-item-style-three .content h5 a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .blog-item-style-three .content h5 a:hover {
+    color: #ff6b35;
+  }
+
+  /* Theme button style-two for blog */
+  .theme-btn-style-two {
+    font-weight: 600;
+    color: #ff6b35;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    background-size: 0% 1px, 0 1px;
+    background-position: 100% 100%, 0 95%;
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#ff6b35, #ff6b35);
+    background-repeat: no-repeat;
+  }
+
+  .theme-btn-style-two:hover {
+    background-size: 0 1px, 100% 1px;
+    color: #ff6b35;
+  }
+
   /* Testimonials styling */
   .testimonials-content-two {
     max-width: 495px;
@@ -526,6 +613,39 @@
   @screen sm {
     .blog-item-style-two .content {
       padding: 20px 25px 15px 25px;
+    }
+  }
+
+  /* Row utility classes */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 0;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .px-sm-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @screen sm {
+    .px-sm-0 {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
