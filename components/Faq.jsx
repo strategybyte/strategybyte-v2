@@ -61,8 +61,10 @@ export default function Faq() {
               data-aos-duration="1500"
               data-aos-offset="50"
             >
-              <span className="subtitle mt-10 mb-15">FAQs</span>
-              <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <span className="subtitle text-secondary font-bold mt-10 mb-15">
+                FAQs
+              </span>
+              <h2 className="text-white text-4xl font-bold leading-tight">
                 Frequently Asked Questions
               </h2>
             </div>

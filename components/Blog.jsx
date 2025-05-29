@@ -52,14 +52,16 @@ export default function Blog() {
               data-aos-duration="1500"
               data-aos-offset="50"
             >
-              <span className="subtitle mb-15">Blog & News</span>
-              <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <span className="subtitle text-secondary font-bold mb-15">
+                Blog & News
+              </span>
+              <h2 className="text-white text-4xl  font-bold leading-tight">
                 Ultimate Guide to Boosting Engagement on Social Media
               </h2>
             </div>
           </div>
         </div>
-        <div className="row justify-center">
+        <div className="row justify-center px-4">
           {blogPosts.map((post, index) => (
             <div key={post.id} className="w-full xl:w-4/12 md:w-6/12">
               <div
@@ -75,7 +77,7 @@ export default function Blog() {
                 <div className="content">
                   <ul className="blog-meta list-none p-0 m-0">
                     <li>
-                      <a href="#" className="text-orange-500 text-xs font-bold">
+                      <a href="#" className="text-secondary text-xs font-bold">
                         {post.category}
                       </a>
                     </li>
@@ -83,14 +85,14 @@ export default function Blog() {
                   <h5 className="text-lg font-bold mb-3 leading-tight">
                     <Link
                       href={post.slug}
-                      className="text-white hover:text-orange-500 transition-colors duration-300"
+                      className="text-white hover:text-secondary transition-colors duration-300"
                     >
                       {post.title}
                     </Link>
                   </h5>
                   <Link
                     href={post.slug}
-                    className="theme-btn-style-two text-orange-500 font-semibold inline-flex items-center"
+                    className="theme-btn-style-two text-secondary font-semibold inline-flex items-center"
                   >
                     <span>Read More</span>
                   </Link>

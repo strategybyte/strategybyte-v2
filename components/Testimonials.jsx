@@ -69,9 +69,9 @@ export default function Testimonials() {
           backgroundImage: "url(/assets/images/background/cta-bg-dots.png)",
         }}
       >
-        <div className="flex flex-col lg:flex-row items-center justify-between">
+        <div className="grid grid-cols-1 lg:grid-cols-2 pl-6 items-center justify-between">
           {/* Testimonials Content */}
-          <div className="w-full lg:w-1/2">
+          <div>
             <div
               className="testimonials-content-two rmb-55"
               data-aos="fade-left"
@@ -79,7 +79,9 @@ export default function Testimonials() {
               data-aos-offset="50"
             >
               <div className="section-title mb-50">
-                <span className="subtitle mt-10 mb-15">Our Testimonials</span>
+                <span className="subtitle mt-10 text-secondary mb-15">
+                  Our Testimonials
+                </span>
                 <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   What Our Clients Say Us
                 </h2>
@@ -123,7 +125,7 @@ export default function Testimonials() {
           </div>
 
           {/* Image Part */}
-          <div className="w-full lg:w-1/2 text-center lg:text-right">
+          <div className="text-center lg:text-right">
             <div
               className="testimonials-four-image-part relative inline-block"
               data-aos="fade-right"

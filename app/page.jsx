@@ -19,13 +19,13 @@ export default function Home() {
         <About />
         <Services />
         <WhyChooseUs />
-        <CaseStudies />
+        {/* <CaseStudies /> */}
         <Testimonials />
         <Faq />
         <Blog />
         <CTA />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -55,8 +55,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="main-footer bgc-black text-white">
-      <div className="container mx-auto px-sm-0 bordered-x py-100">
+    <footer className="main-footer bgc-black text-white ">
+      <div className="container mx-auto px-4 bordered-x py-100">
         <div className="row items-center justify-between">
           <div className="w-full xl:w-5/12 lg:w-1/2">
             <div

@@ -64,17 +64,18 @@ export default function Services({ extraClass = "pb-70" }) {
             data-aos-offset="50"
           >
             <div className="section-title mb-8">
-              <span className="text-primary-500 text-sm font-medium uppercase tracking-wider mb-4 block">
+              <span className="text-secondary text-sm font-medium uppercase tracking-wider mb-4 block">
                 Our Services
               </span>
-              <h2 className="text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
-                Explore Popular Services
+              <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight mb-6">
+                Partner with StrategyByte to focus on what matters most.
               </h2>
             </div>
-            <p className="text-gray-300 text-lg leading-relaxed">
-              From local businesses to global enterprises, we&apos;ve helped
-              countless brands achieve success online through customized SEO
-              solutions tailored to their unique needs and goals
+            <p className="text-gray-300 leading-relaxed">
+              Our approach is designed to maximize the impact of your marketing
+              efforts by delivering measurable ROI. We focus on strategic
+              allocation of resources, ensuring every dollar spent contributes
+              to meaningful growth and business success.
             </p>
           </div>
         </div>
@@ -93,7 +94,7 @@ export default function Services({ extraClass = "pb-70" }) {
               data-aos-duration="1500"
               data-aos-offset="50"
             >
-              <div className="service-two-item relative group bg-black border border-gray-800 rounded-lg p-10 lg:p-12 xl:p-16 mb-8 overflow-hidden transition-all duration-500 hover:bg-secondary-500 hover:border-secondary-500">
+              <div className="service-two-item relative group bg-black border border-gray-800 rounded-lg p-10 lg:p-12 xl:p-16 mb-8 overflow-hidden transition-all duration-500 hover:bg-secondary hover:border-secondary-500">
                 {/* Icon */}
                 <div className="text-primary-500 text-5xl leading-none mb-5 transition-all duration-500 group-hover:text-black">
                   <i className={icon}></i>

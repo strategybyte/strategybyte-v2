@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const Hero = () => {
@@ -19,10 +20,14 @@ const Hero = () => {
 
       {/* Play Lines */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4">
-        <span className="absolute bottom-0 left-0 w-0.5 h-4 bg-white animate-pulse"></span>
+        {/* <span className="absolute bottom-0 left-0 w-0.5 h-4 bg-white animate-pulse"></span>
         <span className="absolute bottom-0 left-1 w-0.5 h-3.5 bg-white animate-pulse delay-100"></span>
         <span className="absolute bottom-0 left-2 w-0.5 h-2.5 bg-white animate-pulse delay-200"></span>
-        <span className="absolute bottom-0 left-3 w-0.5 h-2 bg-white animate-pulse delay-300"></span>
+        <span className="absolute bottom-0 left-3 w-0.5 h-2 bg-white animate-pulse delay-300"></span> */}
+        <img
+          src="/assets/images/strategy-byte-logo-color.svg"
+          // className="size-14"
+        />
       </div>
     </button>
   );
@@ -93,13 +98,17 @@ const Hero = () => {
         <div className="container mx-auto px-4">
           {/* Main Title */}
           <h1 className="text-white font-medium mb-10 text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-none">
-            <TextSplitAnimation delay={500}>We Make</TextSplitAnimation>
+            <TextSplitAnimation delay={500}>Unlock Your</TextSplitAnimation>
             <br />
-            <TextSplitAnimation delay={800}>Everything</TextSplitAnimation>
+            <span className="text-secondary">
+              <TextSplitAnimation delay={800}>
+                Digital Potential
+              </TextSplitAnimation>
+            </span>
           </h1>
 
           {/* Subtitle */}
-          <div className="ml-0 lg:ml-[710px] max-w-full lg:max-w-[560px]">
+          {/* <div className="ml-0 lg:ml-[710px] max-w-full lg:max-w-[560px]">
             <div className="text-white text-2xl md:text-3xl lg:text-[28px] leading-relaxed">
               <TextSplitAnimation delay={1200}>
                 Creative studio at the
@@ -113,7 +122,7 @@ const Hero = () => {
                 and technology.
               </TextSplitAnimation>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

@@ -91,22 +91,23 @@ export default function About() {
           >
             <div className="lg:pl-12 xl:pl-16 xl:ml-1">
               <div className="mb-10">
-                <span className="text-primary-500 text-sm font-medium uppercase tracking-wider mt-2 mb-4 block">
+                <span className="text-secondary text-sm font-medium uppercase tracking-wider mt-2 mb-4 block">
                   About Agency
                 </span>
-                <h2 className="text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
-                  Boost Your Rankings Expert SEO Solutions for Maximum
-                  Visibility
+                <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight mb-6">
+                  Empowering Brands with Data-Driven Strategies
                 </h2>
               </div>
-              <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                Our team of dedicated SEO experts combines extensive industry
-                knowledge with strategies to deliver tangible results for
-                clients innovative our.
+              <p className="text-gray-300  leading-relaxed mb-8">
+                We provide a comprehensive and holistic solution to amplify your
+                brand’s visibility, engagement, and impact across digital
+                platforms. Through strategic marketing and data-driven insights,
+                we help you connect with your audience, strengthen your online
+                presence, and drive meaningful interactions.
               </p>
               <Link
                 href="/about"
-                className="theme-btn group relative inline-flex items-center justify-center bg-primary-500 hover:bg-secondary-500 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 overflow-hidden mt-6"
+                className="theme-btn group relative inline-flex items-center justify-center bg-secondary hover:bg-white text-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 overflow-hidden mt-6"
                 data-hover="Learn More Us"
               >
                 <span className="relative z-10">Learn More Us</span>

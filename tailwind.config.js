@@ -75,14 +75,22 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        // primary: {
+        //   50: "#f0f9ff",
+        //   500: "#3b82f6",
+        //   600: "#2563eb",
+        // },
+        // secondary: {
+        //   500: "#10b981",
+        // },
+
         primary: {
-          50: "#f0f9ff",
-          500: "#3b82f6",
-          600: "#2563eb",
+          DEFAULT: "#2f3f61", // Deep Koamaru
         },
         secondary: {
-          500: "#10b981",
+          DEFAULT: "#ffc605", // Golden Poppy
         },
+
         yellow: {
           400: "#D6F037",
         },

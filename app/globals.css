@@ -69,11 +69,11 @@
   }
 
   .blog-item-style-two .content h5 a:hover {
-    color: #ff6b35;
+    color: #ffc605;
   }
 
   .blog-item-style-two .content .read-more {
-    color: #ff6b35;
+    color: #ffc605;
   }
 
   /* Blog item style-three styling */
@@ -116,7 +116,7 @@
   }
 
   .blog-item-style-three .content .blog-meta li a {
-    color: #ff6b35;
+    color: #ffc605;
     text-decoration: none;
     transition: color 0.3s ease;
   }
@@ -140,13 +140,13 @@
   }
 
   .blog-item-style-three .content h5 a:hover {
-    color: #ff6b35;
+    color: #ffc605;
   }
 
   /* Theme button style-two for blog */
   .theme-btn-style-two {
     font-weight: 600;
-    color: #ff6b35;
+    color: #ffc605;
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-flex;
@@ -401,7 +401,7 @@
   }
 
   .accordion-button:not(.collapsed):after {
-    background: #ff6b35;
+    background: #ffc605;
     color: white;
   }
 
@@ -985,7 +985,7 @@
   }
 
   .bgc-primary {
-    background-color: #ff6b35;
+    background-color: #ffc605;
   }
 
   .bgc-green {

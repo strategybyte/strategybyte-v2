@@ -129,13 +129,13 @@ const Header = () => {
                       </span>
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                     </Link>
-                    <ChevronDownIcon className="w-6 h-6 text-white ml-2 inline-block" />
+                    {/* <ChevronDownIcon className="w-6 h-6 text-white ml-2 inline-block" /> */}
                   </div>
                 </li>
                 <li className="group">
                   <div className="relative">
                     <Link
-                      href="/about"
+                      href="#"
                       className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -144,47 +144,47 @@ const Header = () => {
                       </span>
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                     </Link>
-                    <ChevronDownIcon className="w-6 h-6 text-white ml-2 inline-block" />
+                    {/* <ChevronDownIcon className="w-6 h-6 text-white ml-2 inline-block" /> */}
                   </div>
                 </li>
                 <li className="group">
                   <div className="relative">
                     <Link
-                      href="/projects"
+                      href="#"
                       className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="inline-block animate-fade-in-up delay-300">
-                        Projects
+                        Services
                       </span>
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                     </Link>
-                    <ChevronDownIcon className="w-6 h-6 text-white ml-2 inline-block" />
+                    {/* <ChevronDownIcon className="w-6 h-6 text-white ml-2 inline-block" /> */}
                   </div>
                 </li>
                 <li className="group">
                   <div className="relative">
                     <Link
-                      href="/blog"
+                      href="#"
                       className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="inline-block animate-fade-in-up delay-400">
-                        Blog
+                        News
                       </span>
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                     </Link>
-                    <ChevronDownIcon className="w-6 h-6 text-white ml-2 inline-block" />
+                    {/* <ChevronDownIcon className="w-6 h-6 text-white ml-2 inline-block" /> */}
                   </div>
                 </li>
                 <li className="group">
                   <Link
-                    href="/contact"
+                    href="#"
                     className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="inline-block animate-fade-in-up delay-500">
-                      Contact Us
+                      Contact
                     </span>
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                   </Link>

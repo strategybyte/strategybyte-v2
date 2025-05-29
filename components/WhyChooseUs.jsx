@@ -38,19 +38,19 @@ export default function WhyChooseUs({ bg = "bg-gray-900" }) {
   return (
     <section className={`why-choose-us relative z-10 ${bg}`}>
       <div className="container mx-auto bordered-x py-100">
-        <div className="flex flex-wrap xl:mx-2 justify-between">
+        <div className="grid grid-cols-1 px-2 lg:grid-cols-2 gap-3 lg:items-center">
           {/* Left Column - Image & Title */}
           <div
-            className="w-full lg:w-1/2 rmb-55"
+            // className="w-full lg:w-2/5"
             data-aos="fade-left"
             data-aos-duration="1500"
             data-aos-offset="50"
           >
             <div className="section-title mb-12">
-              <span className="text-primary-500 text-sm font-medium uppercase tracking-wider mt-2 mb-4 block">
+              <span className="text-secondary text-sm font-medium uppercase tracking-wider mt-2 mb-4 block">
                 Why Choose Us?
               </span>
-              <h2 className="text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+              <h2 className="text-white text-3xl md:text-4xl  font-bold leading-tight">
                 SEO Strategies Tailored to Your Business Needs
               </h2>
             </div>
@@ -63,7 +63,7 @@ export default function WhyChooseUs({ bg = "bg-gray-900" }) {
 
           {/* Right Column - Service Items */}
           <div
-            className="w-full lg:w-1/2"
+            // className="w-full lg:w-2/5"
             data-aos="fade-right"
             data-aos-duration="1500"
             data-aos-offset="50"
@@ -71,7 +71,7 @@ export default function WhyChooseUs({ bg = "bg-gray-900" }) {
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className={`service-item-style-two bg-white rounded-lg p-6 lg:p-8 xl:p-10 sm:flex transition-all duration-500 hover:bg-black hover:text-white group ${
+                className={`service-item-style-two bg-white rounded-lg p-6 lg:p-8 xl:p-10 sm:flex transition-all duration-500 hover:bg-secondary hover:text-white group ${
                   index !== services.length - 1 ? "mb-5" : ""
                 }`}
               >
