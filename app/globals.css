@@ -78,6 +78,10 @@
     padding-bottom: 4.375rem;
   }
 
+  .mb-45 {
+    margin-bottom: 2.8125rem;
+  }
+
   @screen lg {
     .gap-100 {
       gap: 4rem;
