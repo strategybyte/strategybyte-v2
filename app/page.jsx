@@ -7,6 +7,8 @@ import CaseStudies from "../components/CaseStudies";
 import Testimonials from "../components/Testimonials";
 import Faq from "../components/Faq";
 import Blog from "../components/Blog";
+import CTA from "../components/CTA";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -21,7 +23,9 @@ export default function Home() {
         <Testimonials />
         <Faq />
         <Blog />
+        <CTA />
       </main>
+      <Footer />
     </div>
   );
 }
