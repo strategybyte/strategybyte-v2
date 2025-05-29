@@ -38,14 +38,14 @@ const Header = () => {
               <div className="relative max-w-[70px]">
                 <Link href="/" className="block">
                   <img
-                    src="/assets/images/logo-black.png"
+                    src="/assets/images/strategy-byte-logo-color.svg"
                     alt="Onovo"
                     className={`max-w-full h-auto transition-opacity duration-300 ${
                       isScrolled ? "opacity-100" : "opacity-0"
                     }`}
                   />
                   <img
-                    src="/assets/images/logo-main.png"
+                    src="/assets/images/strategy-byte-logo-color.svg"
                     alt="Onovo"
                     className={`max-w-full h-auto absolute top-0 left-0 transition-opacity duration-300 ${
                       isScrolled ? "opacity-0" : "opacity-100"
