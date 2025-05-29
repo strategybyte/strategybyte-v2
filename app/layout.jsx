@@ -10,7 +10,7 @@ const epilogue = Epilogue({
 });
 
 export const metadata = {
-  title: "StrategyByte",
+  title: "Onovo - Creative Portfolio Agency",
   description:
     "Creative studio at the intersection of art, design and technology",
 };
@@ -18,6 +18,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="/assets/fonts/flaticon_ridda.css"
+        />
+      </head>
       <body className={epilogue.className}>{children}</body>
     </html>
   );

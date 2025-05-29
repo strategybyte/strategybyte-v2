@@ -74,6 +74,10 @@
     gap: 6rem;
   }
 
+  .pb-70 {
+    padding-bottom: 4.375rem;
+  }
+
   @screen lg {
     .gap-100 {
       gap: 4rem;
