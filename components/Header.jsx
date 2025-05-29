@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 py-2.5 transition-all duration-500 bg-transparent`}
+        className={`fixed top-0 left-0 w-full z-50 py-2.5 transition-all duration-500 bg-white/5 backdrop-blur-lg`}
       >
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-12 items-center">
@@ -64,8 +64,8 @@ const Header = () => {
 
             {/* Showcase Button */}
             <div className="col-span-3 lg:col-span-3 flex justify-end">
-              <Link
-                href="/projects"
+              <button
+                onClick={() => setIsMenuOpen((prevState) => !prevState)}
                 className={`relative inline-flex items-center h-10 px-4 group overflow-hidden transition-colors duration-300`}
               >
                 <span className="relative z-10">
@@ -84,7 +84,7 @@ const Header = () => {
                     className={`absolute top-1/2 right-0 w-0 h-0 border-l-[3px] border-t-[3px] border-b-[3px] border-transparent transition-all duration-300`}
                   ></span>
                 </span>
-              </Link>
+              </button>
             </div>
           </div>
         </div>
