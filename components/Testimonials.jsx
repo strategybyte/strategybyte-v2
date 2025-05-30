@@ -101,19 +101,19 @@ export default function Testimonials() {
                         {testimonial.text}
                       </div>
                       <div className="quote-title flex items-center">
-                        <div className="author mr-4">
+                        {/* <div className="author mr-4">
                           <img
                             src={testimonial.author}
                             alt="Author"
                             className="w-12 h-12 rounded-full object-cover"
                           />
-                        </div>
+                        </div> */}
                         <div>
                           <h6 className="text-white font-bold text-lg mb-1">
                             {testimonial.name}
                           </h6>
                           <span className="designation text-gray-400 text-sm">
-                            /{testimonial.designation}
+                            {testimonial.designation}
                           </span>
                         </div>
                       </div>

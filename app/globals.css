@@ -545,7 +545,7 @@
 
   .newsletter-form .theme-btn {
     flex: none;
-    background-color: #ff6b35;
+    background-color: #2f3f61;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -556,7 +556,7 @@
   }
 
   .newsletter-form .theme-btn:hover {
-    background-color: #e55a2b;
+    background-color: #ffc605;
     transform: translateY(-1px);
   }
 
@@ -993,7 +993,7 @@
   }
 
   .bgc-secondary {
-    background-color: #ff6b35;
+    background-color: #2f3f61;
   }
 
   .bgc-black {
@@ -1224,7 +1224,7 @@
 
 .slick-dots li.slick-active button:before,
 .slick-dots li button:hover:before {
-  background-color: #ff6b35;
+  background-color: #ffc605;
   transform: scale(1.2);
 }
 

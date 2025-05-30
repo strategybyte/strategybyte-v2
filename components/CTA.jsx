@@ -43,10 +43,10 @@ export default function CTA() {
                 data-aos-offset="50"
               >
                 <div className="section-title text-white mb-25">
-                  <span className="subtitle mt-10 mb-15">
+                  <span className="subtitle text-primary font-bold mt-10 mb-15">
                     Let&apos;s Boost Website
                   </span>
-                  <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                  <h2 className="text-white text-4xl  font-bold leading-tight">
                     We Are Ready to Boost Your Website &amp; Grow Sales
                   </h2>
                   <p className="text-white mt-4">
