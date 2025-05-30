@@ -7,33 +7,39 @@ export default function Services({ extraClass = "pb-70" }) {
   const services = [
     {
       icon: "flaticon-seo",
-      title: "Technical SEO Audits",
+      title: "Website Development",
       description:
-        "Our comprehensive technical SEO audits identify and address underlying issues that may hinder your website&apos;s performance in search results, ensuring optimal crawlability, indexability, and user experience successful SEO strategy is data-driven",
+        "We design fast, functional, and conversion-driven websites tailored to specific goals",
     },
     {
       icon: "flaticon-keywords",
-      title: "Keyword Research",
+      title: "Digital Marketing ",
       description:
-        "We conduct in-depth keyword research uncover valuable opportunities optimize your website&apos;s relevant keywords",
+        "We create targeted campaigns that drive real results and help your brand grow smarter online",
     },
     {
       icon: "flaticon-search-engine",
-      title: "On-Page Optimization",
+      title: "Search Engine Optimization",
       description:
-        "Our on-page optimization strategies focus on optimizing key elements of your website, including meta tags, headings",
+        "We boost your website’s visibility with strategic keywords and content to increase traffic and long-term growth",
     },
     {
       icon: "flaticon-link-building",
-      title: "Link Building & Outreach",
+      title: "Participant Portal Development",
       description:
-        "Through strategic link building a outreach efforts, we enhance to website&apos;s authority and credibility, earning high-quality",
+        "We create smart, secure portals that simplify referrals, track needs, and keep you connected in one place",
     },
     {
       icon: "flaticon-www",
-      title: "Local SEO Solutions",
+      title: "Business Process Setup",
       description:
-        "For businesses targeting local audiences, our local SEO solutions optimize your they online presence for location-based",
+        "We streamline your business with efficient workflows and digital tools for smooth operations ",
+    },
+    {
+      icon: "flaticon-www",
+      title: "Analytics & Reporting ",
+      description:
+        "We turn data into actionable insights to help you make smarter, data-driven decisions",
     },
   ];
 
@@ -81,15 +87,10 @@ export default function Services({ extraClass = "pb-70" }) {
         </div>
 
         {/* Services Grid */}
-        <div className="flex flex-wrap justify-center -mx-4">
+        <div className="grid gird-cols-1 md:grid-cols-2 gap-3 -mx-4 px-2">
           {services.map(({ icon, title, description }, i) => (
             <div
               key={i}
-              className={`${
-                i === 0
-                  ? "w-full xl:w-2/3 px-4"
-                  : "w-full xl:w-1/3 md:w-1/2 px-4"
-              }`}
               data-aos="flip-up"
               data-aos-duration="1500"
               data-aos-offset="50"
@@ -121,7 +122,6 @@ export default function Services({ extraClass = "pb-70" }) {
                   className="inline-flex items-center text-primary-500 font-medium hover:text-secondary-500 transition-all duration-500 group-hover:text-black"
                 >
                   Read More
-                  <i className="far fa-arrow-right ml-2"></i>
                 </Link>
 
                 {/* Background Circle - Only visible on hover */}

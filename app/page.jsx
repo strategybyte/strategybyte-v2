@@ -25,7 +25,7 @@ export default function Home() {
         <Blog />
         <CTA />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

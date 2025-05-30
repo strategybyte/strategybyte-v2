@@ -81,9 +81,12 @@ export default function Footer() {
                 </div>
                 <div className="text">
                   Main Location
-                  <span className="h6 block text-white font-semibold text-lg mt-1">
-                    57 Main Street, Melbourne, Australia
-                  </span>
+                  <Link
+                    href="https://maps.app.goo.gl/zf98r779Z13pcNdt6"
+                    className="h6 block text-white font-semibold text-lg mt-1"
+                  >
+                    New South Wales, 2148
+                  </Link>
                 </div>
               </div>
 
@@ -94,12 +97,12 @@ export default function Footer() {
                 <div className="text">
                   Email Address
                   <span className="h6 block text-white font-semibold text-lg mt-1">
-                    <a
-                      href="mailto:support@gmail.com"
+                    <Link
+                      href="mailto:info@strategybyte.com.au"
                       className="hover:text-primary transition-colors"
                     >
-                      support@gmail.com
-                    </a>
+                      info@strategybyte.com.au
+                    </Link>
                   </span>
                 </div>
               </div>
@@ -111,23 +114,26 @@ export default function Footer() {
                 <div className="text">
                   Need Helps
                   <span className="h6 block text-white font-semibold text-lg mt-1">
-                    <a
-                      href="tel:+00012345688"
+                    <Link
+                      href="tel:0410 745 998"
                       className="hover:text-primary transition-colors"
                     >
-                      +000 (123) 456 88
-                    </a>
+                      0410 745 998
+                    </Link>
                   </span>
                 </div>
               </div>
 
               <div className="logo mt-60 rmt-35">
-                <Link href="/">
+                <Link href="/" className="flex items-center gap-2">
                   <img
-                    src="/assets/images/logos/logo-footer.png"
+                    src="/assets/images/strategy-byte-logo-color.svg"
                     alt="Logo"
                     className="max-w-[200px]"
                   />
+                  <span className="text-2xl font-bold text-white">
+                    StrategyByte
+                  </span>
                 </Link>
               </div>
             </div>
@@ -207,28 +213,9 @@ export default function Footer() {
                 </div>
                 <div className="w-full">
                   <div className="form-group mb-0">
-                    <ul className="radio-filter mb-25">
-                      <li>
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          name="saveInfo"
-                          id="activity1"
-                          checked={formData.saveInfo}
-                          onChange={handleInputChange}
-                        />
-                        <label
-                          htmlFor="activity1"
-                          className="text-gray-300 text-sm"
-                        >
-                          Save my name, email, and website in this browser for
-                          the next time I comment.
-                        </label>
-                      </li>
-                    </ul>
                     <button
                       type="submit"
-                      className="theme-btn bgc-secondary hover:bg-orange-600 transition-colors"
+                      className="px-4 py-3 bg-secondary text-white font-semibold rounded-lg flex items-center justify-center transition-colors hover:bg-secondary-500"
                     >
                       <span>Send Us Message</span>
                     </button>
@@ -241,16 +228,13 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <div className="container mx-auto px-sm-0 bordered-x bordered-top pt-30 pb-15">
+        <div className="container mx-auto px-4 bordered-x bordered-top pt-30 pb-15">
           <div className="row">
             <div className="w-full lg:w-5/12">
               <div className="copyright-text text-center lg:text-left">
                 <p className="text-gray-400">
                   Copyright ©{" "}
-                  <Link
-                    href="/"
-                    className="text-primary font-semibold hover:text-orange-400 transition-colors"
-                  >
+                  <Link href="/" className="font-semibold !text-secondary">
                     Strategybyte
                   </Link>
                   , all rights reserved.
@@ -261,40 +245,39 @@ export default function Footer() {
               <ul className="footer-bottom-nav">
                 <li>
                   <Link
-                    href="/refund"
-                    className="text-gray-400 hover:text-white transition-colors"
+                    href="#"
+                    className="text-gray-400 hover:!text-white transition-colors"
                   >
-                    Refund
+                    About
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/privacy"
-                    className="text-gray-400 hover:text-white transition-colors"
+                    href="#"
+                    className="text-gray-400 hover:!text-white transition-colors"
                   >
-                    Privacy Policy
+                    News
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/faqs"
-                    className="text-gray-400 hover:text-white transition-colors"
+                    href="#"
+                    className="text-gray-400 hover:!text-white transition-colors"
                   >
-                    FAQs
+                    Contact
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
-
-          {/* Scroll Top Button */}
+          {/* Scroll Top Button
           <button
             className="scroll-top scroll-to-target"
             onClick={scrollToTop}
             aria-label="Scroll to top"
           >
             <i className="far fa-arrow-up" />
-          </button>
+          </button> */}
         </div>
       </div>
     </footer>
