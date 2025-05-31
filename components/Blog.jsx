@@ -7,23 +7,29 @@ export default function Blog() {
   const blogPosts = [
     {
       id: 1,
-      image: "/assets/images/blog/blog-two1.jpg",
+      image:
+        "https://images.ctfassets.net/3upqc2v7tlyy/3PF7o4IPne1jBOUdIHeDYP/e97cb56dfdfb6b2605884fc25f364bf4/Want_to_Win_inB2B_Marketing_Here-s_Everything_You_Should_Know_.webp",
       category: "SEO Services",
-      title: "How to Craft they Winning Socials Media Strategy from Scratch",
+      title:
+        "How Can an SEO Optimization Agency Boost Your Organic Traffic & Visibility?",
       slug: "blog-details",
     },
     {
       id: 2,
-      image: "/assets/images/blog/blog-two2.jpg",
+      image:
+        "https://images.ctfassets.net/3upqc2v7tlyy/t6wIoqQtIB28qZwWPApnK/c8bb91e4e57598cccc09fd7b5096872e/Want_to_Win_inB2B_Marketing_Here-s_Everything_You_Should_Know_.webp",
       category: "Social Media Marketing",
-      title: "Unlocking the Power of Paid Ads A Social Media Marketing",
+      title:
+        "How to Market NDIS Services in Australia: SEO, Lead Generation, and Digital Strategies for Providers",
       slug: "blog-details",
     },
     {
       id: 3,
-      image: "/assets/images/blog/blog-two3.jpg",
+      image:
+        "https://images.ctfassets.net/3upqc2v7tlyy/2erEpJGipbra4TpgadUWgc/2facb45d15f72a0cc05d6e49e28c3dc5/Want_to_Win_inB2B_Marketing_Here-s_Everything_You_Should_Know_.webp",
       category: "Marketing",
-      title: "How to Improve Your Website's Loading Speed Performance",
+      title:
+        "Digital Marketing Services in Australia: A Step-by-Step Guide to Increasing Your Website Authority Score",
       slug: "blog-details",
     },
   ];
@@ -76,11 +82,11 @@ export default function Blog() {
                 </div>
                 <div className="content">
                   <ul className="blog-meta list-none p-0 m-0">
-                    <li>
+                    {/* <li>
                       <a href="#" className="text-secondary text-xs font-bold">
                         {post.category}
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                   <h5 className="text-lg font-bold mb-3 leading-tight">
                     <Link

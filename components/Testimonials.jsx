@@ -82,8 +82,8 @@ export default function Testimonials() {
                 <span className="subtitle mt-10 text-secondary mb-15">
                   Our Testimonials
                 </span>
-                <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                  What Our Clients Say Us
+                <h2 className="text-white text-4xl font-bold leading-tight">
+                  What Our Clients Say About Us
                 </h2>
               </div>
 
