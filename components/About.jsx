@@ -37,46 +37,47 @@ export default function About() {
               />
 
               {/* Floating Shape Images */}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[30%]">
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <img
-                  src="/assets/images/shapes/about-two1.jpg"
+                  src="/assets/images/strategy-byte-logo-color.svg"
                   alt="Shape"
-                  className="rounded-full w-full"
+                  className="rounded-full w-full border pt-1"
                 />
               </div>
 
-              <div className="absolute left-[12%] bottom-[2%] max-w-[20%] animate-zoom-in-out-delayed sm:left-[5%]">
-                <img
-                  src="/assets/images/shapes/about-two2.jpg"
-                  alt="Shape"
-                  className="rounded-full w-full"
-                />
-              </div>
-
-              <div className="absolute top-[5%] right-[12%] max-w-[20%] animate-zoom-in-out sm:right-[5%]">
-                <img
-                  src="/assets/images/shapes/about-two3.jpg"
-                  alt="Shape"
-                  className="rounded-full w-full"
-                />
-              </div>
-
-              {/* Floating Badges - abs-headings */}
-              <div className="absolute left-0 top-[15%] animate-left-right-one">
-                <h6 className="bg-primary-500 text-white text-sm font-semibold px-4 py-2 rounded-lg mb-2 whitespace-nowrap max-w-max ml-auto">
-                  10m+ Satisfied Clients
+              <div className="absolute top-[10%] left-[25%] animate-left-right-one">
+                <h6 className="bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-lg mb-2 whitespace-nowrap max-w-max ml-auto">
+                  Digital Marketing
                 </h6>
               </div>
 
-              <div className="absolute right-[18%] bottom-[35%] animate-left-right-two sm:right-0">
-                <h6 className="bg-green-400 text-black text-sm font-semibold px-4 py-2 rounded-lg mb-2 whitespace-nowrap max-w-max ml-auto">
-                  CEO &amp; Founder
+              <div className="absolute top-[30%] right-[10%] animate-zoom-in-out">
+                <h6 className="bg-purple-500 text-white text-sm font-semibold px-4 py-2 rounded-lg mb-2 whitespace-nowrap max-w-max ml-auto">
+                  Business Process Setup
+                </h6>
+              </div>
+
+              <div className="absolute bottom-[10%] left-[15%] animate-zoom-in-out-delayed">
+                <h6 className="bg-teal-500 text-white text-sm font-semibold px-4 py-2 rounded-lg mb-2 whitespace-nowrap max-w-max ml-auto">
+                  Web Development
+                </h6>
+              </div>
+
+              <div className="absolute bottom-[30%] right-[5%] animate-left-right-two">
+                <h6 className="bg-orange-500 text-white text-sm font-semibold px-4 py-2 rounded-lg mb-2 whitespace-nowrap max-w-max ml-auto">
+                  Participant Portal Development
+                </h6>
+              </div>
+
+              <div className="absolute bottom-[45%] left-[10%] animate-zoom-in-out-delayed">
+                <h6 className="bg-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-lg mb-2 whitespace-nowrap max-w-max ml-auto">
+                  SEO
                 </h6>
               </div>
 
               <div className="absolute right-0 bottom-[10%] animate-left-right-two">
                 <h6 className="bg-yellow-400 text-black text-sm font-semibold px-4 py-2 rounded-lg mb-2 whitespace-nowrap max-w-max ml-auto">
-                  25+ Years Of Experience
+                  Analytics & Reporting
                 </h6>
               </div>
             </div>
@@ -105,13 +106,21 @@ export default function About() {
                 we help you connect with your audience, strengthen your online
                 presence, and drive meaningful interactions.
               </p>
-              <Link
+              {/* <Link
                 href="/about"
                 className="theme-btn group relative inline-flex items-center justify-center bg-secondary hover:bg-white text-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 overflow-hidden mt-6"
                 data-hover="Learn More Us"
               >
                 <span className="relative z-10">Learn More Us</span>
                 <div className="absolute inset-0 bg-secondary-500 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+              </Link> */}
+              <Link
+                href="/about"
+                className="theme-btn group relative inline-flex items-center justify-center bg-secondary hover:bg-white text-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 overflow-hidden mt-6 outline-none"
+              >
+                <span className="relative z-10 transition-all duration-300 group-hover:-skew-x-6 group-hover:tracking-wider">
+                  Learn More Us
+                </span>
               </Link>
             </div>
           </div>

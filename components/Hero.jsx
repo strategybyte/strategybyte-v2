@@ -84,7 +84,6 @@ const Hero = () => {
           autoPlay
           muted
           loop
-          playsInline
           className="absolute inset-0 w-full h-full object-cover object-center"
           poster="/assets/images/hero-poster.jpg"
         >

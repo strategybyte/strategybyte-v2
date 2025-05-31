@@ -104,7 +104,7 @@ export default function Services({ extraClass = "pb-70" }) {
                 {/* Title */}
                 <h4 className="text-white text-xl lg:text-2xl font-bold mb-4 transition-all duration-500 group-hover:text-black">
                   <Link
-                    href="/service-details"
+                    href="#"
                     className="hover:text-primary-500 group-hover:text-black transition-colors duration-300"
                   >
                     {title}
@@ -118,8 +118,8 @@ export default function Services({ extraClass = "pb-70" }) {
 
                 {/* Read More */}
                 <Link
-                  href="/service-details"
-                  className="inline-flex items-center text-primary-500 font-medium hover:text-secondary-500 transition-all duration-500 group-hover:text-black"
+                  href="#"
+                  className="inline-flex items-center text-primary-500 font-medium hover:text-secondary-500 transition-all duration-500 group-hover:text-black hover:underline"
                 >
                   Read More
                 </Link>

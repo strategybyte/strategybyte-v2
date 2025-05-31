@@ -12,9 +12,9 @@ const epilogue = Epilogue({
 });
 
 export const metadata = {
-  title: "StrategyByte",
+  title: "StrategyByte | NDIS Marketing Solutions",
   description:
-    "Creative studio at the intersection of art, design and technology",
+    "Unlock growth with StrategyByte's NDIS marketing services. We provide targeted campaigns, social media management, and accessible website development to help providers engage participants and enhance visibility.",
 };
 
 export default function RootLayout({ children }) {

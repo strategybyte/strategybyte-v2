@@ -66,12 +66,24 @@ export default function Footer() {
               data-aos-offset="50"
             >
               <div className="section-title mb-30">
-                <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                  Ready To Take Your SEO to the Next Level?
-                </h2>
+                <div className="logo mt-60 rmt-35">
+                  <Link href="/" className="flex items-center gap-2">
+                    <img
+                      src="/assets/images/strategy-byte-logo-color.svg"
+                      alt="Logo"
+                      className="max-w-[200px]"
+                    />
+                    <span className="text-2xl font-bold text-white">
+                      StrategyByte
+                    </span>
+                  </Link>
+                </div>
                 <p className="text-gray-300 mt-4">
-                  Contact us today to schedule a consultation or learn more
-                  about our services
+                  We offer a comprehensive suite of digital marketing services
+                  that cover all aspects of our online presence. From SEO and
+                  social media marketing to content creation and PPC
+                  advertising, they have the expertise and resources to handle
+                  our diverse marketing needs.
                 </p>
               </div>
 
@@ -83,7 +95,7 @@ export default function Footer() {
                   Main Location
                   <Link
                     href="https://maps.app.goo.gl/zf98r779Z13pcNdt6"
-                    className="h6 block text-white font-semibold text-lg mt-1"
+                    className="h6 block text-white hover:!text-white hover:underline font-semibold text-lg mt-1"
                   >
                     New South Wales, 2148
                   </Link>
@@ -122,19 +134,6 @@ export default function Footer() {
                     </Link>
                   </span>
                 </div>
-              </div>
-
-              <div className="logo mt-60 rmt-35">
-                <Link href="/" className="flex items-center gap-2">
-                  <img
-                    src="/assets/images/strategy-byte-logo-color.svg"
-                    alt="Logo"
-                    className="max-w-[200px]"
-                  />
-                  <span className="text-2xl font-bold text-white">
-                    StrategyByte
-                  </span>
-                </Link>
               </div>
             </div>
           </div>
@@ -213,11 +212,10 @@ export default function Footer() {
                 </div>
                 <div className="w-full">
                   <div className="form-group mb-0">
-                    <button
-                      type="submit"
-                      className="px-4 py-3 bg-secondary text-white font-semibold rounded-lg flex items-center justify-center transition-colors hover:bg-secondary-500"
-                    >
-                      <span>Send Us Message</span>
+                    <button className="theme-btn group relative inline-flex items-center justify-center bg-secondary hover:bg-white text-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 overflow-hidden mt-6 outline-none">
+                      <span className="relative z-10 transition-all duration-300 group-hover:-skew-x-6 group-hover:tracking-wider">
+                        Learn More Us
+                      </span>
                     </button>
                   </div>
                 </div>

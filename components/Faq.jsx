@@ -7,30 +7,33 @@ export default function Faq() {
 
   const faqData = [
     {
-      question: "1. What is SEO, and why is it important?",
+      question: "1. Why is Digital Marketing Important for your business?",
       answer:
-        "To take a trivial example which undertakes laborious physical exercise except to obtain some advantage pleasure annoying consequences",
+        "It helps you reach the right audience, increase brand awareness, and drive sales efficiently.",
     },
     {
-      question: "2. How long does it take to see results from SEO?",
+      question:
+        "2. How can digital marketing help improve my website’s visibility?",
       answer:
-        "SEO is a long-term strategy, and results can typically take 3 to 6 months to become noticeable. The timeline can vary depending on factors such as the competitiveness of the industry, the current state of your website, and the effectiveness of the SEO strategy implemented.",
+        "We use SEO, targeted ads, and content strategies to rank higher on search engines and attract more visitors.",
     },
     {
-      question: "3. What services does your SEO agency offer?",
+      question:
+        "3. How long does it take to see results from digital marketing efforts?",
       answer:
-        "To take a trivial example which undertakes laborious physical exercise except to obtain some advantage pleasure annoying consequences",
+        "SEO takes months, PPC works instantly, and content marketing builds traction over time—we optimize for the best speed and impact.",
     },
     {
-      question: "4. How do you measure the success of an SEO campaign?",
+      question:
+        "4. How do you measure the success of digital marketing campaigns?",
       answer:
-        "To take a trivial example which undertakes laborious physical exercise except to obtain some advantage pleasure annoying consequences",
+        "We track key metrics like traffic, conversions, engagement, and ROI to ensure maximum performance.",
     },
-    {
-      question: "5. Can you guarantee top rankings on Google?",
-      answer:
-        "To take a trivial example which undertakes laborious physical exercise except to obtain some advantage pleasure annoying consequences",
-    },
+    // {
+    //   question: "5. Can you guarantee top rankings on Google?",
+    //   answer:
+    //     "To take a trivial example which undertakes laborious physical exercise except to obtain some advantage pleasure annoying consequences",
+    // },
   ];
 
   useEffect(() => {
