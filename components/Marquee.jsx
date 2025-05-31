@@ -1,7 +1,6 @@
 "use client";
 
 const Marquee = () => {
-  // Services data similar to your original HTML
   const services = [
     "Digital Marketing",
     "Business Process Setup",
@@ -11,7 +10,6 @@ const Marquee = () => {
     "Analytics & Reporting",
   ];
 
-  // Create the marquee content
   const MarqueeContent = () => (
     <>
       {services.map((service, serviceIndex) => (
@@ -24,13 +22,13 @@ const Marquee = () => {
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="w-full h-full text-secondary"
+              className="w-full h-full text-black"
             >
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
             </svg>
           </div>
           {/* Service text */}
-          <span className="text-white font-bold text-lg md:text-xl lg:text-2xl tracking-wide whitespace-nowrap">
+          <span className="text-black font-bold text-lg md:text-xl lg:text-2xl tracking-wide whitespace-nowrap">
             {service}
           </span>
         </div>
@@ -39,26 +37,26 @@ const Marquee = () => {
   );
 
   return (
-    <div className="relative overflow-hidden -rotate-3 my-20">
-      {/* Background lines similar to original */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute left-1/4 top-0 w-px h-full bg-black/10"></div>
-        <div className="absolute left-2/4 top-0 w-px h-full bg-black/10"></div>
-        <div className="absolute left-3/4 top-0 w-px h-full bg-black/10"></div>
-        <div className="absolute right-1/4 top-0 w-px h-full bg-black/10"></div>
-      </div>
+    // Outer container with padding to prevent clipping from rotation
+    <div className="relative py-8 md:py-12 overflow-hidden">
+      {/* Marquee container with rotation and negative margins */}
+      <div className="relative -rotate-3 my-20 bg-secondary py-4 md:py-6">
+        {/* Background lines similar to original */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute left-1/4 top-0 w-px h-full bg-black/10"></div>
+          <div className="absolute left-2/4 top-0 w-px h-full bg-black/10"></div>
+          <div className="absolute left-3/4 top-0 w-px h-full bg-black/10"></div>
+          <div className="absolute right-1/4 top-0 w-px h-full bg-black/10"></div>
+        </div>
 
-      {/* Marquee Container */}
-      <div className="relative z-10">
-        <div className="bg-primary py-4 md:py-6">
-          <div className="flex overflow-hidden">
-            <div className="flex animate-marquee">
-              <div className="flex flex-shrink-0">
-                <MarqueeContent />
-              </div>
-              <div className="flex flex-shrink-0">
-                <MarqueeContent />
-              </div>
+        {/* Marquee Content */}
+        <div className="flex overflow-hidden">
+          <div className="flex animate-marquee">
+            <div className="flex flex-shrink-0">
+              <MarqueeContent />
+            </div>
+            <div className="flex flex-shrink-0">
+              <MarqueeContent />
             </div>
           </div>
         </div>
