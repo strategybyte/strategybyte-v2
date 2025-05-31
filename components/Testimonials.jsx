@@ -198,7 +198,7 @@ export default function Testimonials() {
               {/* Animated Badges */}
               <div className="abs-headings">
                 <h6 className="shape five absolute left-0 top-[40%] bgc-primary text-white px-4 py-2 rounded-lg font-bold text-sm animate-down-up-one">
-                  10m+ Satisfied Clients
+                  SEO Expertise
                 </h6>
                 <h6 className="shape six absolute right-0 bottom-[40%] bgc-green px-4 py-2 rounded-lg font-bold text-sm text-white animate-up-down-left">
                   99% Positive Reviews

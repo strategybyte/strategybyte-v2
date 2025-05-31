@@ -214,7 +214,7 @@ export default function Footer() {
                   <div className="form-group mb-0">
                     <button className="theme-btn group relative inline-flex items-center justify-center bg-secondary hover:bg-white text-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 overflow-hidden mt-6 outline-none">
                       <span className="relative z-10 transition-all duration-300 group-hover:-skew-x-6 group-hover:tracking-wider">
-                        Learn More Us
+                        Contact Us
                       </span>
                     </button>
                   </div>

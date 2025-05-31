@@ -11,24 +11,17 @@ const Hero = () => {
   }, []);
 
   const PlayButton = () => (
-    <button className="absolute bottom-16 right-3 w-16 h-16 z-30 group">
+    <button className="absolute bottom-16 w-16 h-16 z-30 group right-10">
       {/* Outer Circle */}
       <div className="absolute inset-0 border border-white rounded-full group-hover:scale-110 transition-transform duration-300">
         {/* Animated Wave */}
         <div className="absolute -inset-2.5 border border-white/30 rounded-full animate-ping"></div>
       </div>
 
-      {/* Play Lines */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4">
-        {/* <span className="absolute bottom-0 left-0 w-0.5 h-4 bg-white animate-pulse"></span>
-        <span className="absolute bottom-0 left-1 w-0.5 h-3.5 bg-white animate-pulse delay-100"></span>
-        <span className="absolute bottom-0 left-2 w-0.5 h-2.5 bg-white animate-pulse delay-200"></span>
-        <span className="absolute bottom-0 left-3 w-0.5 h-2 bg-white animate-pulse delay-300"></span> */}
-        <img
-          src="/assets/images/strategy-byte-logo-color.svg"
-          // className="size-14"
-        />
-      </div>
+      <img
+        src="/assets/images/strategy-byte-logo-color.svg"
+        className="size-20 pb-1.5"
+      />
     </button>
   );
 
