@@ -84,10 +84,7 @@ export default function CTA() {
               >
                 <img src="/assets/images/cta/cta.png" alt="CTA" />
                 <div className="shape logo">
-                  <img
-                    src="/assets/images/logos/logo-two-white.png"
-                    alt="Logo"
-                  />
+                  <img src="/assets/images/sb-logo-primary.svg" alt="Logo" />
                 </div>
                 <div className="shape one">
                   <i className="fas fa-envelope" />

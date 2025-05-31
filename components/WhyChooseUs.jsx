@@ -7,18 +7,18 @@ export default function WhyChooseUs({ bg = "bg-gray-900" }) {
   const services = [
     {
       icon: "fas fa-tools",
-      title: "Expertise and Experience",
-      text: "With over 10+ years of experience in the industry team seasoned SEO professionals brings knowledge",
+      title: "Seasoned experts prepared for any scenario ",
+      text: "With years of cross-industry experience, we anticipate roadblocks and adapt mid-campaign to keep your marketing on track.",
     },
     {
       icon: "fas fa-anchor",
-      title: "Customized Solutions",
-      text: "We understand that every business is unique. That&apos;s why we take a tailored approach to SEO",
+      title: "Comprehensive solutions for every challenge",
+      text: "From SEO audits to content creation and ad management, we tailor solutions for low engagement, poor conversions, or declining reach. ",
     },
     {
       icon: "fas fa-comments",
-      title: "Transparency & Communication",
-      text: "We believe in open and transparent communication with our clients every step of the way.",
+      title: "Regular updates to keep you informed on progress",
+      text: "Get monthly reports and strategy calls so you always know campaign performance and next steps.",
     },
   ];
 
@@ -50,15 +50,17 @@ export default function WhyChooseUs({ bg = "bg-gray-900" }) {
               <span className="text-secondary text-sm font-medium uppercase tracking-wider mt-2 mb-4 block">
                 Why Choose Us?
               </span>
-              <h2 className="text-white text-3xl md:text-4xl  font-bold leading-tight">
-                SEO Strategies Tailored to Your Business Needs
+              <h2 className="text-white text-3xl font-bold leading-tight">
+                Digital Marketing & SEO for Businesses of Every Kind
               </h2>
             </div>
-            <img
-              className="rounded-md w-full"
-              src="/assets/images/services/why-choose-us.jpg"
-              alt="Why Choose Us"
-            />
+            <div className="overflow-hidden ">
+              <img
+                className="rounded-md w-full shadow-lg hover:scale-110 transition-transform duration-500"
+                src="/assets/images/services/why-choose-us.webp"
+                alt="Why Choose Us"
+              />
+            </div>
           </div>
 
           {/* Right Column - Service Items */}
@@ -76,7 +78,7 @@ export default function WhyChooseUs({ bg = "bg-gray-900" }) {
                 }`}
               >
                 {/* Icon */}
-                <div className="flex-none w-14 h-14 mt-1 text-2xl leading-[3.4rem] text-center mr-8 mb-5 sm:mb-0 text-black bg-primary-500 rounded transition-all duration-500 group-hover:border-gray-200 group-hover:border group-hover:border-opacity-10">
+                <div className="flex-none w-14 h-14 mt-1 text-2xl leading-[3.4rem] text-center mr-8 mb-5 sm:mb-0 text-primary group-hover:text-white bg-primary-500 rounded transition-all duration-500 border border-secondary group-hover:border-white group-hover:border">
                   <i className={service.icon}></i>
                 </div>
 
