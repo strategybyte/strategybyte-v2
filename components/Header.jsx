@@ -70,7 +70,7 @@ const Header = () => {
               >
                 <span className="relative z-10">
                   <span className="inline-block relative">
-                    Showcase
+                    Explore
                     <span
                       className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full`}
                     ></span>

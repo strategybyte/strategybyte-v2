@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 
-export default function WhyChooseUs({ bg = "bg-gray-900" }) {
+export default function WhyChooseUs() {
   const services = [
     {
       icon: "fas fa-tools",
@@ -36,7 +36,7 @@ export default function WhyChooseUs({ bg = "bg-gray-900" }) {
   }, []);
 
   return (
-    <section className={`why-choose-us relative z-10 ${bg}`}>
+    <section className={`why-choose-us relative z-10`}>
       <div className="container mx-auto bordered-x py-100">
         <div className="grid grid-cols-1 px-2 lg:grid-cols-2 gap-3 lg:items-center">
           {/* Left Column - Image & Title */}
@@ -57,7 +57,7 @@ export default function WhyChooseUs({ bg = "bg-gray-900" }) {
             <div className="overflow-hidden ">
               <img
                 className="rounded-md w-full shadow-lg hover:scale-110 transition-transform duration-500"
-                src="/assets/images/services/why-choose-us.webp"
+                src="/assets/images/services/why-choose-us.png"
                 alt="Why Choose Us"
               />
             </div>

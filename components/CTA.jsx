@@ -29,7 +29,7 @@ export default function CTA() {
     <section className="cta-two-area rel z-10">
       <div className="container mx-auto px-sm-0 bordered-x pb-100">
         <div
-          className="cta-two-wrap bgc-primary br-10"
+          className="cta-two-wrap bgc-secondary br-10"
           style={{
             backgroundImage: "url(/assets/images/background/hero-bg-dots.png)",
           }}
@@ -43,7 +43,7 @@ export default function CTA() {
                 data-aos-offset="50"
               >
                 <div className="section-title text-white mb-25">
-                  <span className="subtitle text-primary font-bold mt-10 mb-15">
+                  <span className="subtitle text-secondary font-bold mt-10 mb-15">
                     Let&apos;s Boost Website
                   </span>
                   <h2 className="text-white text-4xl  font-bold leading-tight">
@@ -100,7 +100,7 @@ export default function CTA() {
                 </div>
                 <div className="abs-headings">
                   <h6 className="shape five bgc-primary text-white">
-                    10m+ Satisfied Clients
+                    SEO Expertise
                   </h6>
                   <h6 className="shape six bgc-green">99% Positive Reviews</h6>
                 </div>
