@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import Image from "next/image";
 import { useState, useEffect } from "react";
+import { TextAnimation } from "./common";
 
 const Hero = () => {
   const [mounted, setMounted] = useState(false);
@@ -24,42 +26,6 @@ const Hero = () => {
       />
     </button>
   );
-
-  const TextSplitAnimation = ({ children, delay = 0 }) => {
-    const words = children.split(" ");
-
-    return (
-      <span className="inline-block">
-        {words.map((word, index) => (
-          <span
-            key={index}
-            className={`inline-block animate-fade-in-up opacity-0`}
-            style={{
-              animationDelay: `${delay + index * 100}ms`,
-              animationFillMode: "forwards",
-            }}
-          >
-            {word === "Everything" ? (
-              <>
-                {word}
-                <span className="inline-block ml-4 relative top-0 w-8 h-8 align-middle">
-                  <span
-                    className="absolute inset-0 bg-no-repeat bg-center bg-contain"
-                    style={{
-                      backgroundImage: "url(/assets/images/title_icon.svg)",
-                    }}
-                  ></span>
-                </span>
-              </>
-            ) : (
-              word
-            )}
-            {index < words.length - 1 && <span className="mr-2"></span>}
-          </span>
-        ))}
-      </span>
-    );
-  };
 
   if (!mounted) {
     return (
@@ -90,31 +56,12 @@ const Hero = () => {
         <div className="container mx-auto px-4">
           {/* Main Title */}
           <h1 className="text-white font-medium mb-10 text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-none">
-            <TextSplitAnimation delay={500}>Unlock Your</TextSplitAnimation>
+            <TextAnimation delay={500}>Unlock Your</TextAnimation>
             <br />
             <span className="text-secondary">
-              <TextSplitAnimation delay={800}>
-                Digital Potential
-              </TextSplitAnimation>
+              <TextAnimation delay={800}>Digital Potential</TextAnimation>
             </span>
           </h1>
-
-          {/* Subtitle */}
-          {/* <div className="ml-0 lg:ml-[710px] max-w-full lg:max-w-[560px]">
-            <div className="text-white text-2xl md:text-3xl lg:text-[28px] leading-relaxed">
-              <TextSplitAnimation delay={1200}>
-                Creative studio at the
-              </TextSplitAnimation>
-              <br />
-              <TextSplitAnimation delay={1400}>
-                intersection of art, design
-              </TextSplitAnimation>
-              <br />
-              <TextSplitAnimation delay={1600}>
-                and technology.
-              </TextSplitAnimation>
-            </div>
-          </div> */}
         </div>
       </div>
 

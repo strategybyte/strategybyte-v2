@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Slider from "react-slick";
+import { Section, SectionTitle } from "./common";
 
 export default function Testimonials() {
   const [isClient, setIsClient] = useState(false);
@@ -43,18 +45,8 @@ export default function Testimonials() {
     ),
   };
 
-  useEffect(() => {
+  useState(() => {
     setIsClient(true);
-    // Initialize AOS if available
-    if (typeof window !== "undefined") {
-      import("aos").then((AOS) => {
-        AOS.init({
-          duration: 1500,
-          offset: 50,
-          once: true,
-        });
-      });
-    }
   }, []);
 
   if (!isClient) {
@@ -62,9 +54,18 @@ export default function Testimonials() {
   }
 
   return (
-    <section id="testimonials" className="testimonials-two-area relative z-10">
+    <Section
+      id="testimonials"
+      className="testimonials-two-area"
+      containerProps={{
+        bordered: true,
+        px: "px-xl-5",
+        className: "pl-6 items-center justify-between",
+        padding: "py-100",
+      }}
+      fullWidth={false}
+    >
       <div
-        className="container mx-auto px-xl-5 bordered-x py-100"
         style={{
           backgroundImage: "url(/assets/images/background/cta-bg-dots.png)",
         }}
@@ -78,14 +79,12 @@ export default function Testimonials() {
               data-aos-duration="1500"
               data-aos-offset="50"
             >
-              <div className="section-title mb-50">
-                <span className="subtitle mt-10 text-secondary mb-15">
-                  Our Testimonials
-                </span>
-                <h2 className="text-white text-4xl font-bold leading-tight">
-                  What Our Clients Say About Us
-                </h2>
-              </div>
+              <SectionTitle
+                subtitle="Our Testimonials"
+                title="What Our Clients Say About Us"
+                textAlign="left"
+                className="mb-50"
+              />
 
               {/* Testimonials Slider */}
               <div className="testimonials-two-active max-w-[630px] ml-auto">
@@ -101,13 +100,6 @@ export default function Testimonials() {
                         {testimonial.text}
                       </div>
                       <div className="quote-title flex items-center">
-                        {/* <div className="author mr-4">
-                          <img
-                            src={testimonial.author}
-                            alt="Author"
-                            className="w-12 h-12 rounded-full object-cover"
-                          />
-                        </div> */}
                         <div>
                           <h6 className="text-white font-bold text-lg mb-1">
                             {testimonial.name}
@@ -208,6 +200,6 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
