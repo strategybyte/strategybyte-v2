@@ -13,34 +13,64 @@ export default function Marquee() {
   ];
 
   return (
-    <Section
-      className="marquee-area bg-secondary"
-      containerProps={{
-        padding: "py-8",
-      }}
-    >
-      <div className="marquee-wrapper overflow-hidden">
-        <div className="marquee-content flex animate-marquee">
-          {/* First set of brands */}
-          {brands.map((brand, index) => (
-            <div
-              key={index}
-              className="marquee-item flex-shrink-0 mx-8 text-white font-bold text-xl"
-            >
-              {brand}
-            </div>
-          ))}
-          {/* Duplicate set for seamless loop */}
-          {brands.map((brand, index) => (
-            <div
-              key={`duplicate-${index}`}
-              className="marquee-item flex-shrink-0 mx-8 text-white font-bold text-xl"
-            >
-              {brand}
-            </div>
-          ))}
+    <div className="bg-secondary -rotate-[6deg]">
+      <Section
+        className="overflow-hidden"
+        containerProps={{
+          padding: "py-8",
+        }}
+      >
+        <div>
+          <div className="marquee-content">
+            {/* First set of brands */}
+            {brands.map((brand, index) => (
+              <span key={index} className="marquee-item">
+                ✱ {brand}
+              </span>
+            ))}
+            {/* Duplicate set for seamless loop */}
+            {brands.map((brand, index) => (
+              <span key={`duplicate-${index}`} className="marquee-item">
+                ✱ {brand}
+              </span>
+            ))}
+          </div>
         </div>
-      </div>
-    </Section>
+
+        <style jsx>{`
+          .marquee-content {
+            display: inline-block;
+            animation: marquee-scroll 20s linear infinite;
+            white-space: nowrap;
+          }
+
+          .marquee-item {
+            display: inline-block;
+            margin-right: 3rem;
+            color: white;
+            font-weight: bold;
+            font-size: 1.25rem;
+            line-height: 1;
+          }
+
+          @keyframes marquee-scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+
+          /* Ensure perfect straight line */
+          .marquee-wrapper,
+          .marquee-content,
+          .marquee-item {
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+          }
+        `}</style>
+      </Section>
+    </div>
   );
 }

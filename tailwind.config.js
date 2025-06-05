@@ -17,7 +17,7 @@ module.exports = {
         "left-right-two": "leftRightTwo 8s infinite",
         "zoom-in-out": "zoomInOut 4s infinite",
         "zoom-in-out-delayed": "zoomInOut 4s linear 2s infinite",
-        marquee: "marquee 60s linear infinite",
+        marquee: "marquee 30s linear infinite",
       },
       keyframes: {
         fadeInUp: {
@@ -77,7 +77,7 @@ module.exports = {
             transform: "translateX(0%)",
           },
           "100%": {
-            transform: "translateX(-100%)",
+            transform: "translateX(-50%)",
           },
         },
       },
