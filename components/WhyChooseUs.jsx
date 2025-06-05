@@ -52,26 +52,26 @@ export default function WhyChooseUs() {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className={`service-item-style-two bg-white rounded-lg p-6 lg:p-8 xl:p-10 sm:flex transition-all duration-500 hover:bg-secondary hover:text-white group ${
+              className={`service-item-style-two bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-6 lg:p-8 xl:p-10 sm:flex transition-all duration-500 hover:bg-white/20 hover:border-white/30 group shadow-lg ${
                 index !== services.length - 1 ? "mb-5" : ""
               }`}
             >
               {/* Icon */}
-              <div className="flex-none w-14 h-14 mt-1 text-2xl leading-[3.4rem] text-center mr-8 mb-5 sm:mb-0 text-primary group-hover:text-white bg-primary-500 rounded transition-all duration-500 border border-secondary group-hover:border-white group-hover:border">
+              <div className="flex-none w-14 h-14 mt-1 text-2xl leading-[3.4rem] text-center mr-8 mb-5 sm:mb-0 text-white bg-white/20 backdrop-blur-sm rounded transition-all duration-500 border border-white/30 group-hover:bg-white/30 group-hover:border-white/40">
                 <i className={service.icon}></i>
               </div>
 
               {/* Content */}
               <div className="content flex-1">
-                <h6 className="text-black text-lg sm:text-xl font-bold mb-3 group-hover:text-white transition-all duration-500">
+                <h6 className="text-white text-lg sm:text-xl font-bold mb-3 transition-all duration-500">
                   <Link
                     href="/service-details"
-                    className="transition-colors duration-300 hover:text-primary-500 group-hover:text-white"
+                    className="transition-colors duration-300 hover:text-white/80"
                   >
                     {service.title}
                   </Link>
                 </h6>
-                <p className="text-gray-600 text-base leading-relaxed transition-all duration-500 group-hover:text-white">
+                <p className="text-white/80 text-base leading-relaxed transition-all duration-500 group-hover:text-white">
                   {service.text}
                 </p>
               </div>

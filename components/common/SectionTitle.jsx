@@ -31,7 +31,7 @@ const SectionTitle = ({
     >
       {subtitle && (
         <span
-          className={`${subtitleColor} text-sm font-medium uppercase tracking-wider mb-4 block`}
+          className={`${subtitleColor} text-sm font-medium uppercase tracking-wider mb-4 inline-block px-4 py-2 pb-1.5 rounded-md bg-white/10 backdrop-blur-md border border-white/20 shadow-lg`}
         >
           {subtitle}
         </span>
