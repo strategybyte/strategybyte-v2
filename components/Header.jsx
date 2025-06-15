@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -135,7 +134,7 @@ const Header = () => {
                 <li className="group">
                   <div className="relative">
                     <Link
-                      href="#"
+                      href="/about"
                       className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -150,7 +149,7 @@ const Header = () => {
                 <li className="group">
                   <div className="relative">
                     <Link
-                      href="#"
+                      href="/our-services"
                       className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
                       onClick={() => setIsMenuOpen(false)}
                     >
