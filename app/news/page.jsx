@@ -65,17 +65,17 @@ const NewsPage = () => {
         <div className="grid gap-8">
           {[...Array(3)].map((_, i) => (
             <div key={i} className="animate-pulse">
-              <div className="flex flex-col md:flex-row gap-6 p-4 rounded-lg border bg-muted">
+              <div className="flex flex-col md:flex-row gap-6 p-4 rounded-lg border ">
                 <div className="flex-1 space-y-4">
                   <div className="flex items-center gap-2">
-                    <div className="h-4 w-4 rounded-full bg-muted-foreground/30" />
-                    <div className="h-4 w-24 rounded bg-muted-foreground/30" />
+                    <div className="h-4 w-4 rounded-full bg-white" />
+                    <div className="h-4 w-24 rounded bg-white" />
                   </div>
-                  <div className="h-7 w-3/4 rounded bg-muted-foreground/30" />
-                  <div className="h-4 w-full rounded bg-muted-foreground/30" />
-                  <div className="h-4 w-5/6 rounded bg-muted-foreground/30" />
+                  <div className="h-7 w-3/4 rounded bg-white" />
+                  <div className="h-4 w-full rounded bg-white" />
+                  <div className="h-4 w-5/6 rounded bg-white" />
                 </div>
-                <div className="md:w-1/3 h-[200px] rounded-lg overflow-hidden bg-muted-foreground/20" />
+                <div className="md:w-1/3 h-[200px] rounded-lg overflow-hidden bg-gray-200" />
               </div>
             </div>
           ))}
