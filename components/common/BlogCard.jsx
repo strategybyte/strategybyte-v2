@@ -37,7 +37,6 @@ const BlogCard = ({
       <div className="p-6">
         {/* Category Badge */}
         <div>
-          {" "}
           {category && (
             <span className="inline-flex items-center px-3 py-1 bg-secondary-500 text-black text-xs font-bold uppercase tracking-wider rounded-full shadow-lg bg-white">
               <svg
