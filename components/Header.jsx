@@ -164,7 +164,7 @@ const Header = () => {
                 <li className="group">
                   <div className="relative">
                     <Link
-                      href="#"
+                      href="/news"
                       className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
                       onClick={() => setIsMenuOpen(false)}
                     >
