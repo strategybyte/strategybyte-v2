@@ -93,9 +93,7 @@ const OurServicesPage = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                // className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:shadow-2xl hover:shadow-secondary/30 transition-all duration-300"
-                className="relative group bg-black border border-gray-800 rounded-lg p-6 overflow-hidden transition-all duration-500 hover:bg-secondary hover:border-secondary-500"
-                data-aos="flip-up"
+                className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:shadow-2xl hover:shadow-secondary/30 transition-all duration-300"
               >
                 <div
                   className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4  group-hover:text-black group-hover:bg-white"
