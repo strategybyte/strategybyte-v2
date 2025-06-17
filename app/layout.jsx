@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
       <body className={epilogue.className}>
         <Header />
         <main>{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

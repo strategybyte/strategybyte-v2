@@ -151,7 +151,7 @@ const Header = () => {
           }`}
         >
           <div className="container mx-auto px-4">
-            <nav className="text-center">
+            <nav className="text-center overflow-y-auto">
               <ul className="space-y-8">
                 <li className="group">
                   <div className="relative">
@@ -209,9 +209,9 @@ const Header = () => {
 
                     {/* Services Dropdown */}
                     <div
-                      className={`mt-6 transition-all duration-500 overflow-hidden ${
+                      className={`transition-all duration-500 overflow-hidden ${
                         isServicesDropdownOpen
-                          ? "max-h-96 opacity-100"
+                          ? "mt-6 max-h-96 opacity-100"
                           : "max-h-0 opacity-0"
                       }`}
                     >
