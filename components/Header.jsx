@@ -5,10 +5,47 @@ import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    setIsServicesDropdownOpen(false);
   };
+
+  const toggleServicesDropdown = () => {
+    setIsServicesDropdownOpen(!isServicesDropdownOpen);
+  };
+
+  // Service menu items with their corresponding slugs
+  const serviceMenuItems = [
+    { name: "Website Development", slug: "website-development" },
+    { name: "Digital Marketing", slug: "digital-marketing" },
+    { name: "Search Engine Optimization", slug: "seo" },
+    {
+      name: "Participant Portal Development",
+      slug: "participant-portal-development",
+    },
+    { name: "Business Process Setup", slug: "business-process-setup" },
+    { name: "Analytics & Reporting", slug: "analytics-and-reporting" },
+  ];
+
+  // ChevronDownIcon component
+  const ChevronDownIcon = ({ className = "" }) => (
+    <svg
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  );
 
   return (
     <>
@@ -128,7 +165,6 @@ const Header = () => {
                       </span>
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                     </Link>
-                    {/* <ChevronDownIcon className="w-6 h-6 text-white ml-2 inline-block" /> */}
                   </div>
                 </li>
                 <li className="group">
@@ -143,22 +179,66 @@ const Header = () => {
                       </span>
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                     </Link>
-                    {/* <ChevronDownIcon className="w-6 h-6 text-white ml-2 inline-block" /> */}
                   </div>
                 </li>
                 <li className="group">
                   <div className="relative">
-                    <Link
-                      href="/our-services"
-                      className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
-                      onClick={() => setIsMenuOpen(false)}
+                    <div className="flex items-center justify-center">
+                      <Link
+                        href="/our-services"
+                        className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <span className="inline-block animate-fade-in-up delay-300">
+                          Services
+                        </span>
+                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                      </Link>
+                      <button
+                        onClick={toggleServicesDropdown}
+                        className="ml-4 p-2 text-white hover:text-gray-300 transition-colors duration-300"
+                        aria-label="Toggle services dropdown"
+                      >
+                        <ChevronDownIcon
+                          className={`w-6 h-6 transition-transform duration-300 ${
+                            isServicesDropdownOpen ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                    </div>
+
+                    {/* Services Dropdown */}
+                    <div
+                      className={`mt-6 transition-all duration-500 overflow-hidden ${
+                        isServicesDropdownOpen
+                          ? "max-h-96 opacity-100"
+                          : "max-h-0 opacity-0"
+                      }`}
                     >
-                      <span className="inline-block animate-fade-in-up delay-300">
-                        Services
-                      </span>
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-                    </Link>
-                    {/* <ChevronDownIcon className="w-6 h-6 text-white ml-2 inline-block" /> */}
+                      <ul className="space-y-4">
+                        {serviceMenuItems.map((service, index) => (
+                          <li key={service.slug} className="group/item">
+                            <Link
+                              href={`/our-services/${service.slug}`}
+                              className="text-white text-xl md:text-2xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
+                              onClick={() => {
+                                setIsMenuOpen(false);
+                                setIsServicesDropdownOpen(false);
+                              }}
+                            >
+                              <span
+                                className={`inline-block animate-fade-in-up delay-${
+                                  400 + index * 100
+                                }`}
+                              >
+                                {service.name}
+                              </span>
+                              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-400 transition-all duration-300 group-hover/item:w-full"></span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </li>
                 <li className="group">
@@ -173,7 +253,6 @@ const Header = () => {
                       </span>
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                     </Link>
-                    {/* <ChevronDownIcon className="w-6 h-6 text-white ml-2 inline-block" /> */}
                   </div>
                 </li>
                 <li className="group">
