@@ -16,11 +16,10 @@ const Header = () => {
     setIsServicesDropdownOpen(!isServicesDropdownOpen);
   };
 
-  // Service menu items with their corresponding slugs
   const serviceMenuItems = [
-    { name: "Website Development", slug: "website-development" },
     { name: "Digital Marketing", slug: "digital-marketing" },
     { name: "Search Engine Optimization", slug: "seo" },
+    { name: "Website Development", slug: "website-development" },
     {
       name: "Participant Portal Development",
       slug: "participant-portal-development",
