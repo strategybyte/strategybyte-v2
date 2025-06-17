@@ -152,37 +152,68 @@ const OurServicesPage = () => {
 
           {/* Process Timeline */}
           <div className="relative">
-            {/* Vertical Line */}
-            <div className="absolute left-1/2 transform -translate-x-0.5 w-0.5 h-full bg-gray-700"></div>
+            {/* Vertical Line - adjusted for mobile */}
+            <div className="absolute left-6 md:left-1/2 transform md:-translate-x-0.5 w-0.5 h-full bg-gray-700"></div>
 
             {/* Process Steps */}
             <div className="space-y-16">
               {/* Discovery */}
               <div className="flex items-center">
-                <div className="w-1/2 pr-8 text-right">
-                  <h3 className="text-2xl font-bold mb-4">Discovery</h3>
-                  <p className="text-gray-300">
-                    We start by identifying your business goals, audience, and
-                    challenges to define a clear digital strategy.
-                  </p>
+                {/* Mobile: Number on left, Desktop: Text on left for odd items */}
+                <div className="w-12 md:w-1/2 md:pr-8 md:text-right flex md:block justify-start md:justify-end">
+                  <div className="md:hidden relative z-10">
+                    <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-gray-900 font-bold text-xl">
+                      1
+                    </div>
+                  </div>
+                  <div className="hidden md:block">
+                    <h3 className="text-2xl font-bold mb-4">Discovery</h3>
+                    <p className="text-gray-300">
+                      We start by identifying your business goals, audience, and
+                      challenges to define a clear digital strategy.
+                    </p>
+                  </div>
                 </div>
-                <div className="relative z-10">
+
+                {/* Desktop: Center number - perfectly centered on line */}
+                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 z-10">
                   <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-gray-900 font-bold text-xl">
                     1
                   </div>
                 </div>
-                <div className="w-1/2 pl-8"></div>
+
+                {/* Mobile: Text on right, Desktop: Empty space */}
+                <div className="flex-1 pl-6 md:w-1/2 md:pl-8 md:flex-none">
+                  <div className="md:hidden">
+                    <h3 className="text-2xl font-bold mb-4">Discovery</h3>
+                    <p className="text-gray-300">
+                      We start by identifying your business goals, audience, and
+                      challenges to define a clear digital strategy.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Planning */}
               <div className="flex items-center">
-                <div className="w-1/2 pr-8"></div>
-                <div className="relative z-10">
+                {/* Mobile: Number on left, Desktop: Empty space */}
+                <div className="w-12 md:w-1/2 md:pr-8 flex md:block justify-start">
+                  <div className="md:hidden relative z-10">
+                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-900 font-bold text-xl">
+                      2
+                    </div>
+                  </div>
+                </div>
+
+                {/* Desktop: Center number - perfectly centered on line */}
+                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 z-10">
                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-900 font-bold text-xl">
                     2
                   </div>
                 </div>
-                <div className="w-1/2 pl-8">
+
+                {/* Mobile: Text on right, Desktop: Text on right */}
+                <div className="flex-1 pl-6 md:w-1/2 md:pl-8 md:flex-none">
                   <h3 className="text-2xl font-bold mb-4">Planning</h3>
                   <p className="text-gray-300">
                     Our team develops a structured project roadmap with
@@ -194,31 +225,63 @@ const OurServicesPage = () => {
 
               {/* Design */}
               <div className="flex items-center">
-                <div className="w-1/2 pr-8 text-right">
-                  <h3 className="text-2xl font-bold mb-4">Design</h3>
-                  <p className="text-gray-300">
-                    Then we begin creating responsive, user-centric interfaces
-                    optimized for performance, accessibility, and brand
-                    alignment.
-                  </p>
+                {/* Mobile: Number on left, Desktop: Text on left for odd items */}
+                <div className="w-12 md:w-1/2 md:pr-8 md:text-right flex md:block justify-start md:justify-end">
+                  <div className="md:hidden relative z-10">
+                    <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-gray-900 font-bold text-xl">
+                      3
+                    </div>
+                  </div>
+                  <div className="hidden md:block">
+                    <h3 className="text-2xl font-bold mb-4">Design</h3>
+                    <p className="text-gray-300">
+                      Then we begin creating responsive, user-centric interfaces
+                      optimized for performance, accessibility, and brand
+                      alignment.
+                    </p>
+                  </div>
                 </div>
-                <div className="relative z-10">
+
+                {/* Desktop: Center number - perfectly centered on line */}
+                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 z-10">
                   <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-gray-900 font-bold text-xl">
                     3
                   </div>
                 </div>
-                <div className="w-1/2 pl-8"></div>
+
+                {/* Mobile: Text on right, Desktop: Empty space */}
+                <div className="flex-1 pl-6 md:w-1/2 md:pl-8 md:flex-none">
+                  <div className="md:hidden">
+                    <h3 className="text-2xl font-bold mb-4">Design</h3>
+                    <p className="text-gray-300">
+                      Then we begin creating responsive, user-centric interfaces
+                      optimized for performance, accessibility, and brand
+                      alignment.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Development */}
               <div className="flex items-center">
-                <div className="w-1/2 pr-8"></div>
-                <div className="relative z-10">
+                {/* Mobile: Number on left, Desktop: Empty space */}
+                <div className="w-12 md:w-1/2 md:pr-8 flex md:block justify-start">
+                  <div className="md:hidden relative z-10">
+                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-900 font-bold text-xl">
+                      4
+                    </div>
+                  </div>
+                </div>
+
+                {/* Desktop: Center number - perfectly centered on line */}
+                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 z-10">
                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-900 font-bold text-xl">
                     4
                   </div>
                 </div>
-                <div className="w-1/2 pl-8">
+
+                {/* Mobile: Text on right, Desktop: Text on right */}
+                <div className="flex-1 pl-6 md:w-1/2 md:pl-8 md:flex-none">
                   <h3 className="text-2xl font-bold mb-4">Development</h3>
                   <p className="text-gray-300">
                     Using the latest technologies, we build secure, scalable
@@ -230,30 +293,61 @@ const OurServicesPage = () => {
 
               {/* Testing */}
               <div className="flex items-center">
-                <div className="w-1/2 pr-8 text-right">
-                  <h3 className="text-2xl font-bold mb-4">Testing</h3>
-                  <p className="text-gray-300">
-                    We conduct comprehensive QA to ensure site speed,
-                    cross-device compatibility, and SEO readiness.
-                  </p>
+                {/* Mobile: Number on left, Desktop: Text on left for odd items */}
+                <div className="w-12 md:w-1/2 md:pr-8 md:text-right flex md:block justify-start md:justify-end">
+                  <div className="md:hidden relative z-10">
+                    <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-gray-900 font-bold text-xl">
+                      5
+                    </div>
+                  </div>
+                  <div className="hidden md:block">
+                    <h3 className="text-2xl font-bold mb-4">Testing</h3>
+                    <p className="text-gray-300">
+                      We conduct comprehensive QA to ensure site speed,
+                      cross-device compatibility, and SEO readiness.
+                    </p>
+                  </div>
                 </div>
-                <div className="relative z-10">
+
+                {/* Desktop: Center number - perfectly centered on line */}
+                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 z-10">
                   <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-gray-900 font-bold text-xl">
                     5
                   </div>
                 </div>
-                <div className="w-1/2 pl-8"></div>
+
+                {/* Mobile: Text on right, Desktop: Empty space */}
+                <div className="flex-1 pl-6 md:w-1/2 md:pl-8 md:flex-none">
+                  <div className="md:hidden">
+                    <h3 className="text-2xl font-bold mb-4">Testing</h3>
+                    <p className="text-gray-300">
+                      We conduct comprehensive QA to ensure site speed,
+                      cross-device compatibility, and SEO readiness.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Deployment */}
               <div className="flex items-center">
-                <div className="w-1/2 pr-8"></div>
-                <div className="relative z-10">
+                {/* Mobile: Number on left, Desktop: Empty space */}
+                <div className="w-12 md:w-1/2 md:pr-8 flex md:block justify-start">
+                  <div className="md:hidden relative z-10">
+                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-900 font-bold text-xl">
+                      6
+                    </div>
+                  </div>
+                </div>
+
+                {/* Desktop: Center number - perfectly centered on line */}
+                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 z-10">
                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-900 font-bold text-xl">
                     6
                   </div>
                 </div>
-                <div className="w-1/2 pl-8">
+
+                {/* Mobile: Text on right, Desktop: Text on right */}
+                <div className="flex-1 pl-6 md:w-1/2 md:pl-8 md:flex-none">
                   <h3 className="text-2xl font-bold mb-4">Deployment</h3>
                   <p className="text-gray-300">
                     Once ready, we launch your solution with full
