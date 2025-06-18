@@ -461,6 +461,151 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
         ],
       },
     },
+
+    "participant-portal-development": {
+      title: {
+        initial: "",
+        highlight: "Participant Portal Development",
+        end: "Services",
+      },
+      description:
+        "We design secure, user-friendly portals to streamline referrals, boost engagement, and manage services—all in one place. Perfect for NDIS, healthcare, and community providers.",
+      image: "/assets/service/participant-portal-development/banner.png",
+      button: {
+        text: "Book a Consult",
+        link: "/contact",
+      },
+
+      stats: [
+        {
+          value: "78 %",
+          label: "Reduction in Manual Admin Tasks",
+          color: "text-secondary",
+        },
+        {
+          value: "92 %",
+          label: "Referral Response Boost",
+          color: "text-white",
+        },
+        {
+          value: "4.6/5",
+          label: "Average User Satisfaction",
+          color: "text-secondary",
+        },
+        {
+          value: "250+",
+          label: "Participants Supported",
+          color: "text-white",
+        },
+      ],
+
+      why: {
+        title: {
+          initial: "Why",
+          highlight: "Participant Portals",
+          end: "Matters",
+        },
+        description:
+          "In today’s search-driven world, if you’re not visible, you don’t exist. SEO is how your brand gets found—and stays top-of-mind. ",
+
+        cards: [
+          {
+            title: "Participant-Centered Design",
+            description: "Easy for participants. Efficient for your team.",
+            image: "/assets/service/participant-portal-development/card-1.png",
+            list: [
+              "Role-based dashboards",
+              "WCAG accessibility",
+              "Self-service to cut admin",
+            ],
+          },
+          {
+            title: "Referrals & Ticketing Made Simple",
+            description: "Turn support workflows into trackable steps.",
+            image: "/assets/service/participant-portal-development/card-2.png",
+            list: [
+              "Referral & support forms",
+              "Tagged status tracking",
+              "Team collaboration",
+            ],
+          },
+          {
+            title: "Tracking & Insights",
+            description:
+              "Visual dashboards and activity logs that keep you informed.",
+            image: "/assets/service/participant-portal-development/card-3.png",
+            list: [
+              "Activity logs & engagement history",
+              "Visual dashboards",
+              "Reports for trends & planning",
+            ],
+          },
+          {
+            title: "Secure Document Case Management",
+            description: "Safe, centralized storage for documents and records.",
+            image: "/assets/service/participant-portal-development/card-4.png",
+            list: [
+              "Role-based access & audit logs",
+              "Case notes, files & records",
+              "Centralized, traceable storage",
+            ],
+          },
+          {
+            title: "Real-Time Communication",
+            description: "Stay connected without the back-and-forth.",
+            image: "/assets/service/participant-portal-development/card-5.png",
+            list: [
+              "Internal messages & alerts",
+              "Participant chat & request forms",
+              "Automated reminders & updates",
+            ],
+          },
+          {
+            title: "Fully Integrated Ecosystem",
+            description: "Syncs with the tools you already use.",
+            image: "/assets/service/participant-portal-development/card-6.png",
+            list: [
+              "Third-party integrations",
+              "Tracking & scheduling tools",
+              "Syncs with your systems",
+            ],
+          },
+        ],
+      },
+
+      process: {
+        title: {
+          initial: "Our",
+          highlight: "Participant Portals",
+          end: "Process",
+        },
+        description:
+          "A user-first approach to create portals that are simple, secure, and NDIS-compliant.",
+        steps: [
+          {
+            number: "1",
+            title: "Needs Assessment",
+            description:
+              " Understanding participant goals, provider workflows, and compliance requirements.",
+            isActive: true,
+          },
+          {
+            number: "2",
+            title: "Development & Integration",
+            description:
+              "Building secure features like service tracking, document upload, and messaging.",
+            isActive: false,
+          },
+          {
+            number: "3",
+            title: "Testing & Deployment",
+            description:
+              "Ensuring smooth performance across devices, with full data protection in place.",
+            isActive: true,
+          },
+        ],
+      },
+    },
   };
 
   return (
