@@ -24,7 +24,7 @@ export default function CTA() {
       }}
     >
       <div
-        className="cta-two-wrap bgc-secondary br-10"
+        className="cta-two-wrap br-10"
         style={{
           backgroundImage: "url(/assets/images/background/hero-bg-dots.png)",
         }}
@@ -63,7 +63,7 @@ export default function CTA() {
                 />
                 <button
                   type="submit"
-                  className="theme-btn bgc-secondary hover-secondary"
+                  className="theme-btn"
                   data-hover="Subscribe"
                 >
                   <span>Subscribe</span>

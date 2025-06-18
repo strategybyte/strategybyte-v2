@@ -1,3 +1,4 @@
+import { Button } from "@/components/common";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -83,11 +84,15 @@ const AboutPage = () => {
                 solutions.
               </p>
 
-              <Link href="/contact" asChild>
+              {/* <Link href="/contact" asChild>
                 <button className="bg-secondary hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-lg transition-colors mt-4">
                   Get in Touch
                 </button>
-              </Link>
+              </Link> */}
+
+              <Button size="small" href="/contact" className="mt-4">
+                Get in Touch
+              </Button>
             </div>
 
             <div className="w-full">

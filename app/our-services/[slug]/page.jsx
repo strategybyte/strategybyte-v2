@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/common";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -926,12 +927,13 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
                 {serviceDetails[slug].description}
               </p>
 
-              <button
-                className="bg-secondary hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-lg transition-colors mt-4"
-                onClick={() => router.push(serviceDetails[slug].button.link)}
+              <Button
+                href={serviceDetails[slug].button.link}
+                className="mt-4"
+                size="small"
               >
                 {serviceDetails[slug].button.text}
-              </button>
+              </Button>
             </div>
             {/* Service Illustrations */}
             <div className="w-full">
