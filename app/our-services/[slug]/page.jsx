@@ -756,6 +756,156 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
         ],
       },
     },
+
+    "analytics-and-reporting": {
+      title: {
+        initial: "",
+        highlight: "Analytics & Reporting",
+        end: "Services",
+      },
+      description:
+        "We turn raw data into real direction. From tracking setup to strategic insights, StrategyByte helps you make data-driven decisions that drive growth.",
+      image: "/assets/service/analytics-and-reporting/banner.png",
+      button: {
+        text: "Book a Discovery Call",
+        link: "/contact",
+      },
+
+      stats: [
+        {
+          value: "95 %",
+          label: "Better Decision Accuracy",
+          color: "text-secondary",
+        },
+        {
+          value: "4.8x",
+          label: "Quicker Reporting",
+          color: "text-white",
+        },
+        {
+          value: "88 %",
+          label: "Campaign Optimization Rate",
+          color: "text-secondary",
+        },
+        {
+          value: "200+",
+          label: "Custom Dashboards Built",
+          color: "text-white",
+        },
+      ],
+
+      why: {
+        title: {
+          initial: "Why",
+          highlight: "Analytics & Reporting",
+          end: "Matters",
+        },
+        description:
+          "In today’s competitive landscape, guesswork isn’t a strategy. With clear, actionable insights, your team can have the edge you need.",
+
+        cards: [
+          {
+            title: "Smart Data Collection",
+            description:
+              "Track key data from web, ads, and social—accurately and ethically.",
+            image: "/assets/service/analytics-and-reporting/card-1.png",
+            list: [
+              "Tracking setup for web, ads & social",
+              "GA4, Meta Pixel & integrations",
+              "Compliant, ethical data practices",
+            ],
+          },
+          {
+            title: "Custom Dashboards & Reports",
+            description:
+              "Live dashboards and visual reports that highlight what matters most.",
+            image: "/assets/service/analytics-and-reporting/card-2.png",
+            list: [
+              "KPI-based live dashboards",
+              "Weekly/monthly visual reports",
+              "Clear, shareable team insights",
+            ],
+          },
+          {
+            title: "Strategic Analysis",
+            description:
+              "Uncover patterns, trends, and insights to improve user experience and performance.",
+            image: "/assets/service/analytics-and-reporting/card-3.png",
+            list: [
+              "Identify patterns & opportunities",
+              "Analyze user behavior & results",
+              "Track trends across platforms & time",
+            ],
+          },
+          {
+            title: "Data-Driven Decision Making",
+            description:
+              "Use real-time insights to guide actions for business development.",
+            image: "/assets/service/analytics-and-reporting/card-4.png",
+            list: [
+              "Actionable insights, not just data",
+              "Focus on high-impact growth areas",
+              "Test-and-learn for continuous improvement",
+            ],
+          },
+          {
+            title: "Statistical Research & Benchmarking",
+            description:
+              "Know your market with competitor benchmarks, trend data, and surveys.",
+            image: "/assets/service/analytics-and-reporting/card-5.png",
+            list: [
+              "Competitor benchmarking",
+              "Customer segments & trends",
+              "Predictive insights & surveys",
+            ],
+          },
+          {
+            title: "Ongoing Guidance & Collaboration",
+            description:
+              "We guide you with strategy sessions, insights, and continuous support.",
+            image: "/assets/service/analytics-and-reporting/card-6.png",
+            list: [
+              "Strategy sessions & walk-throughs",
+              "Support to apply insights",
+              "Partner in your growth journey",
+            ],
+          },
+        ],
+      },
+
+      process: {
+        title: {
+          initial: "Our",
+          highlight: "Analytics & Reporting",
+          end: "Process",
+        },
+        description:
+          "A data-driven approach to help you understand what’s working and where to optimize.",
+        steps: [
+          {
+            number: "1",
+            title: "Metrics Discovery",
+            description:
+              "Identifying KPIs aligned with your business goals and campaign objectives.",
+            isActive: true,
+          },
+          {
+            number: "2",
+            title: "Tracking Setup",
+            description:
+              "Implementing tools like GA4, Meta Pixel, and custom dashboards to capture accurate data.",
+            isActive: false,
+          },
+          {
+            number: "3",
+            title: "Insight Generation",
+            description:
+              "Analyzing performance trends, audience behavior, and conversion paths.",
+            isActive: true,
+          },
+        ],
+      },
+    },
   };
 
   return (
