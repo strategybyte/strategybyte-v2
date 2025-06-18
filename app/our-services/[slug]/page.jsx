@@ -606,6 +606,156 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
         ],
       },
     },
+
+    "business-process-setup": {
+      title: {
+        initial: "",
+        highlight: "Business Process Setup",
+        end: "Services",
+      },
+      description:
+        "We help you map, streamline, and digitize your internal workflows—so your business runs smarter, scales faster, and grows without the guesswork.",
+      image: "/assets/service/business-process-setup/banner.png",
+      button: {
+        text: "Request a Strategy Session",
+        link: "/contact",
+      },
+
+      stats: [
+        {
+          value: "85 %",
+          label: "Faster Workflows",
+          color: "text-secondary",
+        },
+        {
+          value: "3.9x",
+          label: "Efficiency Gains",
+          color: "text-white",
+        },
+        {
+          value: "72 %",
+          label: "Fewer Admin Errors",
+          color: "text-secondary",
+        },
+        {
+          value: "120+",
+          label: "Systems Implemented",
+          color: "text-white",
+        },
+      ],
+
+      why: {
+        title: {
+          initial: "Why",
+          highlight: "Business Processes",
+          end: "Matters",
+        },
+        description:
+          "Great ideas need great systems to succeed. With the right processes in place, your business runs smoother, scales faster, and delivers consistently.  ",
+
+        cards: [
+          {
+            title: "Clarity from the Start",
+            description:
+              "Map services, roles, and gaps—aligning workflows with business goals.",
+            image: "/assets/service/participant-portal-development/card-1.png",
+            list: [
+              "Map services, journeys & roles",
+              "Spot gaps & inefficiencies",
+              "Align structure with goals",
+            ],
+          },
+          {
+            title: "Funnel Design & Flow Optimization",
+            description:
+              "Turn scattered steps into automated, sales-ready workflows.",
+            image: "/assets/service/participant-portal-development/card-2.png",
+            list: [
+              "Build sales & onboarding funnels",
+              "Automate with smart logic",
+              "Streamline customer experience",
+            ],
+          },
+          {
+            title: "Digital Systems That Support You",
+            description:
+              "Set up CRM, booking, and project tools—low-maintenance and built to scale.",
+            image: "/assets/service/participant-portal-development/card-3.png",
+            list: [
+              "CRM, booking & project tools",
+              "Integrated, silo-free systems",
+              "Scalable, low-maintenance tech stack",
+            ],
+          },
+          {
+            title: "Process Documentation",
+            description:
+              "Standardize team workflows with SOPs, guides, and templates.",
+            image: "/assets/service/participant-portal-development/card-4.png",
+            list: [
+              "SOPs for all workflows",
+              "Guides & internal playbooks",
+              "Templates & tools for growth",
+            ],
+          },
+          {
+            title: "Flexible, Scalable Structures",
+            description:
+              "Adaptable systems that grow with your business and team.",
+            image: "/assets/service/participant-portal-development/card-5.png",
+            list: [
+              "Modular, adaptable workflows",
+              "Built for evolving teams",
+              "Ongoing optimization support",
+            ],
+          },
+          {
+            title: "Support Where You Need It Most",
+            description:
+              "Whether starting fresh or refining, we simplify systems and support every step.",
+            image: "/assets/service/participant-portal-development/card-6.png",
+            list: [
+              "Setup for new businesses",
+              "Simplify complex systems",
+              "Cross-team collaboration",
+            ],
+          },
+        ],
+      },
+
+      process: {
+        title: {
+          initial: "Our",
+          highlight: "Business Process Setup",
+          end: "Process",
+        },
+        description:
+          "A step-by-step approach to streamline operations and enable scalable growth.",
+        steps: [
+          {
+            number: "1",
+            title: "Process Discovery",
+            description:
+              "Identifying key workflows, pain points, and automation opportunities.",
+            isActive: true,
+          },
+          {
+            number: "2",
+            title: "System Mapping",
+            description:
+              "Designing integrated systems tailored to your operations and goals.",
+            isActive: false,
+          },
+          {
+            number: "3",
+            title: "Implementation",
+            description:
+              "Configuring CRMs, tools, and automatons to simplify day-to-day tasks.",
+            isActive: true,
+          },
+        ],
+      },
+    },
   };
 
   return (
