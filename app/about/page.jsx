@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const ourValues = [
   {
@@ -82,9 +83,11 @@ const AboutPage = () => {
                 solutions.
               </p>
 
-              <button className="bg-secondary hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-lg transition-colors mt-4">
-                Get in Touch
-              </button>
+              <Link href="/contact" asChild>
+                <button className="bg-secondary hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-lg transition-colors mt-4">
+                  Get in Touch
+                </button>
+              </Link>
             </div>
 
             <div className="w-full">
