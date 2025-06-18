@@ -50,7 +50,7 @@ const NewsPage = () => {
   };
 
   return (
-    <div className="bg-black text-white min-h-screen pt-6 px-4">
+    <div className="bg-black text-white min-h-screen pt-6 px-4 container mx-auto">
       <div className="space-y-2 mb-8">
         <ht className="text-3xl md:text-4xl text-white font-semibold">
           Latest News
@@ -86,7 +86,7 @@ const NewsPage = () => {
             {content.map((item) => (
               <div key={item.fields.slug} className="group">
                 <Link href={`/news/${item.fields.slug}`}>
-                  <div className="flex flex-col md:flex-row gap-6 p-4 rounded-lg border bg-card hover:bg-accent/10 transition-colors">
+                  <div className="flex flex-col md:flex-row gap-6 p-4 bg-card hover:bg-accent/10 transition-colors bg-white/15 backdrop-blur-md border border-white/20 rounded-lg hover:bg-white/20 hover:border-white/30 group shadow-lg">
                     <div className="flex-1 space-y-3">
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
                         <Clock className="h-4 w-4" />
@@ -120,7 +120,7 @@ const NewsPage = () => {
           </div>
 
           {/* Pagination Controls */}
-          <div className="flex flex-col items-center justify-center gap-2 mt-10">
+          <div className="flex flex-col items-center justify-center gap-2 mt-10 pt-5">
             <div className="flex gap-4">
               <button
                 onClick={handlePrev}
