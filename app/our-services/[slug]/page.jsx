@@ -912,9 +912,9 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
     <div className="bg-black text-white min-h-screen">
       <section>
         <div className="bg-white/15 py-16">
-          <div className="container mx-auto px-4 flex items-center justify-between">
+          <div className="container mx-auto px-4 flex items-center justify-between flex-col md:flex-row">
             {/* Services Header */}
-            <div className="text-left mb-12 max-w-md">
+            <div className="text-left mb-12 w-full">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
                 {serviceDetails[slug].title.initial}{" "}
                 <span className="text-secondary">
@@ -934,7 +934,7 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
               </button>
             </div>
             {/* Service Illustrations */}
-            <div>
+            <div className="w-full">
               <Image
                 src={serviceDetails[slug].image}
                 alt="banner"
