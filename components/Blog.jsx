@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Section, SectionTitle, BlogCard } from "./common";
+import { Section, SectionTitle } from "./common";
 
 export default function Blog() {
   const blogPosts = [
@@ -122,7 +122,7 @@ export default function Blog() {
                   href={post.slug}
                   className="inline-flex items-center gap-2 text-secondary-500 font-semibold group/btn transition-all duration-300 hover:text-secondary-400"
                 >
-                  <span>Case Details</span>
+                  <span>Read More</span>
                   <svg
                     className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1"
                     fill="none"
