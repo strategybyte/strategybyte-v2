@@ -11,7 +11,7 @@ export default function Blog() {
       category: "SEO Services",
       title:
         "How Can an SEO Optimization Agency Boost Your Organic Traffic & Visibility?",
-      slug: "blog-details",
+      slug: "/news/how-can-an-seo-optimization-agency-boost-your-organic-traffic-and-visibility",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export default function Blog() {
       category: "Social Media Marketing",
       title:
         "How to Market NDIS Services in Australia: SEO, Lead Generation, and Digital Strategies for Providers",
-      slug: "blog-details",
+      slug: "/news/how-to-market-ndis-services-in-australia-seo-lead-generation-and-digital",
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ export default function Blog() {
       category: "Marketing",
       title:
         "Digital Marketing Services in Australia: A Step-by-Step Guide to Increasing Your Website Authority Score",
-      slug: "blog-details",
+      slug: "/news/digital-marketing-services-in-australia-a-step-by-step-guide-to-increasing",
     },
   ];
 

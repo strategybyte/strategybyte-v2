@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 export default function Faq() {
-  const [activeIndex, setActiveIndex] = useState(1); // Default open second item like original
+  const [activeIndex, setActiveIndex] = useState(1);
 
   const faqData = [
     {
@@ -29,11 +29,6 @@ export default function Faq() {
       answer:
         "We track key metrics like traffic, conversions, engagement, and ROI to ensure maximum performance.",
     },
-    // {
-    //   question: "5. Can you guarantee top rankings on Google?",
-    //   answer:
-    //     "To take a trivial example which undertakes laborious physical exercise except to obtain some advantage pleasure annoying consequences",
-    // },
   ];
 
   useEffect(() => {

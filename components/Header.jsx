@@ -16,11 +16,10 @@ const Header = () => {
     setIsServicesDropdownOpen(!isServicesDropdownOpen);
   };
 
-  // Service menu items with their corresponding slugs
   const serviceMenuItems = [
-    { name: "Website Development", slug: "website-development" },
     { name: "Digital Marketing", slug: "digital-marketing" },
     { name: "Search Engine Optimization", slug: "seo" },
+    { name: "Website Development", slug: "website-development" },
     {
       name: "Participant Portal Development",
       slug: "participant-portal-development",
@@ -151,7 +150,7 @@ const Header = () => {
           }`}
         >
           <div className="container mx-auto px-4">
-            <nav className="text-center">
+            <nav className="text-center overflow-y-auto">
               <ul className="space-y-8">
                 <li className="group">
                   <div className="relative">
@@ -209,9 +208,9 @@ const Header = () => {
 
                     {/* Services Dropdown */}
                     <div
-                      className={`mt-6 transition-all duration-500 overflow-hidden ${
+                      className={`transition-all duration-500 overflow-hidden ${
                         isServicesDropdownOpen
-                          ? "max-h-96 opacity-100"
+                          ? "mt-6 max-h-96 opacity-100"
                           : "max-h-0 opacity-0"
                       }`}
                     >
@@ -244,7 +243,7 @@ const Header = () => {
                 <li className="group">
                   <div className="relative">
                     <Link
-                      href="#"
+                      href="/news"
                       className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -257,7 +256,7 @@ const Header = () => {
                 </li>
                 <li className="group">
                   <Link
-                    href="#"
+                    href="/contact"
                     className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
                     onClick={() => setIsMenuOpen(false)}
                   >
