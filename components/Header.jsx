@@ -49,7 +49,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 py-2.5 transition-all duration-500 bg-white/5 backdrop-blur-lg`}
+        className={`fixed top-0 left-0 w-full z-50 py-2.5 transition-all duration-500 bg-secondary/5 backdrop-blur-lg`}
       >
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-12 items-center">
@@ -79,17 +79,17 @@ const Header = () => {
                 aria-label="Toggle menu"
               >
                 <span
-                  className={`block w-6 h-0.5 transition-all duration-300 relative bg-white ${
+                  className={`block w-6 h-0.5 transition-all duration-300 relative bg-secondary ${
                     isMenuOpen ? "rotate-45" : ""
                   }`}
                 >
                   <span
-                    className={`block absolute w-6 h-0.5 transition-all duration-300 bg-white ${
+                    className={`block absolute w-6 h-0.5 transition-all duration-300 bg-secondary ${
                       isMenuOpen ? "opacity-0" : "-translate-y-1.5"
                     }`}
                   ></span>
                   <span
-                    className={`block absolute w-6 h-0.5 transition-all duration-300 bg-white ${
+                    className={`block absolute w-6 h-0.5 transition-all duration-300 bg-secondary ${
                       isMenuOpen ? "-rotate-90" : "translate-y-1.5"
                     }`}
                   ></span>
@@ -156,13 +156,13 @@ const Header = () => {
                   <div className="relative">
                     <Link
                       href="/"
-                      className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
+                      className="text-white text-4xl md:text-6xl font-medium hover:text-secondary transition-colors duration-300 inline-block relative"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="inline-block animate-fade-in-up delay-100">
                         Home
                       </span>
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
                     </Link>
                   </div>
                 </li>
@@ -170,13 +170,13 @@ const Header = () => {
                   <div className="relative">
                     <Link
                       href="/about"
-                      className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
+                      className="text-white text-4xl md:text-6xl font-medium hover:text-secondary transition-colors duration-300 inline-block relative"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="inline-block animate-fade-in-up delay-200">
                         About
                       </span>
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
                     </Link>
                   </div>
                 </li>
@@ -185,17 +185,17 @@ const Header = () => {
                     <div className="flex items-center justify-center">
                       <Link
                         href="/our-services"
-                        className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
+                        className="text-white text-4xl md:text-6xl font-medium hover:text-secondary transition-colors duration-300 inline-block relative"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         <span className="inline-block animate-fade-in-up delay-300">
                           Services
                         </span>
-                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
                       </Link>
                       <button
                         onClick={toggleServicesDropdown}
-                        className="ml-4 p-2 text-white hover:text-gray-300 transition-colors duration-300"
+                        className="ml-4 p-2 text-white hover:text-secondary transition-colors duration-300"
                         aria-label="Toggle services dropdown"
                       >
                         <ChevronDownIcon
@@ -219,7 +219,7 @@ const Header = () => {
                           <li key={service.slug} className="group/item">
                             <Link
                               href={`/our-services/${service.slug}`}
-                              className="text-white text-xl md:text-2xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
+                              className="text-white text-xl md:text-2xl font-medium hover:text-secondary transition-colors duration-300 inline-block relative"
                               onClick={() => {
                                 setIsMenuOpen(false);
                                 setIsServicesDropdownOpen(false);
@@ -232,7 +232,7 @@ const Header = () => {
                               >
                                 {service.name}
                               </span>
-                              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-400 transition-all duration-300 group-hover/item:w-full"></span>
+                              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover/item:w-full"></span>
                             </Link>
                           </li>
                         ))}
@@ -244,26 +244,26 @@ const Header = () => {
                   <div className="relative">
                     <Link
                       href="/news"
-                      className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
+                      className="text-white text-4xl md:text-6xl font-medium hover:text-secondary transition-colors duration-300 inline-block relative"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="inline-block animate-fade-in-up delay-400">
                         News
                       </span>
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
                     </Link>
                   </div>
                 </li>
                 <li className="group">
                   <Link
                     href="/contact"
-                    className="text-white text-4xl md:text-6xl font-medium hover:text-gray-300 transition-colors duration-300 inline-block relative"
+                    className="text-white text-4xl md:text-6xl font-medium hover:text-secondary transition-colors duration-300 inline-block relative"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="inline-block animate-fade-in-up delay-500">
                       Contact
                     </span>
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
                   </Link>
                 </li>
               </ul>
