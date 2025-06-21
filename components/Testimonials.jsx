@@ -139,7 +139,7 @@ export default function Testimonials() {
               {/* Floating Shape Images */}
               <div className="shape one absolute top-[5%] left-[15%] p-2 max-w-[20%] bg-white rounded-full animate-zoom-in-out border border-gray-200">
                 <img
-                  src="/assets/images/shapes/testi-four1.jpg"
+                  src="/assets/images/shapes/testi-four1.png"
                   alt="Shape"
                   className="rounded-full w-full"
                 />
@@ -153,7 +153,7 @@ export default function Testimonials() {
                 }}
               >
                 <img
-                  src="/assets/images/shapes/testi-four2.jpg"
+                  src="/assets/images/shapes/testi-four2.png"
                   alt="Shape"
                   className="rounded-full w-full"
                 />
@@ -167,7 +167,7 @@ export default function Testimonials() {
                 }}
               >
                 <img
-                  src="/assets/images/shapes/testi-four3.jpg"
+                  src="/assets/images/shapes/testi-four3.png"
                   alt="Shape"
                   className="rounded-full w-full"
                 />
@@ -181,7 +181,7 @@ export default function Testimonials() {
                 }}
               >
                 <img
-                  src="/assets/images/shapes/testi-four4.jpg"
+                  src="/assets/images/shapes/testi-four4.png"
                   alt="Shape"
                   className="rounded-full w-full"
                 />

@@ -94,10 +94,10 @@ export default function Footer() {
                 <div className="text">
                   Main Location
                   <Link
-                    href="https://maps.app.goo.gl/zf98r779Z13pcNdt6"
+                    href="https://g.co/kgs/bLqi26B"
                     className="h6 block text-white hover:!text-white hover:underline font-semibold text-lg mt-1"
                   >
-                    New South Wales, 2148
+                    30 Campbell St, Blacktown NSW 2148, Australia
                   </Link>
                 </div>
               </div>
