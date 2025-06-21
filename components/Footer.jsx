@@ -243,7 +243,7 @@ export default function Footer() {
               <ul className="footer-bottom-nav">
                 <li>
                   <Link
-                    href="#"
+                    href="/about"
                     className="text-gray-400 hover:!text-white transition-colors"
                   >
                     About
@@ -251,7 +251,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/news"
                     className="text-gray-400 hover:!text-white transition-colors"
                   >
                     News
@@ -259,7 +259,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/contact"
                     className="text-gray-400 hover:!text-white transition-colors"
                   >
                     Contact

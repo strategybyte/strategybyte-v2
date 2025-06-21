@@ -24,7 +24,7 @@ export default function Testimonials() {
     {
       author: "/assets/images/testimonials/author1.jpg",
       text: "From day one, the team was professional, responsive, and genuinely invested in our growth. I wouldn’t go anywhere else for digital marketing.",
-      name: "Jessica Carmichael",
+      name: "Jack Wilson",
       designation: "Mental Health Professional, Adelaide",
     },
   ];
