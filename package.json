@@ -12,6 +12,7 @@
     "@contentful/rich-text-react-renderer": "^16.0.2",
     "@contentful/rich-text-types": "^17.0.1",
     "@heroicons/react": "^2.2.0",
+    "@next/third-parties": "^15.3.4",
     "aos": "^2.3.4",
     "contentful": "^11.7.2",
     "date-fns": "^4.1.0",
@@ -19,6 +20,7 @@
     "next": "14.2.24",
     "react": "^18",
     "react-dom": "^18",
+    "react-facebook-pixel": "^1.0.4",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1"
   },
