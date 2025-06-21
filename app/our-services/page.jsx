@@ -138,12 +138,14 @@ const OurServicesPage = () => {
               </div>
             </div>
             {/* Service Illustrations */}
-            <div className="w-full">
+            <div className="w-full flex justify-center md:justify-end">
               <Image
                 src="/assets/images/services/service-page-banner.png"
                 alt="banner"
+                className="h-[500px]"
                 width={500}
-                height={600}
+                height={400}
+                quality={100}
               />
             </div>
           </div>

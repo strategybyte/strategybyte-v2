@@ -713,31 +713,36 @@ const serviceDetails = {
         },
       ],
     },
-    // faqs: [
-    //   {
-    //     question: "1. Why is Digital Marketing Important for your business?",
-    //     answer:
-    //       "It helps you reach the right audience, increase brand awareness, and drive sales efficiently.",
-    //   },
-    //   {
-    //     question:
-    //       "2. How can digital marketing help improve my website’s visibility?",
-    //     answer:
-    //       "We use SEO, targeted ads, and content strategies to rank higher on search engines and attract more visitors.",
-    //   },
-    //   {
-    //     question:
-    //       "3. How long does it take to see results from digital marketing efforts?",
-    //     answer:
-    //       "SEO takes months, PPC works instantly, and content marketing builds traction over time—we optimize for the best speed and impact.",
-    //   },
-    //   {
-    //     question:
-    //       "4. How do you measure the success of digital marketing campaigns?",
-    //     answer:
-    //       "We track key metrics like traffic, conversions, engagement, and ROI to ensure maximum performance.",
-    //   },
-    // ],
+    faqs: [
+      {
+        question:
+          "1. What is a participant portal and how can it help my business?",
+        answer:
+          "A participant portal is an online platform that lets your clients access services, submit forms, track appointments, and communicate with your team. At Strategybyte, we build custom portals that make it easier for participants to engage with your services—saving you time, reducing admin, and improving client satisfaction.",
+      },
+      {
+        question:
+          "2. How do I choose the right team for participant portal development in Australia?",
+        answer:
+          "Look for a team that understands your sector and compliance needs, especially if you work within the NDIS or healthcare space. At Strategybyte, we’ve developed portals for Australian service providers that meet accessibility standards, streamline communication, and ensure data security.",
+      },
+      {
+        question: "3. What features does a participant portal include?",
+        answer:
+          " Portals can be tailored to your needs, but common features include referral forms, service bookings, document uploads, messaging, and progress tracking. Strategybyte builds user-friendly, mobile-responsive portals that integrate seamlessly with your workflow and tools like Google Calendar or CRMs.",
+      },
+      {
+        question: "4. What does a development team do each day?",
+        answer:
+          "We’re constantly working on designing, developing, testing, and refining your portal. From user interface tweaks to security updates and backend integrations, we ensure everything runs smoothly and meets your operational goals.",
+      },
+      {
+        question:
+          "4. Can a participant portal help me get more leads or clients?",
+        answer:
+          "Absolutely. A well-designed portal shows professionalism and builds trust with participants, support coordinators, and referral networks. It also makes it easier for people to refer others, book services, or stay engaged—helping your business grow through improved accessibility and service delivery.",
+      },
+    ],
   },
 
   "business-process-setup": {

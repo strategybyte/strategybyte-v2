@@ -11,21 +11,21 @@ export default function Testimonials() {
   const testimonials = [
     {
       author: "/assets/images/testimonials/author1.jpg",
-      text: "Working with StrategyByte has been game-changer for our social media presence. Their strategic approach and attention to detail have helped us reach new heights",
-      name: "Randall J. Ferguson",
-      designation: "CEO & Founder",
+      text: "StrategyByte took our online presence to the next level. Within weeks, we saw a noticeable increase in both enquiries and traffic. Their team just gets what small Aussie businesses need.",
+      name: "Jessica Carmichael",
+      designation: "Small Business Owner, Adelaide",
     },
     {
       author: "/assets/images/testimonials/author2.jpg",
-      text: "Working with StrategyByte has been game-changer for our social media presence. Their strategic approach and attention to detail have helped us reach new heights",
-      name: "Sarah Johnson",
-      designation: "Marketing Director",
+      text: "As someone who’s not very tech-savvy, I really appreciated how clear and supportive they were throughout the process. They made marketing feel simple.",
+      name: "Harper Nguyen",
+      designation: "NDIS Provider, Melbourne",
     },
     {
       author: "/assets/images/testimonials/author1.jpg",
-      text: "Working with StrategyByte has been game-changer for our social media presence. Their strategic approach and attention to detail have helped us reach new heights",
-      name: "Michael Chen",
-      designation: "Business Owner",
+      text: "From day one, the team was professional, responsive, and genuinely invested in our growth. I wouldn’t go anywhere else for digital marketing.",
+      name: "Jessica Carmichael",
+      designation: "Mental Health Professional, Adelaide",
     },
   ];
 
