@@ -35,7 +35,7 @@ export default function Services({ extraClass = "pb-70" }) {
         "We streamline your business with efficient workflows and digital tools for smooth operations ",
     },
     {
-      icon: "flaticon-www",
+      icon: "flaticon-performance",
       title: "Analytics & Reporting ",
       description:
         "We turn data into actionable insights to help you make smarter, data-driven decisions",
