@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import banner1 from "@/public/assets/service/banner-1.png";
-import banner2 from "@/public/assets/service/banner-2.png";
-import banner3 from "@/public/assets/service/banner-3.png";
+
 import { ArrowRightIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { Button } from "@/components/common";
+import { useState } from "react";
 
 const services = [
   {
@@ -52,41 +52,104 @@ const services = [
   },
 ];
 
+const faqData = [
+  {
+    question: "1. What is a marketing agency and how can it help my business?",
+    answer:
+      "A marketing agency is a team that helps businesses grow by promoting them through websites, social media, ads, and smart strategies. At Strategybyte, we help businesses of all sizes get noticed, attract new customers, and improve their online presence. Whether you’re launching something new or looking to scale, we create plans tailored just for you.",
+  },
+  {
+    question: "2. How do I choose the right marketing agency in Australia?",
+    answer:
+      "Start by thinking about your goals and budget. Then look for an agency that understands your industry and market. At Strategybyte, we work closely with Australian businesses, especially in healthcare, NDIS, and services to deliver real, trackable results using local knowledge and proven strategies.",
+  },
+  {
+    question: "3. What services does a full service marketing agency offer?",
+    answer:
+      "We handle everything you need to market your business online and offline. This includes branding, website design, SEO, social media, ads, and content creation. At Strategybyte, our process takes you from planning to launch with full transparency along the way.",
+  },
+  {
+    question: "4. What does a marketing agency do each day?",
+    answer:
+      " We’re always working behind the scenes running campaigns, updating content, managing ads, and checking performance. Our team makes sure everything is on track and getting results. We’re not just about running ads we help your business grow in a smart and sustainable way.",
+  },
+  {
+    question: "5. Can a marketing agency help me get more leads?",
+    answer:
+      "Yes, getting you more leads is one of our main goals. We use targeted ads, SEO, landing pages, and smart design to help people find their business and act. Everything we do is focused on bringing you the right customers, not just more clicks.",
+  },
+  {
+    question: "6. Why should I choose Strategybyte over other agencies?",
+    answer:
+      "We’re not just another agency. We’re based in Australia, and we understand what local businesses need. Our strategies are clear, honest, and focused on real resultsnot just buzzwords. Whether you’re a solo operator or a growing brand, we make your goals our priority.",
+  },
+  {
+    question: "7. How do I get started with Strategybyte?",
+    answer:
+      "It’s simple. Click “Get Started” on our website to book a free marketing audit. We’ll take a look at your current setup and suggest ways to improveno pressure, just helpful advice to get you moving in the right direction.",
+  },
+];
+
 const OurServicesPage = () => {
   const router = useRouter();
+
+  const [activeIndex, setActiveIndex] = useState(1);
+
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Our Services Section */}
       <section>
         <div className="bg-white/15 pt-16">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto p-4 flex items-center justify-between flex-col md:flex-row">
             {/* Services Header */}
-            <div className="text-center mb-12">
+            <div className="mb-12 w-full">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                Our <span className="text-secondary">Services</span>
+                Our <span className="text-secondary">Marketing Agency</span>{" "}
+                Services
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
                 We deliver tailored digital marketing, SEO, and web development
                 solutions - designed to accelerate business growth and deliver
                 real results.
               </p>
+              <div className="flex items-center gap-2 mt-4">
+                <Image
+                  src="/assets/images/services/icon-one.png"
+                  alt="banner"
+                  width={50}
+                  height={50}
+                />
+                <Image
+                  src="/assets/images/services/icon-two.png"
+                  alt="banner"
+                  width={50}
+                  height={50}
+                />
+                <Image
+                  src="/assets/images/services/icon-three.png"
+                  alt="banner"
+                  width={50}
+                  height={50}
+                />
+              </div>
             </div>
             {/* Service Illustrations */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 items-end">
-              <div className="bg-white rounded-t-2xl py-8 flex items-center justify-center h-96">
-                <Image src={banner1} alt="banner" />
-              </div>
-              <div className="bg-white rounded-t-2xl py-8 flex items-center justify-center h-80">
-                <Image src={banner2} alt="banner" />
-              </div>
-              <div className="bg-white rounded-t-2xl py-8 flex items-center justify-center h-96">
-                <Image src={banner3} alt="banner" />
-              </div>
+            <div className="w-full">
+              <Image
+                src="/assets/images/services/service-page-banner.png"
+                alt="banner"
+                width={500}
+                height={600}
+              />
             </div>
           </div>
         </div>
 
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 mt-24">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <div
@@ -354,9 +417,118 @@ const OurServicesPage = () => {
             Let&apos;s discuss how we can help you achieve your business goals
             with our expert services.
           </p>
-          <button className="bg-secondary hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+
+          <Button size="small" href="/contact">
             Get a Free Consultation
-          </button>
+          </Button>
+        </div>
+      </section>
+
+      <section className="faq-area bgc-black text-white relative z-10">
+        <div className="container mx-auto bordered-x pb-90">
+          <div className="row mx-xl-4 justify-center">
+            <div className="w-full xl:w-3/4 lg:w-11/12">
+              <div
+                className="section-title mb-50 text-center"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-offset="50"
+              >
+                <span className="subtitle text-secondary font-bold mt-10 mb-15">
+                  FAQs
+                </span>
+                <h2 className="text-white text-4xl font-bold leading-tight">
+                  Frequently Asked Questions
+                </h2>
+              </div>
+
+              {/* Accordion */}
+              <div className="accordion-one" id="faq-accordion">
+                {faqData.map((faq, index) => (
+                  <div
+                    key={index}
+                    className="accordion-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                    data-aos-offset="50"
+                  >
+                    <h6 className="accordion-header">
+                      <button
+                        className={`accordion-button ${
+                          activeIndex === index ? "" : "collapsed"
+                        }`}
+                        onClick={() => toggleAccordion(index)}
+                        type="button"
+                      >
+                        {faq.question}
+                      </button>
+                    </h6>
+                    <div
+                      className={`accordion-collapse ${
+                        activeIndex === index ? "show" : ""
+                      }`}
+                    >
+                      {activeIndex === index && (
+                        <div className="accordion-body">
+                          <p className="text-gray-300">{faq.answer}</p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* FAQ Shapes */}
+        <div className="faq-shapes">
+          <div
+            className="shape one absolute left-[11%] bottom-[25%] animate-zoom-in-out"
+            style={{ zIndex: -2, maxWidth: "5%" }}
+          >
+            <img src="/assets/images/shapes/faq1.png" alt="Shape" />
+          </div>
+          <div
+            className="shape two absolute top-[10%] left-[14%] animate-zoom-in-out"
+            style={{
+              zIndex: -2,
+              maxWidth: "5%",
+              animationDelay: "1s",
+            }}
+          >
+            <img src="/assets/images/shapes/faq2.png" alt="Shape" />
+          </div>
+          <div
+            className="shape three absolute top-[10%] right-[20%] animate-zoom-in-out"
+            style={{
+              zIndex: -2,
+              maxWidth: "5%",
+              animationDelay: "2s",
+            }}
+          >
+            <img src="/assets/images/shapes/faq3.png" alt="Shape" />
+          </div>
+          <div
+            className="shape four absolute top-[25%] right-[9%] animate-zoom-in-out"
+            style={{
+              zIndex: -2,
+              maxWidth: "5%",
+              animationDelay: "3s",
+            }}
+          >
+            <img src="/assets/images/shapes/faq4.png" alt="Shape" />
+          </div>
+          <div
+            className="shape five absolute right-[14%] bottom-[20%] animate-zoom-in-out"
+            style={{
+              zIndex: -2,
+              maxWidth: "5%",
+              animationDelay: "4s",
+            }}
+          >
+            <img src="/assets/images/shapes/faq5.png" alt="Shape" />
+          </div>
         </div>
       </section>
     </div>

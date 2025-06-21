@@ -124,7 +124,7 @@ export default function Footer() {
                   <i className="flaticon-call" />
                 </div>
                 <div className="text">
-                  Need Helps
+                  Need Help
                   <span className="h6 block text-white font-semibold text-lg mt-1">
                     <Link
                       href="tel:0410 745 998"
