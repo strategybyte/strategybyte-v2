@@ -34,7 +34,7 @@ const Button = ({
   } ${className} ${disabled ? "opacity-50 cursor-not-allowed" : ""}`;
 
   const content = (
-    <span className="relative z-10 transition-all duration-300 group-hover:-skew-x-6 group-hover:tracking-wider">
+    <span className="relative z-10 transition-all duration-300 group-hover:-skew-x-6">
       {children}
     </span>
   );
