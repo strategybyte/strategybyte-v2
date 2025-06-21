@@ -7,17 +7,17 @@ import { Section, SectionTitle } from "./common";
 export default function WhyChooseUs() {
   const services = [
     {
-      icon: "fas fa-tools",
+      image: "/assets/images/why/seasoned.svg",
       title: "Seasoned experts prepared for any scenario ",
       text: "With years of cross-industry experience, we anticipate roadblocks and adapt mid-campaign to keep your marketing on track.",
     },
     {
-      icon: "fas fa-anchor",
+      image: "/assets/images/why/solutions.svg",
       title: "Comprehensive solutions for every challenge",
       text: "From SEO audits to content creation and ad management, we tailor solutions for low engagement, poor conversions, or declining reach. ",
     },
     {
-      icon: "fas fa-comments",
+      image: "/assets/images/why/updates.svg",
       title: "Regular updates to keep you informed on progress",
       text: "Get monthly reports and strategy calls so you always know campaign performance and next steps.",
     },
@@ -52,26 +52,23 @@ export default function WhyChooseUs() {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className={`service-item-style-two bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-6 lg:p-8 xl:p-10 sm:flex transition-all duration-500 hover:bg-white/20 hover:border-white/30 group shadow-lg ${
+              className={`service-item-style-two rounded-lg p-6 lg:p-8 xl:p-10 sm:flex transition-all duration-500 group shadow-lg items-center bg-black border border-gray-800 hover:bg-secondary hover:border-secondary-500 ${
                 index !== services.length - 1 ? "mb-5" : ""
               }`}
             >
               {/* Icon */}
-              <div className="flex-none w-14 h-14 mt-1 text-2xl leading-[3.4rem] text-center mr-8 mb-5 sm:mb-0 text-white bg-white/20 backdrop-blur-sm rounded transition-all duration-500 border border-white/30 group-hover:bg-white/30 group-hover:border-white/40">
-                <i className={service.icon}></i>
+              <div className="flex-none w-14 h-14 mt-1 text-2xl leading-[3.4rem] text-center mr-8 mb-5 sm:mb-0 bg-secondary rounded-md p-2">
+                <img src={service.image} alt={service.title} />
               </div>
 
               {/* Content */}
               <div className="content flex-1">
-                <h6 className="text-white text-lg sm:text-xl font-bold mb-3 transition-all duration-500">
-                  <Link
-                    href="/service-details"
-                    className="transition-colors duration-300 hover:text-white/80"
-                  >
+                <h6 className="text-white text-lg sm:text-xl font-bold mb-3 transition-all duration-500 group-hover:text-black">
+                  <h3 className="transition-colors duration-300 group-hover:text-black">
                     {service.title}
-                  </Link>
+                  </h3>
                 </h6>
-                <p className="text-white/80 text-base leading-relaxed transition-all duration-500 group-hover:text-white">
+                <p className="text-white/80 text-base leading-relaxed transition-all duration-500 group-hover:text-black">
                   {service.text}
                 </p>
               </div>
