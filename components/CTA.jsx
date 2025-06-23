@@ -3,15 +3,54 @@
 
 import { useState } from "react";
 import { Section, SectionTitle } from "./common";
+import { send } from "@emailjs/browser";
 
 export default function CTA() {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle newsletter subscription
-    console.log("Newsletter subscription:", email);
-    setEmail("");
+
+    console.log("from sub");
+
+    try {
+      // Prepare the template parameters
+      const templateParams = {
+        from_name: "N/A",
+        from_email: email,
+        contact: "Contact Number: N/A",
+        message: "No message available. ",
+      };
+
+      // Track form submission with Facebook Pixel
+      // sendFBPixelEvent("Lead", {
+      //   content_name: "contact_form_submission",
+      //   content_category: "lead",
+      //   service: values.service,
+      // });
+
+      // Track Google Ads conversion
+      // if (typeof window !== "undefined" && window.gtag) {
+      //   window.gtag("event", "conversion", {
+      //     send_to: "AW-16759601889/tzEICNbkoscaEOH1zLc-",
+      //   });
+      // }
+
+      // Send email using EmailJS
+      await send(
+        process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY
+      );
+
+      // toast.success("Message sent successfully!");
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      // toast.error("Failed to send message");
+    } finally {
+      setEmail("");
+    }
   };
 
   return (

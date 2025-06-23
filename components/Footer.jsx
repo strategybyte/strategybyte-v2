@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { send } from "@emailjs/browser";
 
 export default function Footer() {
   const [formData, setFormData] = useState({
@@ -33,18 +34,55 @@ export default function Footer() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
 
-    setFormData({
-      name: "",
-      phone: "",
-      email: "",
-      message: "",
-      saveInfo: false,
-    });
+    try {
+      // Prepare the template parameters
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        contact: "Contact Number: N/A",
+        // website: "N/A",
+        // service: "N/A",
+        message: formData.message,
+      };
+
+      // Track form submission with Facebook Pixel
+      // sendFBPixelEvent("Lead", {
+      //   content_name: "contact_form_submission",
+      //   content_category: "lead",
+      //   service: values.service,
+      // });
+
+      // Track Google Ads conversion
+      // if (typeof window !== "undefined" && window.gtag) {
+      //   window.gtag("event", "conversion", {
+      //     send_to: "AW-16759601889/tzEICNbkoscaEOH1zLc-",
+      //   });
+      // }
+
+      // Send email using EmailJS
+      await send(
+        process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY
+      );
+
+      // toast.success("Message sent successfully!");
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      // toast.error("Failed to send message");
+    } finally {
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
+        saveInfo: false,
+      });
+    }
   };
 
   return (
