@@ -37,20 +37,13 @@ export default function Footer() {
     e.preventDefault();
     // Handle form submission
     console.log("Form submitted:", formData);
-    // Reset form
+
     setFormData({
       name: "",
       phone: "",
       email: "",
       message: "",
       saveInfo: false,
-    });
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
     });
   };
 
