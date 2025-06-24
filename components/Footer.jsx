@@ -2,12 +2,16 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { send } from "@emailjs/browser";
 
 export default function Footer() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     email: "",
+    website: "",
+    service: "",
     message: "",
     saveInfo: false,
   });
@@ -33,25 +37,59 @@ export default function Footer() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({
-      name: "",
-      phone: "",
-      email: "",
-      message: "",
-      saveInfo: false,
-    });
-  };
+    setIsSubmitted(true);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    try {
+      // Prepare the template parameters
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        contact: `Contact Number: ${formData.phone}`,
+        website: formData.website || "N/A",
+        service: formData.service || "N/A",
+        message: formData.message,
+      };
+
+      // Track form submission with Facebook Pixel
+      // sendFBPixelEvent("Lead", {
+      //   content_name: "contact_form_submission",
+      //   content_category: "lead",
+      //   service: values.service,
+      // });
+
+      // Track Google Ads conversion
+      // if (typeof window !== "undefined" && window.gtag) {
+      //   window.gtag("event", "conversion", {
+      //     send_to: "AW-16759601889/tzEICNbkoscaEOH1zLc-",
+      //   });
+      // }
+
+      // Send email using EmailJS
+      await send(
+        process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY
+      );
+
+      // toast.success("Message sent successfully!");
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      // toast.error("Failed to send message");
+    } finally {
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        website: "",
+        service: "",
+        message: "",
+        saveInfo: false,
+      });
+      setIsSubmitted(false);
+    }
   };
 
   return (
@@ -61,7 +99,7 @@ export default function Footer() {
           <div className="w-full xl:w-5/12 lg:w-1/2">
             <div
               className="contact-info-content rmb-55"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-offset="50"
             >
@@ -142,7 +180,7 @@ export default function Footer() {
             <form
               className="contact-form style-two z-1 rel"
               onSubmit={handleSubmit}
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-offset="50"
             >
@@ -182,7 +220,7 @@ export default function Footer() {
                     />
                   </div>
                 </div>
-                <div className="w-full">
+                <div className="w-full sm:w-1/2 sm:pr-3">
                   <div className="form-group mb-4">
                     <input
                       type="email"
@@ -194,6 +232,56 @@ export default function Footer() {
                       onChange={handleInputChange}
                       required
                     />
+                  </div>
+                </div>
+                <div className="w-full sm:w-1/2 sm:pl-3">
+                  <div className="form-group mb-4">
+                    <input
+                      type="url"
+                      id="website"
+                      name="website"
+                      className="form-control w-full"
+                      placeholder="Website URL (Optional)"
+                      value={formData.website}
+                      onChange={handleInputChange}
+                    />
+                  </div>
+                </div>
+                <div className="w-full">
+                  <div className="form-group mb-4">
+                    <select
+                      id="service"
+                      name="service"
+                      className="form-control w-full"
+                      value={formData.service}
+                      onChange={handleInputChange}
+                      required
+                    >
+                      <option className="text-black" value="" disabled>
+                        Select Service
+                      </option>
+                      <option
+                        className="text-black"
+                        value="Web Development & Management"
+                      >
+                        Web Development & Management
+                      </option>
+                      <option
+                        className="text-black"
+                        value="SEO & Digital Marketing"
+                      >
+                        SEO & Digital Marketing
+                      </option>
+                      <option className="text-black" value="Content Marketing">
+                        Content Marketing
+                      </option>
+                      <option
+                        className="text-black"
+                        value="Brand Development & Management"
+                      >
+                        Brand Development & Management
+                      </option>
+                    </select>
                   </div>
                 </div>
                 <div className="w-full">
@@ -212,9 +300,13 @@ export default function Footer() {
                 </div>
                 <div className="w-full">
                   <div className="form-group mb-0">
-                    <button className="theme-btn group relative inline-flex items-center justify-center bg-secondary hover:bg-white text-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 overflow-hidden mt-6 outline-none">
+                    <button
+                      type="submit"
+                      disabled={isSubmitted}
+                      className="theme-btn group relative inline-flex items-center justify-center bg-secondary hover:bg-white text-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 overflow-hidden mt-6 outline-none"
+                    >
                       <span className="relative z-10 transition-all duration-300 group-hover:-skew-x-6 group-hover:tracking-wider">
-                        Contact Us
+                        {isSubmitted ? "Sending..." : "Contact Us"}
                       </span>
                     </button>
                   </div>

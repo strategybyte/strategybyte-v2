@@ -63,11 +63,11 @@ export default function WhyChooseUs() {
 
               {/* Content */}
               <div className="content flex-1">
-                <h6 className="text-white text-lg sm:text-xl font-bold mb-3 transition-all duration-500 group-hover:text-black">
-                  <h3 className="transition-colors duration-300 group-hover:text-black">
+                <h3 className="text-white text-lg sm:text-xl font-bold mb-3 transition-all duration-500 group-hover:text-black">
+                  <span className="transition-colors duration-300 group-hover:text-black">
                     {service.title}
-                  </h3>
-                </h6>
+                  </span>
+                </h3>
                 <p className="text-white/80 text-base leading-relaxed transition-all duration-500 group-hover:text-black">
                   {service.text}
                 </p>
