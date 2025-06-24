@@ -19,6 +19,8 @@ export default function CTA() {
         from_name: "N/A",
         from_email: email,
         contact: "Contact Number: N/A",
+        website: "N/A",
+        service: "N/A",
         message: "No message available. ",
       };
 
