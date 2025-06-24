@@ -10,7 +10,7 @@ export default function About() {
         {/* Image Section */}
         <div
           className="w-full lg:w-1/2 order-2 lg:order-1"
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-duration="1500"
           data-aos-offset="50"
         >
@@ -72,7 +72,7 @@ export default function About() {
         {/* Content Section */}
         <div
           className="w-full lg:w-1/2 order-1 lg:order-2"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="1500"
           data-aos-offset="50"
         >

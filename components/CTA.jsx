@@ -72,7 +72,7 @@ export default function CTA() {
           <div className="w-full lg:w-6/12">
             <div
               className="cta-content-two rmb-55"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-offset="50"
             >
@@ -113,7 +113,7 @@ export default function CTA() {
           <div className="w-full lg:w-6/12 text-xl-end">
             <div
               className="cta-two-image-part"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-offset="50"
             >
