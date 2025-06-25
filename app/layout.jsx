@@ -4,11 +4,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Epilogue } from "next/font/google";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import dynamic from "next/dynamic";
+
+const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
+const FacebookPixel = dynamic(
+  () => import("@/components/global/analytics/FacebookPixel"),
+  { ssr: false }
+);
 
 import { GoogleTagManager } from "@next/third-parties/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
-// import FacebookPixel from "@/components/global/analytics/FacebookPixel";
 
 const epilogue = Epilogue({
   subsets: ["latin"],
@@ -47,7 +52,7 @@ export default function RootLayout({ children }) {
       <body className={epilogue.className}>
         <GoogleTagManager gtmId="GTM-NQ4XR9DR" />
         <GoogleAnalytics gaId="G-Q19GXLWXRB" />
-        {/* <FacebookPixel pixelId="699084809185518" /> */}
+        <FacebookPixel pixelId="699084809185518" />
         <Header />
         <main>{children}</main>
         <Footer />

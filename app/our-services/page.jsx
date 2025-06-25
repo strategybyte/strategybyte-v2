@@ -5,7 +5,8 @@ import Image from "next/image";
 import { ArrowRightIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/common";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 
 const services = [
   {
@@ -56,7 +57,7 @@ const faqData = [
   {
     question: "1. What is a marketing agency and how can it help my business?",
     answer:
-      "A marketing agency is a team that helps businesses grow by promoting them through websites, social media, ads, and smart strategies. At Strategybyte, we help businesses of all sizes get noticed, attract new customers, and improve their online presence. Whether you’re launching something new or looking to scale, we create plans tailored just for you.",
+      "A marketing agency is a team that helps businesses grow by promoting them through websites, social media, ads, and smart strategies. At Strategybyte, we help businesses of all sizes get noticed, attract new customers, and improve their online presence. Whether you're launching something new or looking to scale, we create plans tailored just for you.",
   },
   {
     question: "2. How do I choose the right marketing agency in Australia?",
@@ -71,7 +72,7 @@ const faqData = [
   {
     question: "4. What does a marketing agency do each day?",
     answer:
-      " We’re always working behind the scenes running campaigns, updating content, managing ads, and checking performance. Our team makes sure everything is on track and getting results. We’re not just about running ads we help your business grow in a smart and sustainable way.",
+      " We're always working behind the scenes running campaigns, updating content, managing ads, and checking performance. Our team makes sure everything is on track and getting results. We're not just about running ads we help your business grow in a smart and sustainable way.",
   },
   {
     question: "5. Can a marketing agency help me get more leads?",
@@ -81,12 +82,12 @@ const faqData = [
   {
     question: "6. Why should I choose Strategybyte over other agencies?",
     answer:
-      "We’re not just another agency. We’re based in Australia, and we understand what local businesses need. Our strategies are clear, honest, and focused on real resultsnot just buzzwords. Whether you’re a solo operator or a growing brand, we make your goals our priority.",
+      "We're not just another agency. We're based in Australia, and we understand what local businesses need. Our strategies are clear, honest, and focused on real resultsnot just buzzwords. Whether you're a solo operator or a growing brand, we make your goals our priority.",
   },
   {
     question: "7. How do I get started with Strategybyte?",
     answer:
-      "It’s simple. Click “Get Started” on our website to book a free marketing audit. We’ll take a look at your current setup and suggest ways to improveno pressure, just helpful advice to get you moving in the right direction.",
+      "It's simple. Click \"Get Started\" on our website to book a free marketing audit. We'll take a look at your current setup and suggest ways to improveno pressure, just helpful advice to get you moving in the right direction.",
   },
 ];
 
@@ -94,6 +95,20 @@ const OurServicesPage = () => {
   const router = useRouter();
 
   const [activeIndex, setActiveIndex] = useState(1);
+
+  useEffect(() => {
+    // Initialize AOS dynamically on client side only
+    const initAOS = async () => {
+      const AOS = (await import("aos")).default;
+      AOS.init({
+        duration: 1500,
+        offset: 50,
+        once: true,
+      });
+    };
+
+    initAOS();
+  }, []);
 
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -106,7 +121,12 @@ const OurServicesPage = () => {
         <div className="bg-white/15 pt-16">
           <div className="container mx-auto p-4 flex items-center justify-between flex-col md:flex-row">
             {/* Services Header */}
-            <div className="mb-12 w-full">
+            <div
+              className="mb-12 w-full"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="50"
+            >
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
                 Our <span className="text-secondary">Marketing Agency</span>{" "}
                 Services
@@ -138,7 +158,13 @@ const OurServicesPage = () => {
               </div>
             </div>
             {/* Service Illustrations */}
-            <div className="w-full flex justify-center md:justify-end">
+            <div
+              className="w-full flex justify-center md:justify-end"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="50"
+              data-aos-delay="200"
+            >
               <Image
                 src="/assets/images/services/service-page-banner.png"
                 alt="banner"
@@ -157,6 +183,10 @@ const OurServicesPage = () => {
               <div
                 key={index}
                 className="bg-white/15 backdrop-blur-md border border-white/20 rounded-lg p-6 lg:p-8 xl:p-10 transition-all duration-500 hover:bg-white/20 hover:border-white/30 group shadow-lg"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-offset="50"
+                data-aos-delay={index * 100}
               >
                 <div className="size-16 p-4 rounded-md bg-[#2F3F61]/50">
                   <Image
@@ -187,7 +217,12 @@ const OurServicesPage = () => {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           {/* Process Header */}
-          <div className="text-center mb-16">
+          <div
+            className="text-center mb-16"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-offset="50"
+          >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Our <span className="text-secondary">Process</span>
             </h2>
@@ -206,7 +241,12 @@ const OurServicesPage = () => {
             {/* Process Steps */}
             <div className="space-y-16">
               {/* Discovery */}
-              <div className="flex items-center">
+              <div
+                className="flex items-center"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-offset="50"
+              >
                 {/* Mobile: Number on left, Desktop: Text on left for odd items */}
                 <div className="w-12 md:w-1/2 md:pr-8 md:text-right flex md:block justify-start md:justify-end">
                   <div className="md:hidden relative z-10">
@@ -243,7 +283,13 @@ const OurServicesPage = () => {
               </div>
 
               {/* Planning */}
-              <div className="flex items-center">
+              <div
+                className="flex items-center"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-offset="50"
+                data-aos-delay="100"
+              >
                 {/* Mobile: Number on left, Desktop: Empty space */}
                 <div className="w-12 md:w-1/2 md:pr-8 flex md:block justify-start">
                   <div className="md:hidden relative z-10">
@@ -272,7 +318,13 @@ const OurServicesPage = () => {
               </div>
 
               {/* Design */}
-              <div className="flex items-center">
+              <div
+                className="flex items-center"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-offset="50"
+                data-aos-delay="200"
+              >
                 {/* Mobile: Number on left, Desktop: Text on left for odd items */}
                 <div className="w-12 md:w-1/2 md:pr-8 md:text-right flex md:block justify-start md:justify-end">
                   <div className="md:hidden relative z-10">
@@ -311,7 +363,13 @@ const OurServicesPage = () => {
               </div>
 
               {/* Development */}
-              <div className="flex items-center">
+              <div
+                className="flex items-center"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-offset="50"
+                data-aos-delay="300"
+              >
                 {/* Mobile: Number on left, Desktop: Empty space */}
                 <div className="w-12 md:w-1/2 md:pr-8 flex md:block justify-start">
                   <div className="md:hidden relative z-10">
@@ -340,7 +398,13 @@ const OurServicesPage = () => {
               </div>
 
               {/* Testing */}
-              <div className="flex items-center">
+              <div
+                className="flex items-center"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-offset="50"
+                data-aos-delay="400"
+              >
                 {/* Mobile: Number on left, Desktop: Text on left for odd items */}
                 <div className="w-12 md:w-1/2 md:pr-8 md:text-right flex md:block justify-start md:justify-end">
                   <div className="md:hidden relative z-10">
@@ -377,7 +441,13 @@ const OurServicesPage = () => {
               </div>
 
               {/* Deployment */}
-              <div className="flex items-center">
+              <div
+                className="flex items-center"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-offset="50"
+                data-aos-delay="500"
+              >
                 {/* Mobile: Number on left, Desktop: Empty space */}
                 <div className="w-12 md:w-1/2 md:pr-8 flex md:block justify-start">
                   <div className="md:hidden relative z-10">
@@ -411,7 +481,12 @@ const OurServicesPage = () => {
 
       {/* Call to Action Section */}
       <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+        <div
+          className="max-w-4xl mx-auto text-center"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-offset="50"
+        >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to transform your digital presence?
           </h2>

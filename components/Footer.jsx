@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { send } from "@emailjs/browser";
+import { sendFBPixelEvent } from "./global/analytics/FacebookPixel";
 
 export default function Footer() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -53,18 +54,18 @@ export default function Footer() {
       };
 
       // Track form submission with Facebook Pixel
-      // sendFBPixelEvent("Lead", {
-      //   content_name: "contact_form_submission",
-      //   content_category: "lead",
-      //   service: values.service,
-      // });
+      sendFBPixelEvent("Lead", {
+        content_name: "contact_form_submission",
+        content_category: "lead",
+        service: values.service,
+      });
 
       // Track Google Ads conversion
-      // if (typeof window !== "undefined" && window.gtag) {
-      //   window.gtag("event", "conversion", {
-      //     send_to: "AW-16759601889/tzEICNbkoscaEOH1zLc-",
-      //   });
-      // }
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "conversion", {
+          send_to: "AW-16759601889/tzEICNbkoscaEOH1zLc-",
+        });
+      }
 
       // Send email using EmailJS
       await send(

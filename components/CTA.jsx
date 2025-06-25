@@ -4,6 +4,7 @@
 import { useState } from "react";
 import { Section, SectionTitle } from "./common";
 import { send } from "@emailjs/browser";
+import { sendFBPixelEvent } from "./global/analytics/FacebookPixel";
 
 export default function CTA() {
   const [email, setEmail] = useState("");
@@ -25,18 +26,18 @@ export default function CTA() {
       };
 
       // Track form submission with Facebook Pixel
-      // sendFBPixelEvent("Lead", {
-      //   content_name: "contact_form_submission",
-      //   content_category: "lead",
-      //   service: values.service,
-      // });
+      sendFBPixelEvent("Lead", {
+        content_name: "contact_form_submission",
+        content_category: "lead",
+        service: values.service,
+      });
 
       // Track Google Ads conversion
-      // if (typeof window !== "undefined" && window.gtag) {
-      //   window.gtag("event", "conversion", {
-      //     send_to: "AW-16759601889/tzEICNbkoscaEOH1zLc-",
-      //   });
-      // }
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "conversion", {
+          send_to: "AW-16759601889/tzEICNbkoscaEOH1zLc-",
+        });
+      }
 
       // Send email using EmailJS
       await send(
