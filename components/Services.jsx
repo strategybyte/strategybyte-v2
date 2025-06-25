@@ -54,7 +54,7 @@ export default function Services({ extraClass = "pb-70" }) {
       containerProps={{
         bordered: true,
         padding: extraClass,
-        px: "px-0 sm:px-4",
+        px: "px-4",
       }}
     >
       {/* Section Header */}
@@ -69,7 +69,7 @@ export default function Services({ extraClass = "pb-70" }) {
       </div>
 
       {/* Services Grid */}
-      <div className="grid gird-cols-1 md:grid-cols-2 gap-3 -mx-4 px-2">
+      <div className="grid gird-cols-1 md:grid-cols-2 gap-3 -mx-4 px-4">
         {services.map(({ icon, title, description, link }, i) => (
           <ServiceCard
             key={i}

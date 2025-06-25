@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
     <Section className="why-choose-us">
       <div className="grid grid-cols-1 px-2 lg:grid-cols-2 gap-3 lg:items-center">
         {/* Left Column - Image & Title */}
-        <div data-aos="fade-left" data-aos-duration="1500" data-aos-offset="50">
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
           <SectionTitle
             subtitle="Why Choose Us?"
             title="Digital Marketing & SEO for Businesses of Every Kind"
@@ -44,11 +44,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Right Column - Service Items */}
-        <div
-          data-aos="fade-right"
-          data-aos-duration="1500"
-          data-aos-offset="50"
-        >
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
           {services.map((service, index) => (
             <div
               key={service.title}

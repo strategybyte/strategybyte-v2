@@ -11,7 +11,7 @@ import Marquee from "@/components/Marquee";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Hero />
       <Marquee />
       <About />
@@ -22,6 +22,6 @@ export default function Home() {
       <Blog />
       <Faq />
       <CTA />
-    </>
+    </div>
   );
 }

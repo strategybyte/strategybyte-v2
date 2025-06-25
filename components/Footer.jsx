@@ -149,7 +149,7 @@ export default function Footer() {
                   <span className="h6 block text-white font-semibold text-lg mt-1">
                     <Link
                       href="mailto:info@strategybyte.com.au"
-                      className="hover:text-primary transition-colors"
+                      className="hover:text-primary transition-colors break-all"
                     >
                       info@strategybyte.com.au
                     </Link>

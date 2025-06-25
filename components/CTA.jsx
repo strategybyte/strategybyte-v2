@@ -61,7 +61,7 @@ export default function CTA() {
       containerProps={{
         bordered: true,
         padding: "pb-100",
-        px: "px-sm-0",
+        px: "px-4",
       }}
     >
       <div
@@ -90,7 +90,10 @@ export default function CTA() {
                 aos={false}
               />
 
-              <form className="newsletter-form" onSubmit={handleSubmit}>
+              <form
+                className="newsletter-form hidden lg:flex"
+                onSubmit={handleSubmit}
+              >
                 <label htmlFor="news-email">
                   <i className="fas fa-envelope" />
                 </label>
@@ -110,9 +113,26 @@ export default function CTA() {
                   <span>Subscribe</span>
                 </button>
               </form>
+              <form className="newsletter-form flex flex-col gap-4 lg:hidden">
+                <input
+                  id="news-email"
+                  type="email"
+                  placeholder="Email Address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <button
+                  type="submit"
+                  className="theme-btn"
+                  data-hover="Subscribe"
+                >
+                  <span>Subscribe</span>
+                </button>
+              </form>
             </div>
           </div>
-          <div className="w-full lg:w-6/12 text-xl-end">
+          <div className="w-full lg:w-6/12 text-xl-end hidden lg:block">
             <div
               className="cta-two-image-part"
               data-aos="fade-up"
