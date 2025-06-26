@@ -260,7 +260,7 @@ const ContactPage = () => {
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-3 border-b border-white/10 hover:bg-white/5 px-3 rounded-lg transition-colors">
                   <span className="font-medium">Monday - Friday</span>
-                  <span className="text-secondary">9:00 AM - 5:00 AM</span>
+                  <span className="text-secondary">9:00 AM - 5:00 PM</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-white/10 hover:bg-white/5 px-3 rounded-lg transition-colors">
                   <span className="font-medium">Saturday & Sunday</span>
