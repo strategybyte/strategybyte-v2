@@ -3,8 +3,14 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { send } from "@emailjs/browser";
-import { sendFBPixelEvent } from "@/components/global/analytics/FacebookPixel";
+// import { sendFBPixelEvent } from "@/components/global/analytics/FacebookPixel";
 import { MailIcon, MapPinIcon, PhoneIcon, ClockIcon } from "lucide-react";
+import dynamic from "next/dynamic";
+
+const FacebookPixel = dynamic(
+  () => import("@/components/global/analytics/FacebookPixel"),
+  { ssr: false }
+);
 
 const ContactPage = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -56,7 +62,7 @@ const ContactPage = () => {
       };
 
       // Track form submission with Facebook Pixel
-      sendFBPixelEvent("Lead", {
+      FacebookPixel.sendFBPixelEvent("Lead", {
         content_name: "contact_form_submission",
         content_category: "lead",
         service: formData.service,
