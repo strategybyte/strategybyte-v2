@@ -100,7 +100,7 @@ const ContactPage = () => {
       {/* Header Section */}
       <div className="container mx-auto p-4">
         <div
-          className="text-center mb-16"
+          className="text-center my-16"
           data-aos="fade-up"
           data-aos-duration="1500"
           data-aos-offset="50"
