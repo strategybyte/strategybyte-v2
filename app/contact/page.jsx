@@ -167,10 +167,9 @@ const ContactPage = () => {
             Ready to Accelerate Your Growth?
           </h2>
           <p className="text-gray-300 text-lg max-w-4xl mx-auto mb-8">
-            Join hundreds of businesses that trust StrategyByte to deliver
-            results. Let&apos;s discuss how we
-            <br />
-            can help you achieve your digital marketing goals.
+            Join us today so we can help deliver results. Let&apos;s discuss
+            today how we <br /> can help you achieve your digital marketing
+            goals.
           </p>
 
           {/* Status Indicators */}
