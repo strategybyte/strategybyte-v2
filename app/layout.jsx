@@ -14,6 +14,7 @@ const FacebookPixel = dynamic(
 
 import { GoogleTagManager } from "@next/third-parties/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Toaster } from "sonner";
 
 const epilogue = Epilogue({
   subsets: ["latin"],
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={epilogue.className}>
+        <Toaster position="top-center" richColors />
         <GoogleTagManager gtmId="GTM-NQ4XR9DR" />
         <GoogleAnalytics gaId="G-Q19GXLWXRB" />
         <FacebookPixel pixelId="699084809185518" />

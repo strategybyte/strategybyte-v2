@@ -5,6 +5,7 @@ import Link from "next/link";
 import { send } from "@emailjs/browser";
 import { sendFBPixelEvent } from "./global/analytics/FacebookPixel";
 import { usePathname } from "next/navigation";
+import { toast } from "sonner";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -60,7 +61,7 @@ export default function Footer() {
       sendFBPixelEvent("Lead", {
         content_name: "contact_form_submission",
         content_category: "lead",
-        service: values.service,
+        service: formData.service || "N/A",
       });
 
       // Track Google Ads conversion
@@ -78,10 +79,10 @@ export default function Footer() {
         process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY
       );
 
-      // toast.success("Message sent successfully!");
+      toast.success("Message sent successfully!");
     } catch (error) {
       console.error("Failed to send email:", error);
-      // toast.error("Failed to send message");
+      toast.error("Failed to send message");
     } finally {
       setFormData({
         name: "",
