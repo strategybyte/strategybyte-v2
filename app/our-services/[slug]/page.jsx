@@ -2,22 +2,43 @@
 
 import { Button } from "@/components/common";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 import serviceDetails from "./resources/service-data";
 
 const ServiceDetailsPage = ({ params: { slug } }) => {
   const [activeIndex, setActiveIndex] = useState(1);
 
+  useEffect(() => {
+    // Initialize AOS dynamically on client side only
+    const initAOS = async () => {
+      const AOS = (await import("aos")).default;
+      AOS.init({
+        duration: 1500,
+        offset: 50,
+        once: true,
+      });
+    };
+
+    initAOS();
+  }, []);
+
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+
   return (
     <div className="bg-black text-white min-h-screen">
       <section>
         <div className="bg-white/15 py-16">
           <div className="container mx-auto px-4 flex items-center justify-between flex-col md:flex-row">
             {/* Services Header */}
-            <div className="text-left mb-12 w-full">
+            <div
+              className="text-left mb-12 w-full"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="50"
+            >
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
                 {serviceDetails[slug].title.initial}{" "}
                 <span className="text-secondary">
@@ -38,7 +59,13 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
               </Button>
             </div>
             {/* Service Illustrations */}
-            <div className="w-full">
+            <div
+              className="w-full"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="50"
+              data-aos-delay="200"
+            >
               <Image
                 src={serviceDetails[slug].image}
                 alt="banner"
@@ -52,7 +79,14 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
         <div className="bg-[#2F3F61]/15 py-16">
           <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {serviceDetails[slug].stats.map((stat, index) => (
-              <div className="text-center" key={index}>
+              <div
+                className="text-center"
+                key={index}
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-offset="50"
+                data-aos-delay={index * 100}
+              >
                 <h3 className={`text-4xl font-bold ${stat.color}`}>
                   {stat.value}
                 </h3>
@@ -63,7 +97,12 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
         </div>
 
         <div className="container px-4 py-16 mx-auto">
-          <div className="text-center mb-16">
+          <div
+            className="text-center mb-16"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-offset="50"
+          >
             <h2 className="text-4xl md:text-5xl font-bold mb-4 md:max-w-xl mx-auto !leading-tight">
               {serviceDetails[slug].why.title.initial}{" "}
               <span className="text-secondary">
@@ -80,6 +119,10 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
                 <div
                   className="bg-white/15 backdrop-blur-md border border-white/20 rounded-lg p-6 lg:p-8 xl:p-10 transition-all duration-500 hover:bg-white/20 hover:border-white/30 group shadow-lg"
                   key={index}
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-offset="50"
+                  data-aos-delay={index * 100}
                 >
                   <div className="size-16 p-4 rounded-full bg-[#2F3F61]/50">
                     <Image
@@ -106,7 +149,12 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
 
         <div className="bg-black py-16">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
+            <div
+              className="text-center mb-16"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="50"
+            >
               <h2 className="text-4xl md:text-5xl font-bold mb-4 md:max-w-2xl mx-auto !leading-tight">
                 {serviceDetails[slug].process.title.initial}{" "}
                 <span className="text-secondary">
@@ -125,6 +173,10 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
               <div
                 key={index}
                 className="flex flex-col items-center text-center max-w-xs"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-offset="50"
+                data-aos-delay={index * 100}
               >
                 {/* Step Number Circle */}
                 <div
@@ -157,7 +209,7 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
 
         {serviceDetails[slug].faqs ? (
           <section className="faq-area bgc-black text-white relative z-10">
-            <div className="container mx-auto bordered-x pb-90">
+            <div className="container mx-auto px-4 bordered-x">
               <div className="row mx-xl-4 justify-center">
                 <div className="w-full xl:w-3/4 lg:w-11/12">
                   <div
@@ -183,6 +235,7 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
                         data-aos="fade-up"
                         data-aos-duration="1500"
                         data-aos-offset="50"
+                        data-aos-delay={index * 50}
                       >
                         <h6 className="accordion-header">
                           <button

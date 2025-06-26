@@ -9,7 +9,7 @@ export default function About() {
       <div className="flex flex-col lg:flex-row items-center justify-between gap-100">
         {/* Image Section */}
         <div
-          className="w-full lg:w-1/2 order-2 lg:order-1"
+          className="w-full lg:w-1/2 order-2 lg:order-1 hidden lg:block"
           data-aos="fade-up"
           data-aos-duration="1500"
           data-aos-offset="50"

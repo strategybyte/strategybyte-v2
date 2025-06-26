@@ -59,8 +59,8 @@ export default function Testimonials() {
       className="testimonials-two-area"
       containerProps={{
         bordered: true,
-        px: "px-xl-5",
-        className: "pl-6 items-center justify-between",
+        px: "px-4",
+        className: "items-center justify-between",
         padding: "py-100",
       }}
       fullWidth={false}
@@ -70,12 +70,12 @@ export default function Testimonials() {
           backgroundImage: "url(/assets/images/background/cta-bg-dots.png)",
         }}
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 pl-6 items-center justify-between">
+        <div className="grid grid-cols-1 lg:grid-cols-2 px-4 items-center justify-between">
           {/* Testimonials Content */}
           <div>
             <div
               className="testimonials-content-two rmb-55"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-offset="50"
             >
@@ -117,10 +117,10 @@ export default function Testimonials() {
           </div>
 
           {/* Image Part */}
-          <div className="text-center lg:text-right">
+          <div className="text-center lg:text-right hidden lg:block">
             <div
               className="testimonials-four-image-part relative inline-block"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-offset="50"
             >

@@ -4,13 +4,16 @@
 import { useState } from "react";
 import { Section, SectionTitle } from "./common";
 import { send } from "@emailjs/browser";
+import { sendFBPixelEvent } from "./global/analytics/FacebookPixel";
+import { toast } from "sonner";
 
 export default function CTA() {
   const [email, setEmail] = useState("");
+  const [sending, setSending] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setSending(true);
     console.log("from sub");
 
     try {
@@ -25,18 +28,18 @@ export default function CTA() {
       };
 
       // Track form submission with Facebook Pixel
-      // sendFBPixelEvent("Lead", {
-      //   content_name: "contact_form_submission",
-      //   content_category: "lead",
-      //   service: values.service,
-      // });
+      sendFBPixelEvent("Lead", {
+        content_name: "contact_form_submission",
+        content_category: "lead",
+        service: "N/A",
+      });
 
       // Track Google Ads conversion
-      // if (typeof window !== "undefined" && window.gtag) {
-      //   window.gtag("event", "conversion", {
-      //     send_to: "AW-16759601889/tzEICNbkoscaEOH1zLc-",
-      //   });
-      // }
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "conversion", {
+          send_to: "AW-16759601889/tzEICNbkoscaEOH1zLc-",
+        });
+      }
 
       // Send email using EmailJS
       await send(
@@ -46,12 +49,13 @@ export default function CTA() {
         process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY
       );
 
-      // toast.success("Message sent successfully!");
+      toast.success("Message sent successfully!");
     } catch (error) {
       console.error("Failed to send email:", error);
-      // toast.error("Failed to send message");
+      toast.error("Failed to send message");
     } finally {
       setEmail("");
+      setSending(false);
     }
   };
 
@@ -61,7 +65,7 @@ export default function CTA() {
       containerProps={{
         bordered: true,
         padding: "pb-100",
-        px: "px-sm-0",
+        px: "px-4",
       }}
     >
       <div
@@ -90,7 +94,10 @@ export default function CTA() {
                 aos={false}
               />
 
-              <form className="newsletter-form" onSubmit={handleSubmit}>
+              <form
+                className="newsletter-form hidden lg:flex"
+                onSubmit={handleSubmit}
+              >
                 <label htmlFor="news-email">
                   <i className="fas fa-envelope" />
                 </label>
@@ -106,13 +113,35 @@ export default function CTA() {
                   type="submit"
                   className="theme-btn"
                   data-hover="Subscribe"
+                  disabled={sending}
                 >
-                  <span>Subscribe</span>
+                  {sending ? "Sending..." : "Subscribe"}
+                </button>
+              </form>
+              <form
+                className="newsletter-form flex flex-col gap-4 lg:hidden"
+                onSubmit={handleSubmit}
+              >
+                <input
+                  id="news-email"
+                  type="email"
+                  placeholder="Email Address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <button
+                  type="submit"
+                  className="theme-btn"
+                  data-hover="Subscribe"
+                  disabled={sending}
+                >
+                  {sending ? "Sending..." : "Subscribe"}
                 </button>
               </form>
             </div>
           </div>
-          <div className="w-full lg:w-6/12 text-xl-end">
+          <div className="w-full lg:w-6/12 text-xl-end hidden lg:block">
             <div
               className="cta-two-image-part"
               data-aos="fade-up"

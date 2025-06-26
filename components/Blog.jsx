@@ -40,7 +40,7 @@ export default function Blog() {
       containerProps={{
         bordered: true,
         padding: "pt-110 pb-70",
-        px: "px-sm-0",
+        px: "px-4",
       }}
     >
       <div className="row justify-center">

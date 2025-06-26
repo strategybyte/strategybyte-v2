@@ -3,8 +3,13 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { send } from "@emailjs/browser";
+import { sendFBPixelEvent } from "./global/analytics/FacebookPixel";
+import { usePathname } from "next/navigation";
+import { toast } from "sonner";
 
 export default function Footer() {
+  const pathname = usePathname();
+
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -53,18 +58,18 @@ export default function Footer() {
       };
 
       // Track form submission with Facebook Pixel
-      // sendFBPixelEvent("Lead", {
-      //   content_name: "contact_form_submission",
-      //   content_category: "lead",
-      //   service: values.service,
-      // });
+      sendFBPixelEvent("Lead", {
+        content_name: "contact_form_submission",
+        content_category: "lead",
+        service: formData.service || "N/A",
+      });
 
       // Track Google Ads conversion
-      // if (typeof window !== "undefined" && window.gtag) {
-      //   window.gtag("event", "conversion", {
-      //     send_to: "AW-16759601889/tzEICNbkoscaEOH1zLc-",
-      //   });
-      // }
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "conversion", {
+          send_to: "AW-16759601889/tzEICNbkoscaEOH1zLc-",
+        });
+      }
 
       // Send email using EmailJS
       await send(
@@ -74,10 +79,10 @@ export default function Footer() {
         process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY
       );
 
-      // toast.success("Message sent successfully!");
+      toast.success("Message sent successfully!");
     } catch (error) {
       console.error("Failed to send email:", error);
-      // toast.error("Failed to send message");
+      toast.error("Failed to send message");
     } finally {
       setFormData({
         name: "",
@@ -91,6 +96,10 @@ export default function Footer() {
       setIsSubmitted(false);
     }
   };
+
+  if (pathname === "/contact") {
+    return null;
+  }
 
   return (
     <footer className="main-footer bgc-black text-white ">
@@ -149,7 +158,7 @@ export default function Footer() {
                   <span className="h6 block text-white font-semibold text-lg mt-1">
                     <Link
                       href="mailto:info@strategybyte.com.au"
-                      className="hover:text-primary transition-colors"
+                      className="hover:text-primary transition-colors break-all"
                     >
                       info@strategybyte.com.au
                     </Link>

@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect } from "react";
+import dynamic from "next/dynamic";
 import { Button } from "@/components/common";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +11,7 @@ const ourValues = [
     id: "1",
     title: "Integrity",
     description:
-      "We do what’s right—always. Ethics, honesty, and transparency drive every decision we make.",
+      "We do what's right—always. Ethics, honesty, and transparency drive every decision we make.",
     image: "/assets/images/about/integrity-icon.png",
   },
   {
@@ -42,7 +46,7 @@ const ourValues = [
     id: "6",
     title: "Responsibility",
     description:
-      "We take ownership of your outcomes—whether it’s improving digital visibility or automating business processes.",
+      "We take ownership of your outcomes—whether it's improving digital visibility or automating business processes.",
     image: "/assets/images/about/responsibility-icon.png",
   },
 ];
@@ -69,12 +73,31 @@ const ourApproach = [
 ];
 
 const AboutPage = () => {
+  useEffect(() => {
+    // Initialize AOS dynamically on client side only
+    const initAOS = async () => {
+      const AOS = (await import("aos")).default;
+      AOS.init({
+        duration: 1500,
+        offset: 50,
+        once: true,
+      });
+    };
+
+    initAOS();
+  }, []);
+
   return (
     <div className="bg-black text-white min-h-screen">
       <section>
         <div className="bg-white/15 py-16">
           <div className="container mx-auto px-4 flex items-center justify-between flex-col md:flex-row">
-            <div className="text-left mb-12 w-full">
+            <div
+              className="text-left mb-12 w-full"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="50"
+            >
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
                 Driving Growth Through Digital Marketing & Innovation
               </h2>
@@ -95,7 +118,13 @@ const AboutPage = () => {
               </Button>
             </div>
 
-            <div className="w-full">
+            <div
+              className="w-full"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="50"
+              data-aos-delay="200"
+            >
               <Image
                 src="/assets/images/about/about-us-banner.png"
                 alt="banner"
@@ -107,14 +136,24 @@ const AboutPage = () => {
         </div>
 
         <div className="container px-4 py-16 mx-auto">
-          <div className="text-center">
+          <div
+            className="text-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-offset="50"
+          >
             <h2 className="text-3xl md:text-5xl font-bold mb-16 md:max-w-xl mx-auto !leading-tight">
               Who We Are
             </h2>
           </div>
 
           <div className="flex items-center justify-between flex-col-reverse md:flex-row gap-10 md:gap-2">
-            <div className="text-left mb-12 w-full">
+            <div
+              className="text-left mb-12 w-full"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="50"
+            >
               <h2 className="text-3xl font-bold mb-4">Our Story</h2>
               <p className="text-gray-300 mb-4">
                 StrategyByte was founded to help businesses grow in a
@@ -131,7 +170,13 @@ const AboutPage = () => {
               </p>
             </div>
             {/* Service Illustrations */}
-            <div className="w-full">
+            <div
+              className="w-full"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="50"
+              data-aos-delay="200"
+            >
               <Image
                 src="/assets/images/about/our-story.png"
                 alt="banner"
@@ -142,7 +187,12 @@ const AboutPage = () => {
           </div>
 
           <div className="flex items-center justify-between flex-col-reverse mt-24 md:flex-row-reverse gap-10 md:gap-2">
-            <div className="text-left mb-12 w-full">
+            <div
+              className="text-left mb-12 w-full"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="50"
+            >
               <h2 className="text-3xl font-bold mb-4">Our Approach</h2>
               <p className="text-gray-300 mb-4">
                 We craft tailored digital strategies that bridge the gap between
@@ -150,8 +200,15 @@ const AboutPage = () => {
                 digital-first world.
               </p>
               <div className="my-3 flex flex-col gap-5">
-                {ourApproach.map((item) => (
-                  <div key={item.id} className="flex items-start gap-2">
+                {ourApproach.map((item, index) => (
+                  <div
+                    key={item.id}
+                    className="flex items-start gap-2"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                    data-aos-offset="50"
+                    data-aos-delay={index * 100}
+                  >
                     <Image
                       className="size-8"
                       src={item.icon}
@@ -173,7 +230,13 @@ const AboutPage = () => {
               </p>
             </div>
             {/* Service Illustrations */}
-            <div className="w-full">
+            <div
+              className="w-full"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="50"
+              data-aos-delay="200"
+            >
               <Image
                 src="/assets/images/about/our-approach.png"
                 alt="banner"
@@ -185,12 +248,17 @@ const AboutPage = () => {
         </div>
 
         <div className="container px-4 py-16 mx-auto">
-          <div className="text-center mb-16">
+          <div
+            className="text-center mb-16"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-offset="50"
+          >
             <h2 className="text-4xl md:text-5xl font-bold mb-4 md:max-w-xl mx-auto !leading-tight">
               Our Core Value
             </h2>
             <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-              These values define who we are and how we work at StrategyByte. 
+              These values define who we are and how we work at StrategyByte.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 text-left">
@@ -198,6 +266,10 @@ const AboutPage = () => {
                 <div
                   className="bg-white/15 backdrop-blur-md border border-white/20 rounded-lg p-6 lg:p-8 xl:p-10 transition-all duration-500 hover:bg-white/20 hover:border-white/30 group shadow-lg"
                   key={index}
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-offset="50"
+                  data-aos-delay={index * 100}
                 >
                   <div className="size-16 p-4 rounded-full bg-[#2F3F61]/50">
                     <Image
