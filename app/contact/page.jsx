@@ -91,6 +91,7 @@ const ContactPage = () => {
                     <br />
                     <Link
                       href="https://g.co/kgs/bLqi26B"
+                      target="_blank"
                       className="font-normal text-[#D1D5DB] pt-1"
                     >
                       30 Campbell St
@@ -110,6 +111,7 @@ const ContactPage = () => {
                     Email Us
                     <span className="font-normal text-[#D1D5DB]">
                       <Link
+                        target="_blank"
                         href="mailto:info@strategybyte.com.au"
                         className="font-normal text-[#D1D5DB] block pt-1"
                       >
@@ -128,6 +130,7 @@ const ContactPage = () => {
                     <span className="font-normal text-[#D1D5DB]">
                       <Link
                         href="tel:0401 193 958"
+                        target="_blank"
                         className="font-normal text-[#D1D5DB] block pt-1"
                       >
                         0401 193 958
