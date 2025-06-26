@@ -287,7 +287,7 @@ const ContactPage = () => {
                   Get In Touch
                 </h3>
                 <p className="text-gray-300">
-                  Whether you&apos;re looking to boost your online presence,z
+                  Whether you&apos;re looking to boost your online presence,
                   increase conversions, or scale your business, we&apos;re here
                   to help.
                 </p>
@@ -352,11 +352,11 @@ const ContactPage = () => {
               {/* Quick Response Guarantee */}
               <div className="bg-secondary p-6 rounded-lg mt-8">
                 <h4 className="text-black font-bold text-lg mb-2">
-                  Quick Response Guarantee
+                  Quick Responses
                 </h4>
                 <p className="text-black">
-                  We&apos;ll respond within 1-2 business days and provide a
-                  custom strategy for your business growth.
+                  We&apos;ll get back to you at our earliest convenience and
+                  provide a custom strategy tailored to your business goals.
                 </p>
               </div>
             </div>
@@ -472,14 +472,10 @@ const ContactPage = () => {
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-3 border-b border-white/10 hover:bg-white/5 px-3 rounded-lg transition-colors">
                   <span className="font-medium">Monday - Friday</span>
-                  <span className="text-secondary">9:00 AM - 6:00 PM</span>
+                  <span className="text-secondary">9:00 AM - 5:00 AM</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-white/10 hover:bg-white/5 px-3 rounded-lg transition-colors">
-                  <span className="font-medium">Saturday</span>
-                  <span className="text-secondary">10:00 AM - 4:00 PM</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-white/10 hover:bg-white/5 px-3 rounded-lg transition-colors">
-                  <span className="font-medium">Sunday</span>
+                  <span className="font-medium">Saturday & Sunday</span>
                   <span className="text-red-400">Closed</span>
                 </div>
               </div>
