@@ -6,7 +6,6 @@ import { ArrowRightIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/common";
 import { useState, useEffect } from "react";
-import dynamic from "next/dynamic";
 
 const services = [
   {

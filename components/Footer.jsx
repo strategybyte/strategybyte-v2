@@ -4,8 +4,11 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { send } from "@emailjs/browser";
 import { sendFBPixelEvent } from "./global/analytics/FacebookPixel";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -92,6 +95,10 @@ export default function Footer() {
       setIsSubmitted(false);
     }
   };
+
+  if (pathname === "/contact") {
+    return null;
+  }
 
   return (
     <footer className="main-footer bgc-black text-white ">
