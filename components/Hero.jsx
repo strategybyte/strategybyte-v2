@@ -57,10 +57,10 @@ const Hero = () => {
       <div className="relative h-full flex items-center justify-center flex-col z-20 pt-24">
         <div className="container mx-auto px-4">
           {/* Main Title */}
-          <h1 className="text-white font-bold mb-6 text-4xl md:text-7xl lg:text-8xl xl:text-9xl leading-tight tracking-tight">
+          <h1 className="text-white font-semibold mb-6 text-4xl md:text-7xl lg:text-8xl xl:text-9xl leading-tight tracking-tight">
             <TextAnimation delay={500}>Unlock Your</TextAnimation>
             <br />
-            <span className="text-secondary font-extrabold">
+            <span className="text-secondary font-bold">
               <TypeAnimation
                 sequence={[
                   "Digital Success",
@@ -89,10 +89,25 @@ const Hero = () => {
 
           {/* CTA Button */}
           <Link href="/contact" className="inline-block">
-            <button className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-secondary rounded-full overflow-hidden transition-all duration-300 hover:scale-105 group">
-              <span className="relative z-10">Get Started</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-secondary via-yellow-500 to-secondary opacity-75 group-hover:opacity-100 blur-lg transition-opacity duration-300 animate-pulse"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-secondary to-yellow-500"></div>
+            <button className="relative group">
+              {/* Main button */}
+              <span className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-secondary rounded-full overflow-hidden transition-all duration-500 hover:scale-105 hover:text-black z-10">
+                <span className="relative z-10">Book a Consultation</span>
+
+                {/* Gradient background */}
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-secondary to-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                {/* Multiple glowing layers */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-secondary to-yellow-400 rounded-full blur-sm transition-all duration-500 group-hover:blur-md group-hover:scale-105"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-yellow-300 via-secondary to-yellow-300 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-all duration-500 animate-pulse"></div>
+
+                {/* Moving shine effect */}
+                <div className="absolute inset-0 translate-x-full group-hover:translate-x-[-150%] transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+              </span>
+
+              {/* Outer glow rings */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400 via-secondary to-yellow-400 rounded-full opacity-0 group-hover:opacity-20 blur-2xl transition-all duration-500"></div>
+              <div className="absolute -inset-3 bg-gradient-to-r from-secondary via-yellow-400 to-secondary rounded-full opacity-0 group-hover:opacity-30 blur-xl transition-all duration-500 animate-pulse"></div>
             </button>
           </Link>
         </div>

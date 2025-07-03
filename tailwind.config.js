@@ -18,6 +18,14 @@ module.exports = {
         "zoom-in-out": "zoomInOut 4s infinite",
         "zoom-in-out-delayed": "zoomInOut 4s linear 2s infinite",
         marquee: "marquee 30s linear infinite",
+        "gradient-x": "gradient-x 3s ease infinite",
+        "spin-slow": "spin 8s linear infinite",
+        "spin-slow-reverse": "spin 8s linear infinite reverse",
+        sparkle: "sparkle 1.5s ease-in-out infinite",
+        "sparkle-delayed": "sparkle 1.5s ease-in-out 0.75s infinite",
+        "particle-1": "particle-1 2s ease-in-out infinite",
+        "particle-2": "particle-2 2s ease-in-out infinite",
+        "particle-3": "particle-3 2s ease-in-out infinite",
       },
       keyframes: {
         fadeInUp: {
@@ -78,6 +86,68 @@ module.exports = {
           },
           "100%": {
             transform: "translateX(-50%)",
+          },
+        },
+        "gradient-x": {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
+        sparkle: {
+          "0%, 100%": {
+            opacity: 0,
+            transform: "scale(0)",
+          },
+          "50%": {
+            opacity: 1,
+            transform: "scale(1)",
+          },
+        },
+        "particle-1": {
+          "0%": {
+            transform: "translate(0, 0)",
+            opacity: 0,
+          },
+          "50%": {
+            transform: "translate(100px, -50px)",
+            opacity: 1,
+          },
+          "100%": {
+            transform: "translate(200px, 0)",
+            opacity: 0,
+          },
+        },
+        "particle-2": {
+          "0%": {
+            transform: "translate(0, 0)",
+            opacity: 0,
+          },
+          "50%": {
+            transform: "translate(-100px, -50px)",
+            opacity: 1,
+          },
+          "100%": {
+            transform: "translate(-200px, 0)",
+            opacity: 0,
+          },
+        },
+        "particle-3": {
+          "0%": {
+            transform: "translate(0, 0)",
+            opacity: 0,
+          },
+          "50%": {
+            transform: "translate(0, -100px)",
+            opacity: 1,
+          },
+          "100%": {
+            transform: "translate(0, -200px)",
+            opacity: 0,
           },
         },
       },
