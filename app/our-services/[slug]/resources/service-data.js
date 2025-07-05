@@ -1262,30 +1262,34 @@ export const serviceDetails = {
     },
     faqs: [
       {
-        question: "1. What is analytics and reporting in digital marketing?",
+        question: "1. What is strategic branding management?",
         answer:
-          " Analytics and reporting involve tracking data from your website, ads, or campaigns and turning that information into meaningful insights. It helps you understand what’s working, what isn’t, and where to focus your efforts. Whether it's traffic sources or lead conversions, we make sense of your numbers so you can make smarter business decisions.",
+          "Strategic branding management is the process of building, positioning, and maintaining a brand in a way that aligns with business goals and connects meaningfully with your audience. It combines creative identity with data-driven direction.",
       },
       {
-        question: "2. Why do I need analytics and reporting for my business?",
+        question: "2. How is branding different from marketing?",
         answer:
-          "Without data, you're guessing. With proper analytics and clear reporting, you can see where your visitors come from, which pages they engage with, and how your campaigns perform. Our clients use these insights to improve results and cut wasted spend.",
+          "Branding defines who you are, your values, visuals, and voice. Marketing is how you promote your brand. Branding comes first; it sets the foundation for all your marketing efforts.",
       },
       {
-        question: "3. What tools do you use for analytics and reporting?",
+        question: "3. Do I need branding if I’m a startup or small business?",
         answer:
-          "We use tools like Google Analytics, Search Console, and custom dashboards that show you the data that matters most. For businesses that use SEO and paid ads, we integrate performance tracking so you always know your return on investment.",
+          "Absolutely. A clear brand identity helps you build trust early, stand out in crowded markets, and communicate your value clearly from day one.",
       },
       {
-        question: "4. What’s the difference between reporting and analytics?",
+        question: "4. How long does a brand identity package take?",
         answer:
-          "Reporting shows you what happened (e.g., traffic numbers, bounce rates), while analytics helps you understand why it happened. At Strategybyte, we combine bothso you're not just getting numbers, you're getting clear recommendations.",
+          "Most identity packages take 2–6 weeks depending on your scope—this includes discovery sessions, logo design, brand voice development, and guidelines delivery.",
       },
       {
-        question:
-          "5. Can you explain how Google Analytics tracks user behavior?",
+        question: "5. What does a complete brand identity package include?",
         answer:
-          "Yes! Google Analytics tracks user actions on your website like which pages they visit, how long they stay, or where they drop off. This helps us optimize your site and improve user experience. We break it all down in plain language, so you don’t need to be a data expert.",
+          "It typically includes a logo suite, color palette, typography, brand voice, messaging framework, and a style guide. We also offer add-ons like business cards and branded email setup, for more information please contact us.",
+      },
+      {
+        question: "5. Can I update my branding without starting from scratch?",
+        answer:
+          "Yes. We offer brand refresh services that modernize your look and feel while keeping your brand’s core intact.",
       },
     ],
   },
