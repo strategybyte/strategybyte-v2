@@ -3,7 +3,6 @@
 import { Button } from "@/components/common";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import dynamic from "next/dynamic";
 import serviceDetails from "./resources/service-data";
 
 const ServiceDetailsPage = ({ params: { slug } }) => {
@@ -103,7 +102,7 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
             data-aos-duration="1500"
             data-aos-offset="50"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 md:max-w-xl mx-auto !leading-tight">
+            <h2 className="text-4xl md:text-6xl font-bold mb-4 md:max-w-4xl mx-auto !leading-tight">
               {serviceDetails[slug].why.title.initial}{" "}
               <span className="text-secondary">
                 {serviceDetails[slug].why.title.highlight}
@@ -197,11 +196,6 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
                 <p className="text-gray-300 text-sm leading-relaxed">
                   {step.description}
                 </p>
-
-                {/* Connecting Line (hidden on last item) */}
-                {index < serviceDetails[slug].process.steps.length - 1 && (
-                  <div className="hidden md:block absolute top-8 left-1/2 w-16 h-0.5 bg-white/20 transform translate-x-8"></div>
-                )}
               </div>
             ))}
           </div>
