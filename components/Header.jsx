@@ -26,6 +26,10 @@ const Header = () => {
     },
     { name: "Business Process Setup", slug: "business-process-setup" },
     { name: "Analytics & Reporting", slug: "analytics-and-reporting" },
+    {
+      name: "Strategic Branding Management",
+      slug: "strategic-branding-management",
+    },
   ];
 
   // ChevronDownIcon component
