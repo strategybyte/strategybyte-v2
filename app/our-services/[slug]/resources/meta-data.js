@@ -20,4 +20,8 @@ export const SERVICES_META = {
     title: "Analytics & Reporting Service | StrategyByte",
     description: "",
   },
+  "strategic-branding-management": {
+    title: "Strategic Branding Management Service | StrategyByte",
+    description: "",
+  },
 };

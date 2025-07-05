@@ -1,4 +1,4 @@
-const serviceDetails = {
+export const serviceDetails = {
   "digital-marketing": {
     title: {
       initial: "Digital",
@@ -38,9 +38,9 @@ const serviceDetails = {
 
     why: {
       title: {
-        initial: "Why",
+        initial: "What is Our Approach to",
         highlight: "Digital Marketing",
-        end: "Matters",
+        end: "",
       },
       description:
         "Reach the right audience, build trust, track performance, and maximize ROI with smart, data-driven marketing.",
@@ -236,9 +236,9 @@ const serviceDetails = {
 
     why: {
       title: {
-        initial: "Why",
+        initial: "What is Our Approach to",
         highlight: "Website Development",
-        end: "Matters",
+        end: "",
       },
       description:
         "In today’s digital-first world, your website is your first impression, your lead generator, and your most valuable sales tool. ",
@@ -431,9 +431,9 @@ const serviceDetails = {
 
     why: {
       title: {
-        initial: "Why",
+        initial: "What is Our Approach to",
         highlight: "Search Engine Optimization",
-        end: "Matters",
+        end: "",
       },
       description:
         "In today’s search-driven world, if you’re not visible, you don’t exist. SEO is how your brand gets found—and stays top-of-mind. ",
@@ -609,9 +609,9 @@ const serviceDetails = {
 
     why: {
       title: {
-        initial: "Why",
-        highlight: "Participant Portals",
-        end: "Matters",
+        initial: "What is Our Approach to",
+        highlight: "Participant Portal Development",
+        end: "",
       },
       description:
         "In today’s search-driven world, if you’re not visible, you don’t exist. SEO is how your brand gets found—and stays top-of-mind. ",
@@ -784,9 +784,9 @@ const serviceDetails = {
 
     why: {
       title: {
-        initial: "Why",
-        highlight: "Business Processes",
-        end: "Matters",
+        initial: "What is Our Approach to",
+        highlight: "Business Process Setup",
+        end: "",
       },
       description:
         "Great ideas need great systems to succeed. With the right processes in place, your business runs smoother, scales faster, and delivers consistently.  ",
@@ -977,9 +977,9 @@ const serviceDetails = {
 
     why: {
       title: {
-        initial: "Why",
+        initial: "What is Our Approach to",
         highlight: "Analytics & Reporting",
-        end: "Matters",
+        end: "",
       },
       description:
         "In today’s competitive landscape, guesswork isn’t a strategy. With clear, actionable insights, your team can have the edge you need.",
@@ -1112,6 +1112,184 @@ const serviceDetails = {
           "5. Can you explain how Google Analytics tracks user behavior?",
         answer:
           "Yes! Google Analytics tracks user actions on your website like which pages they visit, how long they stay, or where they drop off. This helps us optimize your site and improve user experience. We break it all down in plain language, so you don’t need to be a data expert.",
+      },
+    ],
+  },
+
+  "strategic-branding-management": {
+    title: {
+      initial: "Strategic",
+      highlight: "Branding Management",
+      end: "",
+    },
+    description:
+      "Local recognition starts with clear branding. We help you build a trustworthy identity that stands out in search and sticks in your community’s mind.",
+    image: "/assets/service/strategic-branding-management/banner.png",
+    button: {
+      text: "Book a Discovery Call",
+      link: "/contact",
+    },
+
+    stats: [
+      {
+        value: "91 %",
+        label: "Improved Brand Consistency",
+        color: "text-secondary",
+      },
+      {
+        value: "3.7x",
+        label: "Faster Creative Alignment ",
+        color: "text-white",
+      },
+      {
+        value: "79%",
+        label: "Increase in audience recall",
+        color: "text-secondary",
+      },
+      {
+        value: "2.1x",
+        label: "Higher likelihood of brand trust",
+        color: "text-white",
+      },
+    ],
+
+    why: {
+      title: {
+        initial: "What is Our Approach to ",
+        highlight: "Strategic Branding Management",
+        end: "",
+      },
+      description:
+        "We help build, position, and grow your brand with data-driven strategies that drive recognition, trust, and long-term impact.",
+
+      cards: [
+        {
+          title: "Brand Identity Creation",
+          description:
+            "Build a strong first impression with tailored brand identity packages.",
+          image: "/assets/service/analytics-and-reporting/card-1.png",
+          list: [
+            "Basic Logo Package",
+            "Complete Brand Identity Package ",
+            "Premium Brand Identity Package ",
+          ],
+        },
+        {
+          title: "Print Materials",
+          description:
+            "Stand out with professionally designed physical assets.",
+          image: "/assets/service/analytics-and-reporting/card-2.png",
+          list: [
+            "Business Cards",
+            "Brochures & Leaflets",
+            "Complete Print Package for brand consistency",
+          ],
+        },
+        {
+          title: "Business Email Creation",
+          description: "Get branded communication tools that build trust.",
+          image: "/assets/service/analytics-and-reporting/card-3.png",
+          list: [
+            "Setup & configuration (per email)",
+            "Bulk email setups for teams",
+            "Optimized for branding and deliverability",
+          ],
+        },
+        {
+          title: "Brand Guidelines",
+          description: "Maintain consistency with clear brand standards.",
+          image: "/assets/service/analytics-and-reporting/card-4.png",
+          list: [
+            "Basic Guidelines Document (colors, fonts, tone)",
+            "Comprehensive Brand Manual (full usage instructions & examples)",
+          ],
+        },
+        {
+          title: "Brand Strategy & Positioning",
+          description:
+            "Use competitive research and trends to sharpen your market presence.",
+          image: "/assets/service/analytics-and-reporting/card-5.png",
+          list: [
+            "Strategic messaging frameworks",
+            "Audience positioning insights",
+            "Data-backed differentiation",
+          ],
+        },
+        {
+          title: "Ongoing Brand Support",
+          description: "We support your brand as it grows.",
+          image: "/assets/service/analytics-and-reporting/card-6.png",
+          list: [
+            "Visual & voice audits",
+            "Updates to guidelines & assets",
+            "Creative collaboration as your brand evolves",
+          ],
+        },
+      ],
+    },
+
+    process: {
+      title: {
+        initial: "Our",
+        highlight: "Strategic Branding Management",
+        end: "Process",
+      },
+      description:
+        "A data-driven brand strategy process designed to refine your brand identity, improve positioning, and optimize for long-term growth.",
+      steps: [
+        {
+          number: "1",
+          title: "Brand Discovery",
+          description:
+            "We dive deep into your brand's story, challenges, and audience perception.",
+          isActive: true,
+        },
+        {
+          number: "2",
+          title: "Creative Foundation",
+          description:
+            "We craft the visual and verbal language your brand needs to resonate.",
+          isActive: false,
+        },
+        {
+          number: "3",
+          title: "Audience Alignment",
+          description:
+            "We shape how your brand speaks across every touch point.",
+          isActive: true,
+        },
+      ],
+    },
+    faqs: [
+      {
+        question: "1. What is strategic branding management?",
+        answer:
+          "Strategic branding management is the process of building, positioning, and maintaining a brand in a way that aligns with business goals and connects meaningfully with your audience. It combines creative identity with data-driven direction.",
+      },
+      {
+        question: "2. How is branding different from marketing?",
+        answer:
+          "Branding defines who you are, your values, visuals, and voice. Marketing is how you promote your brand. Branding comes first; it sets the foundation for all your marketing efforts.",
+      },
+      {
+        question: "3. Do I need branding if I’m a startup or small business?",
+        answer:
+          "Absolutely. A clear brand identity helps you build trust early, stand out in crowded markets, and communicate your value clearly from day one.",
+      },
+      {
+        question: "4. How long does a brand identity package take?",
+        answer:
+          "Most identity packages take 2–6 weeks depending on your scope—this includes discovery sessions, logo design, brand voice development, and guidelines delivery.",
+      },
+      {
+        question: "5. What does a complete brand identity package include?",
+        answer:
+          "It typically includes a logo suite, color palette, typography, brand voice, messaging framework, and a style guide. We also offer add-ons like business cards and branded email setup, for more information please contact us.",
+      },
+      {
+        question: "5. Can I update my branding without starting from scratch?",
+        answer:
+          "Yes. We offer brand refresh services that modernize your look and feel while keeping your brand’s core intact.",
       },
     ],
   },
