@@ -17,7 +17,6 @@ const images2 = [
 
 const images3 = [
   "/images/quote/red_bull.webp",
-  "/images/quote/sesame_workshop_bangladesh.webp",
   "/images/quote/SLU_softball.webp",
   "/images/quote/the_daily_star.webp",
 ];
@@ -52,7 +51,7 @@ export default function Quote() {
 }
 
 const MarqueeRow = ({ images, direction, className }) => {
-  const duplicatedImages = [...images, ...images, ...images];
+  const duplicatedImages = [...images, ...images, ...images, ...images];
 
   return (
     <div
