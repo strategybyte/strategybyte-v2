@@ -24,9 +24,9 @@ const epilogue = Epilogue({
 });
 
 export const metadata = {
-  title: "StrategyByte | NDIS Marketing Solutions",
+  title: "StrategyByte | Digital Marketing Agency in Australia",
   description:
-    "Unlock growth with StrategyByte's NDIS marketing services. We provide targeted campaigns, social media management, and accessible website development to help providers engage participants and enhance visibility.",
+    "Smart digital marketing, SEO, web development, and content solutions to help Australian businesses grow and stand out online.",
   robots: "index, follow",
   authors: [{ name: "StrategyByte" }],
   metadataBase: new URL("https://www.strategybyte.com.au"),
