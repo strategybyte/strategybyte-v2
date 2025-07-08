@@ -11,7 +11,7 @@ export default function Testimonials() {
   const testimonials = [
     {
       author: "/assets/images/testimonials/author1.jpg",
-      text: "Working with StrategyByte has been a nice experience. They take to the time to listen to what I want, and seek to make sure what they deliver is what what asked for. I am very happy to have found them. They provide regular updates on progress, have great customer service, and ask questions when things need clarifying.",
+      text: "Working with StrategyByte has been a nice experience. They take the time to listen to what I want, and seek to make sure what they deliver is what what I asked for. I am very happy to have found them. They provide regular updates on progress, have great customer service, and ask questions when things need clarifying.",
       name: "Alexander Rodriguez",
       designation: "Counsellor and Life Coach",
     },
