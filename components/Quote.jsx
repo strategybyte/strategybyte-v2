@@ -5,7 +5,7 @@ const images1 = [
   "/images/quote/alexander_rodriguez.webp",
   "/images/quote/care_around_you.webp",
   "/images/quote/disacare_solution.webp",
-  "/images/quote/ECS.webp",
+  "/images/quote/ecs.webp",
 ];
 
 const images2 = [
@@ -17,7 +17,7 @@ const images2 = [
 
 const images3 = [
   "/images/quote/red_bull.webp",
-  "/images/quote/SLU_softball.webp",
+  "/images/quote/slu_softball.webp",
   "/images/quote/the_daily_star.webp",
 ];
 
@@ -73,7 +73,7 @@ const MarqueeRow = ({ images, direction, className }) => {
               height={1000}
               quality={100}
               src={image || "/placeholder.svg"}
-              alt={`Brand logo ${index + 1}`}
+              alt={`${image} ${index + 1}`}
               className="object-contain h-40 w-fit"
             />
           </div>
