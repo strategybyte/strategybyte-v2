@@ -118,16 +118,26 @@ const NewsDetails = ({ params: { slug } }) => {
           href={node.data.uri}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-600 hover:underline"
+          className="text-secondary hover:underline"
         >
           {children}
         </Link>
       ),
       [INLINES.ENTRY_HYPERLINK]: (node, children) => (
-        <Link href={node.data.target.fields.slug}>{children}</Link>
+        <Link
+          href={node.data.target.fields.slug}
+          className="text-secondary hover:underline"
+        >
+          {children}
+        </Link>
       ),
       [INLINES.ASSET_HYPERLINK]: (node, children) => (
-        <Link href={node.data.target.fields.file.url}>{children}</Link>
+        <Link
+          href={node.data.target.fields.file.url}
+          className="text-secondary hover:underline"
+        >
+          {children}
+        </Link>
       ),
     },
   };

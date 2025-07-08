@@ -1294,3 +1294,36 @@
 .animate-play-wave {
   animation: play-btn-wave 2s infinite ease-in-out;
 }
+
+@keyframes marqueeLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-33.33% - 10px));
+  }
+}
+
+@keyframes marqueeRight {
+  from {
+    transform: translateX(-33.33%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@layer utilities {
+  .animate-marquee-left {
+    animation: marqueeLeft 15s linear infinite;
+  }
+
+  .animate-marquee-right {
+    animation: marqueeRight 15s linear infinite;
+  }
+
+  .animate-marquee-left:hover,
+  .animate-marquee-right:hover {
+    animation-play-state: paused;
+  }
+}

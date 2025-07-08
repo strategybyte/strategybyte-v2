@@ -11,9 +11,9 @@ export default function Testimonials() {
   const testimonials = [
     {
       author: "/assets/images/testimonials/author1.jpg",
-      text: "StrategyByte took our online presence to the next level. Within weeks, we saw a noticeable increase in both enquiries and traffic. Their team just gets what small Aussie businesses need.",
-      name: "Jessica Carmichael",
-      designation: "Small Business Owner, Adelaide",
+      text: "Working with StrategyByte has been a nice experience. They take to the time to listen to what I want, and seek to make sure what they deliver is what what asked for. I am very happy to have found them. They provide regular updates on progress, have great customer service, and ask questions when things need clarifying.",
+      name: "Alexander Rodriguez",
+      designation: "Counsellor and Life Coach",
     },
     {
       author: "/assets/images/testimonials/author2.jpg",
