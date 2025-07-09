@@ -50,7 +50,7 @@ export default function Faq() {
 
   return (
     <section className="faq-area bgc-black text-white relative z-10">
-      <div className="container mx-auto px-4 bordered-x pb-90">
+      <div className="container mx-auto px-4 bordered-x py-10">
         <div className="row mx-xl-4 justify-center">
           <div className="w-full xl:w-3/4 lg:w-11/12">
             <div

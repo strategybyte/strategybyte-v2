@@ -2,7 +2,7 @@
 
 import { Section, SectionTitle, ServiceCard } from "./common";
 
-export default function Services({ extraClass = "pb-70" }) {
+export default function Services() {
   const services = [
     {
       icon: "flaticon-seo",
@@ -53,7 +53,6 @@ export default function Services({ extraClass = "pb-70" }) {
       id="services"
       containerProps={{
         bordered: true,
-        padding: extraClass,
         px: "px-4",
       }}
     >

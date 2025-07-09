@@ -6,7 +6,7 @@ const Container = ({
   children,
   className = "",
   bordered = false,
-  padding = "py-100",
+  padding = "py-10",
   maxWidth = "container mx-auto",
   px = "px-4",
 }) => {

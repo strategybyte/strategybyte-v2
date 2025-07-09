@@ -20,7 +20,7 @@ const ServiceCard = ({
 }) => {
   return (
     <div className={className} {...(aos ? aosProps : {})}>
-      <div className="service-two-item relative group bg-black border border-gray-800 rounded-lg p-10 lg:p-12 xl:p-16 mb-8 overflow-hidden transition-all duration-500 hover:bg-secondary hover:border-secondary-500">
+      <div className="service-two-item relative group bg-black border border-gray-800 rounded-lg p-10 lg:p-12 xl:p-16 overflow-hidden transition-all duration-500 hover:bg-secondary hover:border-secondary-500">
         {/* Icon */}
         <div
           className={`${iconColor} text-5xl leading-none mb-5 transition-all duration-500 group-hover:text-black`}
