@@ -61,7 +61,6 @@ export default function Testimonials() {
         bordered: true,
         px: "px-4",
         className: "items-center justify-between",
-        padding: "py-100",
       }}
       fullWidth={false}
     >
