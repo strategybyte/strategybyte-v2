@@ -39,7 +39,6 @@ export default function Blog() {
       id="blog"
       containerProps={{
         bordered: true,
-        padding: "pt-110 pb-70",
         px: "px-4",
       }}
     >

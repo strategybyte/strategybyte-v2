@@ -1,7 +1,5 @@
 "use client";
 
-import { Section } from "./common";
-
 export default function Marquee() {
   const brands = [
     "Digital Marketing",
@@ -13,7 +11,7 @@ export default function Marquee() {
   ];
 
   return (
-    <div className="relative w-full overflow-hidden h-80 flex items-center justify-center">
+    <div className="relative w-full overflow-hidden h-28 xs:h-40 lg:h-80 flex items-center justify-center">
       <div className="bg-secondary -rotate-[4deg] transform-gpu scale-110 -mx-8 ">
         <div className="marquee-wrapper py-6">
           <div className="marquee-content">
