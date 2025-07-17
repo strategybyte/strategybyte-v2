@@ -46,7 +46,7 @@ export default function Blog() {
         <div className="w-full xl:w-7/12 lg:w-9/12">
           <SectionTitle
             subtitle="Blog & News"
-            title="Ultimate Guide to Boosting Engagement on Social Media"
+            title="Boost Your Brand: Essential Marketing Insights"
             className="mb-50"
           />
         </div>
