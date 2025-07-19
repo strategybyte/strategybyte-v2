@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={epilogue.className}>
         <Toaster position="top-center" richColors />
-        <GoogleTagManager gtmId="GTM-NQ4XR9DR" />
+        <GoogleTagManager gtmId="GTM-P7Z3ZC3C" />
         <GoogleAnalytics gaId="G-Q19GXLWXRB" />
         <FacebookPixel pixelId="699084809185518" />
         <Header />
