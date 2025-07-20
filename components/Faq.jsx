@@ -7,27 +7,57 @@ export default function Faq() {
 
   const faqData = [
     {
-      question: "1. Why is Digital Marketing Important for your business?",
+      question: "1. What is a marketing agency and what does it do?",
       answer:
-        "It helps you reach the right audience, increase brand awareness, and drive sales efficiently.",
+        "A marketing agency helps businesses grow by promoting their products or services online and offline. From running social media campaigns to managing paid ads, SEO, content, and branding—we handle the strategy and execution so you get more leads, visibility, and sales.",
     },
     {
       question:
-        "2. How can digital marketing help improve my website’s visibility?",
+        "2. How do I choose the right marketing agency for my business?",
       answer:
-        "We use SEO, targeted ads, and content strategies to rank higher on search engines and attract more visitors.",
+        "Look for an agency that understands your goals, communicates clearly, and shows proven results. At StrategyByte, we take time to understand your business, industry, and customers—so every campaign we build is tailored and effective.",
+    },
+    {
+      question: "3. What services does StrategyByte offer?",
+      answer:
+        "We offer a full suite of digital marketing services including SEO, paid ads, social media, content marketing, branding, web development, and analytics. Whether you need a full digital strategy or help with a single campaign—we’re here to help.",
+    },
+    {
+      question: "4. How much do marketing agency services cost?",
+      answer:
+        "It depends on your goals and the channels you want to use. Pricing can vary from basic packages for small businesses to full-service retainers for larger campaigns. We offer transparent pricing and free consultations to help you plan smart and spend wisely.",
+    },
+    {
+      question: "5. Can you help both local and national businesses?",
+      answer:
+        "Yes. Whether you're a Sydney-based startup or an established business across Australia, we craft marketing strategies tailored to your market and growth stage. We also offer scalable solutions as your business expands.",
+    },
+    {
+      question: "6. Do you only focus on digital marketing?",
+      answer:
+        "Digital is our strength—but we also understand brand positioning, messaging, and customer experience. Every digital campaign is supported by strong brand strategy and data insights to make sure your business message is clear and compelling.",
     },
     {
       question:
-        "3. How long does it take to see results from digital marketing efforts?",
+        "7. What’s the difference between digital marketing and traditional marketing?",
       answer:
-        "SEO takes months, PPC works instantly, and content marketing builds traction over time—we optimize for the best speed and impact.",
+        "Digital marketing uses online platforms like Google, Facebook, Instagram, and email to reach your audience. It’s measurable, scalable, and cost-effective—unlike traditional marketing (TV, print, billboards), which often costs more and is harder to track.",
+    },
+    {
+      question: "8. How long before I see results from digital marketing?",
+      answer:
+        "Some strategies like paid ads can bring results in days, while SEO and content marketing take longer to build momentum. We focus on both short-term wins and long-term growth, and share regular reports so you always know what’s working.",
     },
     {
       question:
-        "4. How do you measure the success of digital marketing campaigns?",
+        "9. Do I need a marketing agency if I already have social media accounts?",
       answer:
-        "We track key metrics like traffic, conversions, engagement, and ROI to ensure maximum performance.",
+        "Yes—having accounts is just the start. A marketing agency builds strategy, consistency, and campaigns that drive real engagement and conversions. We help you move beyond posts and turn social media into a growth channel.",
+    },
+    {
+      question: "10. How do I get started with StrategyByte?",
+      answer:
+        "Just reach out for a free strategy session. We’ll review where your business stands and show you exactly how we can help you grow—online and beyond. ",
     },
   ];
 
