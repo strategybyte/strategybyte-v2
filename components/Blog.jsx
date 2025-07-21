@@ -2,37 +2,89 @@
 
 import Link from "next/link";
 import { Section, SectionTitle } from "./common";
+import { useEffect, useState } from "react";
+import client from "@/lib/contnetful";
+
+const ITEMS_PER_PAGE = 8;
 
 export default function Blog() {
-  const blogPosts = [
-    {
-      id: 1,
-      image:
-        "https://images.ctfassets.net/3upqc2v7tlyy/3PF7o4IPne1jBOUdIHeDYP/e97cb56dfdfb6b2605884fc25f364bf4/Want_to_Win_inB2B_Marketing_Here-s_Everything_You_Should_Know_.webp",
-      category: "SEO Services",
-      title:
-        "How Can an SEO Optimization Agency Boost Your Organic Traffic & Visibility?",
-      slug: "/news/how-can-an-seo-optimization-agency-boost-your-organic-traffic-and-visibility",
-    },
-    {
-      id: 2,
-      image:
-        "https://images.ctfassets.net/3upqc2v7tlyy/t6wIoqQtIB28qZwWPApnK/c8bb91e4e57598cccc09fd7b5096872e/Want_to_Win_inB2B_Marketing_Here-s_Everything_You_Should_Know_.webp",
-      category: "Social Media Marketing",
-      title:
-        "How to Market NDIS Services in Australia: SEO, Lead Generation, and Digital Strategies for Providers",
-      slug: "/news/how-to-market-ndis-services-in-australia-seo-lead-generation-and-digital",
-    },
-    {
-      id: 3,
-      image:
-        "https://images.ctfassets.net/3upqc2v7tlyy/2erEpJGipbra4TpgadUWgc/2facb45d15f72a0cc05d6e49e28c3dc5/Want_to_Win_inB2B_Marketing_Here-s_Everything_You_Should_Know_.webp",
-      category: "Marketing",
-      title:
-        "Digital Marketing Services in Australia: A Step-by-Step Guide to Increasing Your Website Authority Score",
-      slug: "/news/digital-marketing-services-in-australia-a-step-by-step-guide-to-increasing",
-    },
-  ];
+  // const blogPosts = [
+  //   {
+  //     id: 1,
+  //     image:
+  //       "https://images.ctfassets.net/3upqc2v7tlyy/3PF7o4IPne1jBOUdIHeDYP/e97cb56dfdfb6b2605884fc25f364bf4/Want_to_Win_inB2B_Marketing_Here-s_Everything_You_Should_Know_.webp",
+  //     category: "SEO Services",
+  //     title:
+  //       "How Can an SEO Optimization Agency Boost Your Organic Traffic & Visibility?",
+  //     slug: "/news/how-can-an-seo-optimization-agency-boost-your-organic-traffic-and-visibility",
+  //   },
+  //   {
+  //     id: 2,
+  //     image:
+  //       "https://images.ctfassets.net/3upqc2v7tlyy/t6wIoqQtIB28qZwWPApnK/c8bb91e4e57598cccc09fd7b5096872e/Want_to_Win_inB2B_Marketing_Here-s_Everything_You_Should_Know_.webp",
+  //     category: "Social Media Marketing",
+  //     title:
+  //       "How to Market NDIS Services in Australia: SEO, Lead Generation, and Digital Strategies for Providers",
+  //     slug: "/news/how-to-market-ndis-services-in-australia-seo-lead-generation-and-digital",
+  //   },
+  //   {
+  //     id: 3,
+  //     image:
+  //       "https://images.ctfassets.net/3upqc2v7tlyy/2erEpJGipbra4TpgadUWgc/2facb45d15f72a0cc05d6e49e28c3dc5/Want_to_Win_inB2B_Marketing_Here-s_Everything_You_Should_Know_.webp",
+  //     category: "Marketing",
+  //     title:
+  //       "Digital Marketing Services in Australia: A Step-by-Step Guide to Increasing Your Website Authority Score",
+  //     slug: "/news/digital-marketing-services-in-australia-a-step-by-step-guide-to-increasing",
+  //   },
+  // ];
+
+  const [content, setContent] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalItems, setTotalItems] = useState(0);
+  const [loading, setLoading] = useState(true);
+
+  const fetchData = async () => {
+    setLoading(true);
+
+    try {
+      const newsEntries = await client.getEntries({
+        content_type: "news",
+        order: "-sys.createdAt",
+        limit: 3,
+        select:
+          "fields.title,fields.slug,fields.thumbnail,sys.id,fields.blogCategory",
+      });
+
+      setContent(newsEntries?.items || []);
+      setTotalItems(newsEntries?.total || 0);
+    } catch (error) {
+      console.error("Error fetching news:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  if (loading) {
+    return;
+  }
+
+  console.log(content);
+
+  const blogPosts = content?.map((item) => {
+    return {
+      id: item.sys.id,
+      image: `https:${item.fields.thumbnail.fields.file.url}`,
+      title: item.fields.title,
+      slug: item.fields.slug,
+      category: item.fields.blogCategory?.fields.title || "Marketing",
+    };
+  });
+
+  // console.log(blogPostNew);
 
   return (
     <Section
@@ -54,20 +106,6 @@ export default function Blog() {
 
       <div className="row justify-center px-4">
         {blogPosts.map((post, i) => (
-          // <div key={post.id} className="w-full xl:w-4/12 md:w-6/12">
-          //   <BlogCard
-          //     image={post.image}
-          //     title={post.title}
-          //     category={post.category}
-          //     slug={post.slug}
-          //     aosProps={{
-          //       "data-aos": "fade-up",
-          //       "data-aos-duration": "1500",
-          //       "data-aos-offset": "50",
-          //       "data-aos-delay": index * 50,
-          //     }}
-          //   />
-          // </div>
           <div
             key={i}
             className="w-full xl:w-1/3 md:w-1/2 px-4"
@@ -118,7 +156,7 @@ export default function Blog() {
 
                 {/* Read More Button */}
                 <Link
-                  href={post.slug}
+                  href={`/news/${post.slug}`}
                   className="inline-flex items-center gap-2 text-secondary-500 font-semibold group/btn transition-all duration-300 hover:text-secondary-400"
                 >
                   <span>Read More</span>
