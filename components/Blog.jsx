@@ -8,39 +8,7 @@ import client from "@/lib/contnetful";
 const ITEMS_PER_PAGE = 8;
 
 export default function Blog() {
-  // const blogPosts = [
-  //   {
-  //     id: 1,
-  //     image:
-  //       "https://images.ctfassets.net/3upqc2v7tlyy/3PF7o4IPne1jBOUdIHeDYP/e97cb56dfdfb6b2605884fc25f364bf4/Want_to_Win_inB2B_Marketing_Here-s_Everything_You_Should_Know_.webp",
-  //     category: "SEO Services",
-  //     title:
-  //       "How Can an SEO Optimization Agency Boost Your Organic Traffic & Visibility?",
-  //     slug: "/news/how-can-an-seo-optimization-agency-boost-your-organic-traffic-and-visibility",
-  //   },
-  //   {
-  //     id: 2,
-  //     image:
-  //       "https://images.ctfassets.net/3upqc2v7tlyy/t6wIoqQtIB28qZwWPApnK/c8bb91e4e57598cccc09fd7b5096872e/Want_to_Win_inB2B_Marketing_Here-s_Everything_You_Should_Know_.webp",
-  //     category: "Social Media Marketing",
-  //     title:
-  //       "How to Market NDIS Services in Australia: SEO, Lead Generation, and Digital Strategies for Providers",
-  //     slug: "/news/how-to-market-ndis-services-in-australia-seo-lead-generation-and-digital",
-  //   },
-  //   {
-  //     id: 3,
-  //     image:
-  //       "https://images.ctfassets.net/3upqc2v7tlyy/2erEpJGipbra4TpgadUWgc/2facb45d15f72a0cc05d6e49e28c3dc5/Want_to_Win_inB2B_Marketing_Here-s_Everything_You_Should_Know_.webp",
-  //     category: "Marketing",
-  //     title:
-  //       "Digital Marketing Services in Australia: A Step-by-Step Guide to Increasing Your Website Authority Score",
-  //     slug: "/news/digital-marketing-services-in-australia-a-step-by-step-guide-to-increasing",
-  //   },
-  // ];
-
   const [content, setContent] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalItems, setTotalItems] = useState(0);
   const [loading, setLoading] = useState(true);
 
   const fetchData = async () => {
@@ -56,7 +24,6 @@ export default function Blog() {
       });
 
       setContent(newsEntries?.items || []);
-      setTotalItems(newsEntries?.total || 0);
     } catch (error) {
       console.error("Error fetching news:", error);
     } finally {
@@ -72,8 +39,6 @@ export default function Blog() {
     return;
   }
 
-  console.log(content);
-
   const blogPosts = content?.map((item) => {
     return {
       id: item.sys.id,
@@ -83,8 +48,6 @@ export default function Blog() {
       category: item.fields.blogCategory?.fields.title || "Marketing",
     };
   });
-
-  // console.log(blogPostNew);
 
   return (
     <Section
