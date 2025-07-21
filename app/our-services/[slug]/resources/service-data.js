@@ -125,6 +125,77 @@ export const serviceDetails = {
         },
       ],
     },
+    experts: {
+      title: "Our Industry Expertise",
+      description:
+        "At Strategybyte, we craft tailored digital solutions that meet the unique needs of Australian industries. Whether it’s e-commerce, health tech, or beyond, our deep sector knowledge and user-focused approach deliver impactful results that help businesses thrive in a competitive market.",
+      cards: [
+        {
+          title: "Fintech",
+          description:
+            "A fast-paced industry where clarity, trust, and security are key.",
+          image: "/assets/service/website-development/expert-1.png",
+          keyFeatures: [
+            "Simplified, goal-focused layouts",
+            "Responsive, secure design",
+            "Data made visual and user-friendly",
+          ],
+        },
+        {
+          title: "Corporate",
+          description:
+            "Enterprises need consistent branding and scalable digital presence.",
+          image: "/assets/service/website-development/expert-2.png",
+          keyFeatures: [
+            "Brand-aligned visual systems",
+            "Enterprise-ready responsive design",
+            "Storytelling that builds authority",
+          ],
+        },
+        {
+          title: "Health Tech",
+          description:
+            "Requires clarity, accessibility, and compliance with sensitive data.",
+          image: "/assets/service/website-development/expert-3.png",
+          keyFeatures: [
+            "Clean, compliant interfaces",
+            "Mobile-first, accessible design",
+            "Trust-focused visual storytelling",
+          ],
+        },
+        {
+          title: "SaaS Application",
+          description:
+            "SaaS thrives on usability, clarity, and conversion-focused design.",
+          image: "/assets/service/website-development/expert-4.png",
+          keyFeatures: [
+            "High-converting landing pages",
+            "Scalable UI for growth",
+            "Clear visuals for product features",
+          ],
+        },
+        {
+          title: "E-Commerce",
+          description: "Fast, intuitive shopping experiences that convert.",
+          image: "/assets/service/website-development/expert-5.png",
+          keyFeatures: [
+            "Mobile-optimized product layouts",
+            "Fast-loading, responsive design",
+            "Storytelling that sells",
+          ],
+        },
+        {
+          title: "Edu-Tech",
+          description: "Education platforms need to inform, engage, and guide.",
+          image: "/assets/service/website-development/expert-6.png",
+          keyFeatures: [
+            "Easy-to-use, inclusive design",
+            "Course-focused UX",
+            "Messaging that connects with learners",
+          ],
+        },
+      ],
+    },
     process: {
       title: {
         initial: "Our",

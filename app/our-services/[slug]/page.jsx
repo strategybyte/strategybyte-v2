@@ -194,6 +194,7 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
           </div>
         </div>
 
+        {/* Process section */}
         <div className="bg-black pt-16">
           <div className="container mx-auto px-4">
             <div
@@ -249,6 +250,7 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
           </div>
         </div>
 
+        {/* FAQs section */}
         {serviceDetails[slug].faqs ? (
           <section className="faq-area bgc-black text-white relative z-10 pt-16">
             <div className="container mx-auto px-4 bordered-x">
