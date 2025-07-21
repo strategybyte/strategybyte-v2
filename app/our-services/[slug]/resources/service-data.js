@@ -2,17 +2,16 @@ export const serviceDetails = {
   "website-development": {
     title: {
       initial: "",
-      highlight: "Website Development",
+      highlight: "Web Development",
       end: "Services",
     },
     description:
-      "We build fast, secure, SEO-ready websites that reflect your brand, boost engagement, and convert visitors into customers—24/7.",
+      "We build high-performance, mobile-first websites with SEO-ready structure—helping your brand rank higher and grow faster online, right here in Australia.",
     image: "/assets/service/website-development/banner.png",
     button: {
-      text: "Request a Quote",
+      text: "Schedule a Meeting",
       link: "/contact",
     },
-
     stats: [
       {
         value: "1.2s",
@@ -35,19 +34,15 @@ export const serviceDetails = {
         color: "text-white",
       },
     ],
-
-    why: {
+    service: {
       title: {
-        initial: "What is Our Approach to",
-        highlight: "Website Development",
-        end: "",
+        initial: "Drive success with our expert",
+        highlight: "Web design and Development Services",
       },
-      description:
-        "In today’s digital-first world, your website is your first impression, your lead generator, and your most valuable sales tool. ",
 
       cards: [
         {
-          title: "Custom Design That Stands Out ",
+          title: "Website Design & Re-design",
           description:
             "Modern, responsive layouts tailored to your brand with visual storytelling.",
           image: "/assets/service/website-development/card-1.png",
@@ -58,7 +53,7 @@ export const serviceDetails = {
           ],
         },
         {
-          title: "Built to Convert ",
+          title: "UI & UX Development",
           description:
             "Pages designed to drive action—CTAs, funnels, and CRM integration included.",
           image: "/assets/service/website-development/card-2.png",
@@ -69,7 +64,7 @@ export const serviceDetails = {
           ],
         },
         {
-          title: "Optimized for Speed & Performance ",
+          title: "Web App Development",
           description:
             "Fast, mobile-first websites built for long-term performance and SEO.",
           image: "/assets/service/website-development/card-3.png",
@@ -80,7 +75,7 @@ export const serviceDetails = {
           ],
         },
         {
-          title: "SEO-Ready Foundation ",
+          title: "CMS Development",
           description:
             "Structured for visibility with metadata, keyword-rich content, and optimized tags.",
           image: "/assets/service/website-development/card-4.png",
@@ -91,7 +86,7 @@ export const serviceDetails = {
           ],
         },
         {
-          title: "Scalable & Easy to Manage ",
+          title: "User Friendly Wireframe Development",
           description:
             "User-friendly, modular platforms with training and support built in.",
           image: "/assets/service/website-development/card-5.png",
@@ -102,7 +97,7 @@ export const serviceDetails = {
           ],
         },
         {
-          title: "Fully Integrated Solutions ",
+          title: "Website Maintenance & Support",
           description:
             "Connect your site to analytics, bookings, NDIS tools, and more—seamlessly.",
           image: "/assets/service/website-development/card-6.png",
@@ -114,7 +109,6 @@ export const serviceDetails = {
         },
       ],
     },
-
     process: {
       title: {
         initial: "Our",
@@ -149,624 +143,624 @@ export const serviceDetails = {
     },
     faqs: [
       {
-        question: "1. What is website development and why is it important?",
+        question: "What is website development and why is it important?",
         answer:
           "Website development is the process of building and maintaining a website. It includes everything from designing how your site looks to making sure it functions smoothly. In today’s digitalfirst world, a wellbuilt website helps your business make a great first impression, builds trust, and brings in customers.",
       },
       {
-        question: "2. How much does website development cost?",
+        question: "How much does website development cost?",
         answer:
           "The cost of website development can vary depending on what you need whether it’s a basic site or a custombuilt platform with advanced features. One of the most searched questions in Australia is “how much does it cost to develop a website”, so you're not alone in wondering. At Strategybyte, we offer flexible pricing based on the number of pages, functionality, and design needs. Book a free consultation for a tailored quote.",
       },
       {
-        question: "3. How long does it take to build a website?",
+        question: "How long does it take to build a website?",
         answer:
           "A basic website can take a few weeks, while more complex sites may take longer. Our team follows a clear process: discovery, planning, design, development, testing, and launch so you always know what’s happening and when.",
       },
       {
-        question: "4. Can you help me with a custom website for my business?",
+        question: "Can you help me with a custom website for my business?",
         answer:
-          "Absolutely. Whether you're based in Sydney, Brisbane, or anywhere in Australia, we build websites tailored to your goals. From local businesses needing service pages to startups wanting scalable platforms, we’ve got you covered. ",
+          "Absolutely. Whether you're based in Sydney, Brisbane, or anywhere in Australia, we build websites tailored to your goals. From local businesses needing service pages to startups wanting scalable platforms, we’ve got you covered.",
       },
       {
-        question: "5. Do you offer mobilefriendly and SEOready websites?",
+        question: "Do you offer mobile friendly and SEO ready websites?",
         answer:
-          "Yes. Every site we build is optimized for mobile devices and includes SEO best practicesso you have a strong foundation to get found on Google. We also help with performance, speed, and user experience.",
-      },
-      {
-        question:
-          "5. What’s the difference between website design and development?",
-        answer:
-          "Website design is about how your site lookscolors, layout, fonts, and style. Website development brings that design to life with coding and functionality. At Strategybyte, we handle both in one seamless process.",
+          "Yes. Every site we build is optimized for mobile devices and includes SEO best practice so you have a strong foundation to get found on Google. We also help with performance, speed, and user experience.",
       },
       {
         question:
-          "6. Can you update my existing website instead of building a new one?",
+          "What’s the difference between website design and development?",
         answer:
-          "Yes, we can review your current site and recommend updates. Sometimes a full rebuild isn’t needed we might just need to improve speed, structure, or design to get better results.",
+          "Website design is about how your site looks colors, layout, fonts, and style. Website development brings that design to life with coding and functionality. At Strategybyte, we handle both in one seamless process.",
       },
       {
         question:
-          "7. How do I get started with Strategybyte’s website development service?",
+          "Can you update my existing website instead of building a new one?",
+        answer:
+          "Yes, we can review your current site and recommend updates. Sometimes a full rebuild isn’t needed we might just need to improve speed, structure, or design to get better results. ",
+      },
+      {
+        question:
+          "How do I get started with Strategybyte’s website development service?",
         answer:
           "Getting started is easy. Just contact us for a free website audit. We’ll look at where your current site stands, and what we can do to improve itor help you plan a new one from scratch.",
       },
     ],
   },
 
-  "digital-marketing": {
-    title: {
-      initial: "Digital",
-      highlight: "Marketing",
-      end: "Services",
-    },
-    description:
-      "Grow your business with data-driven digital marketing that connects you to the right audience and turns clicks into customers.",
-    image: "/assets/service/digital-marketing/banner.png",
-    button: {
-      text: "Get a Free Audit",
-      link: "/contact",
-    },
+  // "digital-marketing": {
+  //   title: {
+  //     initial: "Digital",
+  //     highlight: "Marketing",
+  //     end: "Services",
+  //   },
+  //   description:
+  //     "Grow your business with data-driven digital marketing that connects you to the right audience and turns clicks into customers.",
+  //   image: "/assets/service/digital-marketing/banner.png",
+  //   button: {
+  //     text: "Get a Free Audit",
+  //     link: "/contact",
+  //   },
 
-    stats: [
-      {
-        value: "92 %",
-        label: "Client Retention Rate",
-        color: "text-secondary",
-      },
-      {
-        value: "2x",
-        label: "Avg. ROI from Paid Ads",
-        color: "text-white",
-      },
-      {
-        value: "73 %",
-        label: "Improvement in Lead Quality",
-        color: "text-secondary",
-      },
-      {
-        value: "150+",
-        label: "Businesses Transformed",
-        color: "text-white",
-      },
-    ],
+  //   stats: [
+  //     {
+  //       value: "92 %",
+  //       label: "Client Retention Rate",
+  //       color: "text-secondary",
+  //     },
+  //     {
+  //       value: "2x",
+  //       label: "Avg. ROI from Paid Ads",
+  //       color: "text-white",
+  //     },
+  //     {
+  //       value: "73 %",
+  //       label: "Improvement in Lead Quality",
+  //       color: "text-secondary",
+  //     },
+  //     {
+  //       value: "150+",
+  //       label: "Businesses Transformed",
+  //       color: "text-white",
+  //     },
+  //   ],
 
-    why: {
-      title: {
-        initial: "What is Our Approach to",
-        highlight: "Digital Marketing",
-        end: "",
-      },
-      description:
-        "Reach the right audience, build trust, track performance, and maximize ROI with smart, data-driven marketing.",
+  //   why: {
+  //     title: {
+  //       initial: "What is Our Approach to",
+  //       highlight: "Digital Marketing",
+  //       end: "",
+  //     },
+  //     description:
+  //       "Reach the right audience, build trust, track performance, and maximize ROI with smart, data-driven marketing.",
 
-      cards: [
-        {
-          title: "Digital Strategy & Brand Positioning",
-          description:
-            "Refine your brand, target the right audience, and outpace competitors.",
-          image: "/assets/service/digital-marketing/card-1.png",
-          list: [
-            "Brand messaging & tone",
-            "Audience segmentation & journeys",
-            "Competitor bench marking",
-            "Campaigns with growth goals",
-          ],
-        },
-        {
-          title: "Content That Connects",
-          description: "Engaging blogs, videos, and graphics that convert.",
-          image: "/assets/service/digital-marketing/card-2.png",
-          list: [
-            "Reels, videos & graphics",
-            "Blog & ad content",
-            "Content calendars",
-            "Storytelling & copy writing",
-          ],
-        },
-        {
-          title: "Social Media That Builds Communities",
-          description:
-            "Grow with organic and paid social campaigns that build engagement and loyalty.",
-          image: "/assets/service/digital-marketing/card-3.png",
-          list: [
-            "Platform strategies",
-            "Organic & paid campaigns",
-            "Community management",
-            "Influencer partnerships",
-          ],
-        },
-        {
-          title: "Converting Paid Ads",
-          description:
-            "Funnel-based Google & Meta Ads that drive real results.",
-          image: "/assets/service/digital-marketing/card-4.png",
-          list: [
-            "Google & Meta Ads",
-            "Funnel-based campaigns",
-            "Budgeting & A/B testing",
-            "Live campaign tracking",
-          ],
-        },
-        {
-          title: "Website Experience & Conversion Design",
-          description: "Fast-loading pages with CTAs and UX built to convert.",
-          image: "/assets/service/digital-marketing/card-5.png",
-          list: [
-            "Mobile-first, fast-loading design",
-            "Lead-gen landing pages",
-            "Funnels & clear CTAs",
-            "Data-driven UX updates",
-          ],
-        },
-        {
-          title: "Data-Driven Insights & Growth Tracking",
-          description:
-            "Dashboards, traffic tracking, and data that drives action.",
-          image: "/assets/service/digital-marketing/card-6.png",
-          list: [
-            "Custom dashboards & reports",
-            "Real-time traffic & ROI tracking",
-            "Conversion & journey analysis",
-            "Actionable next steps",
-          ],
-        },
-      ],
-    },
+  //     cards: [
+  //       {
+  //         title: "Digital Strategy & Brand Positioning",
+  //         description:
+  //           "Refine your brand, target the right audience, and outpace competitors.",
+  //         image: "/assets/service/digital-marketing/card-1.png",
+  //         list: [
+  //           "Brand messaging & tone",
+  //           "Audience segmentation & journeys",
+  //           "Competitor bench marking",
+  //           "Campaigns with growth goals",
+  //         ],
+  //       },
+  //       {
+  //         title: "Content That Connects",
+  //         description: "Engaging blogs, videos, and graphics that convert.",
+  //         image: "/assets/service/digital-marketing/card-2.png",
+  //         list: [
+  //           "Reels, videos & graphics",
+  //           "Blog & ad content",
+  //           "Content calendars",
+  //           "Storytelling & copy writing",
+  //         ],
+  //       },
+  //       {
+  //         title: "Social Media That Builds Communities",
+  //         description:
+  //           "Grow with organic and paid social campaigns that build engagement and loyalty.",
+  //         image: "/assets/service/digital-marketing/card-3.png",
+  //         list: [
+  //           "Platform strategies",
+  //           "Organic & paid campaigns",
+  //           "Community management",
+  //           "Influencer partnerships",
+  //         ],
+  //       },
+  //       {
+  //         title: "Converting Paid Ads",
+  //         description:
+  //           "Funnel-based Google & Meta Ads that drive real results.",
+  //         image: "/assets/service/digital-marketing/card-4.png",
+  //         list: [
+  //           "Google & Meta Ads",
+  //           "Funnel-based campaigns",
+  //           "Budgeting & A/B testing",
+  //           "Live campaign tracking",
+  //         ],
+  //       },
+  //       {
+  //         title: "Website Experience & Conversion Design",
+  //         description: "Fast-loading pages with CTAs and UX built to convert.",
+  //         image: "/assets/service/digital-marketing/card-5.png",
+  //         list: [
+  //           "Mobile-first, fast-loading design",
+  //           "Lead-gen landing pages",
+  //           "Funnels & clear CTAs",
+  //           "Data-driven UX updates",
+  //         ],
+  //       },
+  //       {
+  //         title: "Data-Driven Insights & Growth Tracking",
+  //         description:
+  //           "Dashboards, traffic tracking, and data that drives action.",
+  //         image: "/assets/service/digital-marketing/card-6.png",
+  //         list: [
+  //           "Custom dashboards & reports",
+  //           "Real-time traffic & ROI tracking",
+  //           "Conversion & journey analysis",
+  //           "Actionable next steps",
+  //         ],
+  //       },
+  //     ],
+  //   },
 
-    process: {
-      title: {
-        initial: "Our",
-        highlight: "Digital Marketing",
-        end: "Process",
-      },
-      description:
-        "We follow a clear and collaborative process to ensure every project is delivered with quality, precision, and impact.",
-      steps: [
-        {
-          number: "1",
-          title: "Discovery & Research",
-          description:
-            "Understanding your business, competitors, and target audience.",
-          isActive: true,
-        },
-        {
-          number: "2",
-          title: "Strategy Development",
-          description: "Creating a customized digital marketing roadmap.",
-          isActive: false,
-        },
-        {
-          number: "3",
-          title: "Execution & Optimization",
-          description:
-            "Launching campaigns, content, and assets while continuously refining based on data.",
-          isActive: true,
-        },
-      ],
-    },
+  //   process: {
+  //     title: {
+  //       initial: "Our",
+  //       highlight: "Digital Marketing",
+  //       end: "Process",
+  //     },
+  //     description:
+  //       "We follow a clear and collaborative process to ensure every project is delivered with quality, precision, and impact.",
+  //     steps: [
+  //       {
+  //         number: "1",
+  //         title: "Discovery & Research",
+  //         description:
+  //           "Understanding your business, competitors, and target audience.",
+  //         isActive: true,
+  //       },
+  //       {
+  //         number: "2",
+  //         title: "Strategy Development",
+  //         description: "Creating a customized digital marketing roadmap.",
+  //         isActive: false,
+  //       },
+  //       {
+  //         number: "3",
+  //         title: "Execution & Optimization",
+  //         description:
+  //           "Launching campaigns, content, and assets while continuously refining based on data.",
+  //         isActive: true,
+  //       },
+  //     ],
+  //   },
 
-    faqs: [
-      {
-        question: "1. What is digital marketing and how does it work?",
-        answer:
-          "Digital marketing is how businesses promote themselves online using tools like Google, social media, websites, and online ads. At Strategybyte, we use smart, datadriven strategies like SEO, Google Ads, and content creation to help your business get noticed online. The goal? To reach the right people and turn them into customers.",
-      },
-      {
-        question:
-          "2. Why is digital marketing important for Australian businesses?",
-        answer:
-          "More and more Australians are searching online before they buy. If your business doesn’t show up, you're missing out. A good digital marketing strategy builds trust, helps people find you easily, and gives you an edge over the competition. Whether you're in health, education, or retail, we help you get found and grow.",
-      },
-      {
-        question: "3. How much does digital marketing cost?",
-        answer:
-          "Costs can vary based on what you need. For example, targeting customers in a specific city or running ongoing campaigns might require more work. At Strategybyte, we keep pricing clear. We’ll work with your goals and budget to build a plan that fits.",
-      },
-      {
-        question:
-          "4. What services are included in your digital marketing packages?",
-        answer:
-          "We offer everything you need to grow online. That includes SEO (so you rank higher on Google), paid ads (for fast traffic), social media management (to connect with your audience), website design (to convert visitors into leads), and tracking tools (to measure results). We also create content that helps your business stand out in searches.",
-      },
-      {
-        question: "5. How soon will I see results?",
-        answer:
-          "You won’t see results overnight, digital marketing takes time. Most of our clients see noticeable improvements in 6 to 12 weeks. We focus on both shortterm wins and longterm growth, so your business keeps improving month after month.",
-      },
-      {
-        question: "6. Can digital marketing help me get more leads?",
-        answer:
-          "Yes, that’s one of our main goals. We build landing pages, run targeted ads, and improve your site to turn visitors into customers. We also track what’s working (and what’s not) so we can keep improving your results.",
-      },
-      {
-        question: "7. What makes Strategybyte different from other agencies?",
-        answer:
-          "We’re based in Australia and understand the local market. Unlike onesizefitsall agencies, we tailor our approach to your business and audience. We use smart tools to find what people are searching for, and we turn that into strategies that work. We're clear, resultsdriven, and easy to work with. ",
-      },
-      {
-        question: "8. How do I get started?",
-        answer:
-          "It’s easy. Just book a free audit on our website. We’ll look at your current online presence and give you clear advice on what to do next, no pressure, no obligation. Whether you're just starting out or ready to grow, we’re here to help.",
-      },
-    ],
-  },
+  //   faqs: [
+  //     {
+  //       question: "1. What is digital marketing and how does it work?",
+  //       answer:
+  //         "Digital marketing is how businesses promote themselves online using tools like Google, social media, websites, and online ads. At Strategybyte, we use smart, datadriven strategies like SEO, Google Ads, and content creation to help your business get noticed online. The goal? To reach the right people and turn them into customers.",
+  //     },
+  //     {
+  //       question:
+  //         "2. Why is digital marketing important for Australian businesses?",
+  //       answer:
+  //         "More and more Australians are searching online before they buy. If your business doesn’t show up, you're missing out. A good digital marketing strategy builds trust, helps people find you easily, and gives you an edge over the competition. Whether you're in health, education, or retail, we help you get found and grow.",
+  //     },
+  //     {
+  //       question: "3. How much does digital marketing cost?",
+  //       answer:
+  //         "Costs can vary based on what you need. For example, targeting customers in a specific city or running ongoing campaigns might require more work. At Strategybyte, we keep pricing clear. We’ll work with your goals and budget to build a plan that fits.",
+  //     },
+  //     {
+  //       question:
+  //         "4. What services are included in your digital marketing packages?",
+  //       answer:
+  //         "We offer everything you need to grow online. That includes SEO (so you rank higher on Google), paid ads (for fast traffic), social media management (to connect with your audience), website design (to convert visitors into leads), and tracking tools (to measure results). We also create content that helps your business stand out in searches.",
+  //     },
+  //     {
+  //       question: "5. How soon will I see results?",
+  //       answer:
+  //         "You won’t see results overnight, digital marketing takes time. Most of our clients see noticeable improvements in 6 to 12 weeks. We focus on both shortterm wins and longterm growth, so your business keeps improving month after month.",
+  //     },
+  //     {
+  //       question: "6. Can digital marketing help me get more leads?",
+  //       answer:
+  //         "Yes, that’s one of our main goals. We build landing pages, run targeted ads, and improve your site to turn visitors into customers. We also track what’s working (and what’s not) so we can keep improving your results.",
+  //     },
+  //     {
+  //       question: "7. What makes Strategybyte different from other agencies?",
+  //       answer:
+  //         "We’re based in Australia and understand the local market. Unlike onesizefitsall agencies, we tailor our approach to your business and audience. We use smart tools to find what people are searching for, and we turn that into strategies that work. We're clear, resultsdriven, and easy to work with. ",
+  //     },
+  //     {
+  //       question: "8. How do I get started?",
+  //       answer:
+  //         "It’s easy. Just book a free audit on our website. We’ll look at your current online presence and give you clear advice on what to do next, no pressure, no obligation. Whether you're just starting out or ready to grow, we’re here to help.",
+  //     },
+  //   ],
+  // },
 
-  "content-marketing": {
-    title: {
-      initial: "Digital",
-      highlight: "Marketing",
-      end: "Services",
-    },
-    description:
-      "Grow your business with data-driven digital marketing that connects you to the right audience and turns clicks into customers.",
-    image: "/assets/service/digital-marketing/banner.png",
-    button: {
-      text: "Get a Free Audit",
-      link: "/contact",
-    },
+  // "content-marketing": {
+  //   title: {
+  //     initial: "Digital",
+  //     highlight: "Marketing",
+  //     end: "Services",
+  //   },
+  //   description:
+  //     "Grow your business with data-driven digital marketing that connects you to the right audience and turns clicks into customers.",
+  //   image: "/assets/service/digital-marketing/banner.png",
+  //   button: {
+  //     text: "Get a Free Audit",
+  //     link: "/contact",
+  //   },
 
-    stats: [
-      {
-        value: "92 %",
-        label: "Client Retention Rate",
-        color: "text-secondary",
-      },
-      {
-        value: "2x",
-        label: "Avg. ROI from Paid Ads",
-        color: "text-white",
-      },
-      {
-        value: "73 %",
-        label: "Improvement in Lead Quality",
-        color: "text-secondary",
-      },
-      {
-        value: "150+",
-        label: "Businesses Transformed",
-        color: "text-white",
-      },
-    ],
+  //   stats: [
+  //     {
+  //       value: "92 %",
+  //       label: "Client Retention Rate",
+  //       color: "text-secondary",
+  //     },
+  //     {
+  //       value: "2x",
+  //       label: "Avg. ROI from Paid Ads",
+  //       color: "text-white",
+  //     },
+  //     {
+  //       value: "73 %",
+  //       label: "Improvement in Lead Quality",
+  //       color: "text-secondary",
+  //     },
+  //     {
+  //       value: "150+",
+  //       label: "Businesses Transformed",
+  //       color: "text-white",
+  //     },
+  //   ],
 
-    why: {
-      title: {
-        initial: "What is Our Approach to",
-        highlight: "Digital Marketing",
-        end: "",
-      },
-      description:
-        "Reach the right audience, build trust, track performance, and maximize ROI with smart, data-driven marketing.",
+  //   why: {
+  //     title: {
+  //       initial: "What is Our Approach to",
+  //       highlight: "Digital Marketing",
+  //       end: "",
+  //     },
+  //     description:
+  //       "Reach the right audience, build trust, track performance, and maximize ROI with smart, data-driven marketing.",
 
-      cards: [
-        {
-          title: "Digital Strategy & Brand Positioning",
-          description:
-            "Refine your brand, target the right audience, and outpace competitors.",
-          image: "/assets/service/digital-marketing/card-1.png",
-          list: [
-            "Brand messaging & tone",
-            "Audience segmentation & journeys",
-            "Competitor bench marking",
-            "Campaigns with growth goals",
-          ],
-        },
-        {
-          title: "Content That Connects",
-          description: "Engaging blogs, videos, and graphics that convert.",
-          image: "/assets/service/digital-marketing/card-2.png",
-          list: [
-            "Reels, videos & graphics",
-            "Blog & ad content",
-            "Content calendars",
-            "Storytelling & copy writing",
-          ],
-        },
-        {
-          title: "Social Media That Builds Communities",
-          description:
-            "Grow with organic and paid social campaigns that build engagement and loyalty.",
-          image: "/assets/service/digital-marketing/card-3.png",
-          list: [
-            "Platform strategies",
-            "Organic & paid campaigns",
-            "Community management",
-            "Influencer partnerships",
-          ],
-        },
-        {
-          title: "Converting Paid Ads",
-          description:
-            "Funnel-based Google & Meta Ads that drive real results.",
-          image: "/assets/service/digital-marketing/card-4.png",
-          list: [
-            "Google & Meta Ads",
-            "Funnel-based campaigns",
-            "Budgeting & A/B testing",
-            "Live campaign tracking",
-          ],
-        },
-        {
-          title: "Website Experience & Conversion Design",
-          description: "Fast-loading pages with CTAs and UX built to convert.",
-          image: "/assets/service/digital-marketing/card-5.png",
-          list: [
-            "Mobile-first, fast-loading design",
-            "Lead-gen landing pages",
-            "Funnels & clear CTAs",
-            "Data-driven UX updates",
-          ],
-        },
-        {
-          title: "Data-Driven Insights & Growth Tracking",
-          description:
-            "Dashboards, traffic tracking, and data that drives action.",
-          image: "/assets/service/digital-marketing/card-6.png",
-          list: [
-            "Custom dashboards & reports",
-            "Real-time traffic & ROI tracking",
-            "Conversion & journey analysis",
-            "Actionable next steps",
-          ],
-        },
-      ],
-    },
+  //     cards: [
+  //       {
+  //         title: "Digital Strategy & Brand Positioning",
+  //         description:
+  //           "Refine your brand, target the right audience, and outpace competitors.",
+  //         image: "/assets/service/digital-marketing/card-1.png",
+  //         list: [
+  //           "Brand messaging & tone",
+  //           "Audience segmentation & journeys",
+  //           "Competitor bench marking",
+  //           "Campaigns with growth goals",
+  //         ],
+  //       },
+  //       {
+  //         title: "Content That Connects",
+  //         description: "Engaging blogs, videos, and graphics that convert.",
+  //         image: "/assets/service/digital-marketing/card-2.png",
+  //         list: [
+  //           "Reels, videos & graphics",
+  //           "Blog & ad content",
+  //           "Content calendars",
+  //           "Storytelling & copy writing",
+  //         ],
+  //       },
+  //       {
+  //         title: "Social Media That Builds Communities",
+  //         description:
+  //           "Grow with organic and paid social campaigns that build engagement and loyalty.",
+  //         image: "/assets/service/digital-marketing/card-3.png",
+  //         list: [
+  //           "Platform strategies",
+  //           "Organic & paid campaigns",
+  //           "Community management",
+  //           "Influencer partnerships",
+  //         ],
+  //       },
+  //       {
+  //         title: "Converting Paid Ads",
+  //         description:
+  //           "Funnel-based Google & Meta Ads that drive real results.",
+  //         image: "/assets/service/digital-marketing/card-4.png",
+  //         list: [
+  //           "Google & Meta Ads",
+  //           "Funnel-based campaigns",
+  //           "Budgeting & A/B testing",
+  //           "Live campaign tracking",
+  //         ],
+  //       },
+  //       {
+  //         title: "Website Experience & Conversion Design",
+  //         description: "Fast-loading pages with CTAs and UX built to convert.",
+  //         image: "/assets/service/digital-marketing/card-5.png",
+  //         list: [
+  //           "Mobile-first, fast-loading design",
+  //           "Lead-gen landing pages",
+  //           "Funnels & clear CTAs",
+  //           "Data-driven UX updates",
+  //         ],
+  //       },
+  //       {
+  //         title: "Data-Driven Insights & Growth Tracking",
+  //         description:
+  //           "Dashboards, traffic tracking, and data that drives action.",
+  //         image: "/assets/service/digital-marketing/card-6.png",
+  //         list: [
+  //           "Custom dashboards & reports",
+  //           "Real-time traffic & ROI tracking",
+  //           "Conversion & journey analysis",
+  //           "Actionable next steps",
+  //         ],
+  //       },
+  //     ],
+  //   },
 
-    process: {
-      title: {
-        initial: "Our",
-        highlight: "Digital Marketing",
-        end: "Process",
-      },
-      description:
-        "We follow a clear and collaborative process to ensure every project is delivered with quality, precision, and impact.",
-      steps: [
-        {
-          number: "1",
-          title: "Discovery & Research",
-          description:
-            "Understanding your business, competitors, and target audience.",
-          isActive: true,
-        },
-        {
-          number: "2",
-          title: "Strategy Development",
-          description: "Creating a customized digital marketing roadmap.",
-          isActive: false,
-        },
-        {
-          number: "3",
-          title: "Execution & Optimization",
-          description:
-            "Launching campaigns, content, and assets while continuously refining based on data.",
-          isActive: true,
-        },
-      ],
-    },
+  //   process: {
+  //     title: {
+  //       initial: "Our",
+  //       highlight: "Digital Marketing",
+  //       end: "Process",
+  //     },
+  //     description:
+  //       "We follow a clear and collaborative process to ensure every project is delivered with quality, precision, and impact.",
+  //     steps: [
+  //       {
+  //         number: "1",
+  //         title: "Discovery & Research",
+  //         description:
+  //           "Understanding your business, competitors, and target audience.",
+  //         isActive: true,
+  //       },
+  //       {
+  //         number: "2",
+  //         title: "Strategy Development",
+  //         description: "Creating a customized digital marketing roadmap.",
+  //         isActive: false,
+  //       },
+  //       {
+  //         number: "3",
+  //         title: "Execution & Optimization",
+  //         description:
+  //           "Launching campaigns, content, and assets while continuously refining based on data.",
+  //         isActive: true,
+  //       },
+  //     ],
+  //   },
 
-    faqs: [
-      {
-        question: "1. What is digital marketing and how does it work?",
-        answer:
-          "Digital marketing is how businesses promote themselves online using tools like Google, social media, websites, and online ads. At Strategybyte, we use smart, datadriven strategies like SEO, Google Ads, and content creation to help your business get noticed online. The goal? To reach the right people and turn them into customers.",
-      },
-      {
-        question:
-          "2. Why is digital marketing important for Australian businesses?",
-        answer:
-          "More and more Australians are searching online before they buy. If your business doesn’t show up, you're missing out. A good digital marketing strategy builds trust, helps people find you easily, and gives you an edge over the competition. Whether you're in health, education, or retail, we help you get found and grow.",
-      },
-      {
-        question: "3. How much does digital marketing cost?",
-        answer:
-          "Costs can vary based on what you need. For example, targeting customers in a specific city or running ongoing campaigns might require more work. At Strategybyte, we keep pricing clear. We’ll work with your goals and budget to build a plan that fits.",
-      },
-      {
-        question:
-          "4. What services are included in your digital marketing packages?",
-        answer:
-          "We offer everything you need to grow online. That includes SEO (so you rank higher on Google), paid ads (for fast traffic), social media management (to connect with your audience), website design (to convert visitors into leads), and tracking tools (to measure results). We also create content that helps your business stand out in searches.",
-      },
-      {
-        question: "5. How soon will I see results?",
-        answer:
-          "You won’t see results overnight, digital marketing takes time. Most of our clients see noticeable improvements in 6 to 12 weeks. We focus on both shortterm wins and longterm growth, so your business keeps improving month after month.",
-      },
-      {
-        question: "6. Can digital marketing help me get more leads?",
-        answer:
-          "Yes, that’s one of our main goals. We build landing pages, run targeted ads, and improve your site to turn visitors into customers. We also track what’s working (and what’s not) so we can keep improving your results.",
-      },
-      {
-        question: "7. What makes Strategybyte different from other agencies?",
-        answer:
-          "We’re based in Australia and understand the local market. Unlike onesizefitsall agencies, we tailor our approach to your business and audience. We use smart tools to find what people are searching for, and we turn that into strategies that work. We're clear, resultsdriven, and easy to work with. ",
-      },
-      {
-        question: "8. How do I get started?",
-        answer:
-          "It’s easy. Just book a free audit on our website. We’ll look at your current online presence and give you clear advice on what to do next, no pressure, no obligation. Whether you're just starting out or ready to grow, we’re here to help.",
-      },
-    ],
-  },
+  //   faqs: [
+  //     {
+  //       question: "1. What is digital marketing and how does it work?",
+  //       answer:
+  //         "Digital marketing is how businesses promote themselves online using tools like Google, social media, websites, and online ads. At Strategybyte, we use smart, datadriven strategies like SEO, Google Ads, and content creation to help your business get noticed online. The goal? To reach the right people and turn them into customers.",
+  //     },
+  //     {
+  //       question:
+  //         "2. Why is digital marketing important for Australian businesses?",
+  //       answer:
+  //         "More and more Australians are searching online before they buy. If your business doesn’t show up, you're missing out. A good digital marketing strategy builds trust, helps people find you easily, and gives you an edge over the competition. Whether you're in health, education, or retail, we help you get found and grow.",
+  //     },
+  //     {
+  //       question: "3. How much does digital marketing cost?",
+  //       answer:
+  //         "Costs can vary based on what you need. For example, targeting customers in a specific city or running ongoing campaigns might require more work. At Strategybyte, we keep pricing clear. We’ll work with your goals and budget to build a plan that fits.",
+  //     },
+  //     {
+  //       question:
+  //         "4. What services are included in your digital marketing packages?",
+  //       answer:
+  //         "We offer everything you need to grow online. That includes SEO (so you rank higher on Google), paid ads (for fast traffic), social media management (to connect with your audience), website design (to convert visitors into leads), and tracking tools (to measure results). We also create content that helps your business stand out in searches.",
+  //     },
+  //     {
+  //       question: "5. How soon will I see results?",
+  //       answer:
+  //         "You won’t see results overnight, digital marketing takes time. Most of our clients see noticeable improvements in 6 to 12 weeks. We focus on both shortterm wins and longterm growth, so your business keeps improving month after month.",
+  //     },
+  //     {
+  //       question: "6. Can digital marketing help me get more leads?",
+  //       answer:
+  //         "Yes, that’s one of our main goals. We build landing pages, run targeted ads, and improve your site to turn visitors into customers. We also track what’s working (and what’s not) so we can keep improving your results.",
+  //     },
+  //     {
+  //       question: "7. What makes Strategybyte different from other agencies?",
+  //       answer:
+  //         "We’re based in Australia and understand the local market. Unlike onesizefitsall agencies, we tailor our approach to your business and audience. We use smart tools to find what people are searching for, and we turn that into strategies that work. We're clear, resultsdriven, and easy to work with. ",
+  //     },
+  //     {
+  //       question: "8. How do I get started?",
+  //       answer:
+  //         "It’s easy. Just book a free audit on our website. We’ll look at your current online presence and give you clear advice on what to do next, no pressure, no obligation. Whether you're just starting out or ready to grow, we’re here to help.",
+  //     },
+  //   ],
+  // },
 
-  "strategic-branding-management": {
-    title: {
-      initial: "Strategic",
-      highlight: "Branding Management",
-      end: "",
-    },
-    description:
-      "Local recognition starts with clear branding. We help you build a trustworthy identity that stands out in search and sticks in your community’s mind.",
-    image: "/assets/service/strategic-branding-management/banner.png",
-    button: {
-      text: "Book a Discovery Call",
-      link: "/contact",
-    },
+  // "strategic-branding-management": {
+  //   title: {
+  //     initial: "Strategic",
+  //     highlight: "Branding Management",
+  //     end: "",
+  //   },
+  //   description:
+  //     "Local recognition starts with clear branding. We help you build a trustworthy identity that stands out in search and sticks in your community’s mind.",
+  //   image: "/assets/service/strategic-branding-management/banner.png",
+  //   button: {
+  //     text: "Book a Discovery Call",
+  //     link: "/contact",
+  //   },
 
-    stats: [
-      {
-        value: "91 %",
-        label: "Improved Brand Consistency",
-        color: "text-secondary",
-      },
-      {
-        value: "3.7x",
-        label: "Faster Creative Alignment ",
-        color: "text-white",
-      },
-      {
-        value: "79%",
-        label: "Increase in audience recall",
-        color: "text-secondary",
-      },
-      {
-        value: "2.1x",
-        label: "Higher likelihood of brand trust",
-        color: "text-white",
-      },
-    ],
+  //   stats: [
+  //     {
+  //       value: "91 %",
+  //       label: "Improved Brand Consistency",
+  //       color: "text-secondary",
+  //     },
+  //     {
+  //       value: "3.7x",
+  //       label: "Faster Creative Alignment ",
+  //       color: "text-white",
+  //     },
+  //     {
+  //       value: "79%",
+  //       label: "Increase in audience recall",
+  //       color: "text-secondary",
+  //     },
+  //     {
+  //       value: "2.1x",
+  //       label: "Higher likelihood of brand trust",
+  //       color: "text-white",
+  //     },
+  //   ],
 
-    why: {
-      title: {
-        initial: "What is Our Approach to ",
-        highlight: "Strategic Branding Management",
-        end: "",
-      },
-      description:
-        "We help build, position, and grow your brand with data-driven strategies that drive recognition, trust, and long-term impact.",
+  //   why: {
+  //     title: {
+  //       initial: "What is Our Approach to ",
+  //       highlight: "Strategic Branding Management",
+  //       end: "",
+  //     },
+  //     description:
+  //       "We help build, position, and grow your brand with data-driven strategies that drive recognition, trust, and long-term impact.",
 
-      cards: [
-        {
-          title: "Brand Identity Creation",
-          description:
-            "Build a strong first impression with tailored brand identity packages.",
-          image: "/assets/service/analytics-and-reporting/card-1.png",
-          list: [
-            "Basic Logo Package",
-            "Complete Brand Identity Package ",
-            "Premium Brand Identity Package ",
-          ],
-        },
-        {
-          title: "Print Materials",
-          description:
-            "Stand out with professionally designed physical assets.",
-          image: "/assets/service/analytics-and-reporting/card-2.png",
-          list: [
-            "Business Cards",
-            "Brochures & Leaflets",
-            "Complete Print Package for brand consistency",
-          ],
-        },
-        {
-          title: "Business Email Creation",
-          description: "Get branded communication tools that build trust.",
-          image: "/assets/service/analytics-and-reporting/card-3.png",
-          list: [
-            "Setup & configuration (per email)",
-            "Bulk email setups for teams",
-            "Optimized for branding and deliverability",
-          ],
-        },
-        {
-          title: "Brand Guidelines",
-          description: "Maintain consistency with clear brand standards.",
-          image: "/assets/service/analytics-and-reporting/card-4.png",
-          list: [
-            "Basic Guidelines Document (colors, fonts, tone)",
-            "Comprehensive Brand Manual (full usage instructions & examples)",
-          ],
-        },
-        {
-          title: "Brand Strategy & Positioning",
-          description:
-            "Use competitive research and trends to sharpen your market presence.",
-          image: "/assets/service/analytics-and-reporting/card-5.png",
-          list: [
-            "Strategic messaging frameworks",
-            "Audience positioning insights",
-            "Data-backed differentiation",
-          ],
-        },
-        {
-          title: "Ongoing Brand Support",
-          description: "We support your brand as it grows.",
-          image: "/assets/service/analytics-and-reporting/card-6.png",
-          list: [
-            "Visual & voice audits",
-            "Updates to guidelines & assets",
-            "Creative collaboration as your brand evolves",
-          ],
-        },
-      ],
-    },
+  //     cards: [
+  //       {
+  //         title: "Brand Identity Creation",
+  //         description:
+  //           "Build a strong first impression with tailored brand identity packages.",
+  //         image: "/assets/service/analytics-and-reporting/card-1.png",
+  //         list: [
+  //           "Basic Logo Package",
+  //           "Complete Brand Identity Package ",
+  //           "Premium Brand Identity Package ",
+  //         ],
+  //       },
+  //       {
+  //         title: "Print Materials",
+  //         description:
+  //           "Stand out with professionally designed physical assets.",
+  //         image: "/assets/service/analytics-and-reporting/card-2.png",
+  //         list: [
+  //           "Business Cards",
+  //           "Brochures & Leaflets",
+  //           "Complete Print Package for brand consistency",
+  //         ],
+  //       },
+  //       {
+  //         title: "Business Email Creation",
+  //         description: "Get branded communication tools that build trust.",
+  //         image: "/assets/service/analytics-and-reporting/card-3.png",
+  //         list: [
+  //           "Setup & configuration (per email)",
+  //           "Bulk email setups for teams",
+  //           "Optimized for branding and deliverability",
+  //         ],
+  //       },
+  //       {
+  //         title: "Brand Guidelines",
+  //         description: "Maintain consistency with clear brand standards.",
+  //         image: "/assets/service/analytics-and-reporting/card-4.png",
+  //         list: [
+  //           "Basic Guidelines Document (colors, fonts, tone)",
+  //           "Comprehensive Brand Manual (full usage instructions & examples)",
+  //         ],
+  //       },
+  //       {
+  //         title: "Brand Strategy & Positioning",
+  //         description:
+  //           "Use competitive research and trends to sharpen your market presence.",
+  //         image: "/assets/service/analytics-and-reporting/card-5.png",
+  //         list: [
+  //           "Strategic messaging frameworks",
+  //           "Audience positioning insights",
+  //           "Data-backed differentiation",
+  //         ],
+  //       },
+  //       {
+  //         title: "Ongoing Brand Support",
+  //         description: "We support your brand as it grows.",
+  //         image: "/assets/service/analytics-and-reporting/card-6.png",
+  //         list: [
+  //           "Visual & voice audits",
+  //           "Updates to guidelines & assets",
+  //           "Creative collaboration as your brand evolves",
+  //         ],
+  //       },
+  //     ],
+  //   },
 
-    process: {
-      title: {
-        initial: "Our",
-        highlight: "Strategic Branding Management",
-        end: "Process",
-      },
-      description:
-        "A data-driven brand strategy process designed to refine your brand identity, improve positioning, and optimize for long-term growth.",
-      steps: [
-        {
-          number: "1",
-          title: "Brand Discovery",
-          description:
-            "We dive deep into your brand's story, challenges, and audience perception.",
-          isActive: true,
-        },
-        {
-          number: "2",
-          title: "Creative Foundation",
-          description:
-            "We craft the visual and verbal language your brand needs to resonate.",
-          isActive: false,
-        },
-        {
-          number: "3",
-          title: "Audience Alignment",
-          description:
-            "We shape how your brand speaks across every touch point.",
-          isActive: true,
-        },
-      ],
-    },
-    faqs: [
-      {
-        question: "1. What is strategic branding management?",
-        answer:
-          "Strategic branding management is the process of building, positioning, and maintaining a brand in a way that aligns with business goals and connects meaningfully with your audience. It combines creative identity with data-driven direction.",
-      },
-      {
-        question: "2. How is branding different from marketing?",
-        answer:
-          "Branding defines who you are, your values, visuals, and voice. Marketing is how you promote your brand. Branding comes first; it sets the foundation for all your marketing efforts.",
-      },
-      {
-        question: "3. Do I need branding if I’m a startup or small business?",
-        answer:
-          "Absolutely. A clear brand identity helps you build trust early, stand out in crowded markets, and communicate your value clearly from day one.",
-      },
-      {
-        question: "4. How long does a brand identity package take?",
-        answer:
-          "Most identity packages take 2–6 weeks depending on your scope—this includes discovery sessions, logo design, brand voice development, and guidelines delivery.",
-      },
-      {
-        question: "5. What does a complete brand identity package include?",
-        answer:
-          "It typically includes a logo suite, color palette, typography, brand voice, messaging framework, and a style guide. We also offer add-ons like business cards and branded email setup, for more information please contact us.",
-      },
-      {
-        question: "5. Can I update my branding without starting from scratch?",
-        answer:
-          "Yes. We offer brand refresh services that modernize your look and feel while keeping your brand’s core intact.",
-      },
-    ],
-  },
+  //   process: {
+  //     title: {
+  //       initial: "Our",
+  //       highlight: "Strategic Branding Management",
+  //       end: "Process",
+  //     },
+  //     description:
+  //       "A data-driven brand strategy process designed to refine your brand identity, improve positioning, and optimize for long-term growth.",
+  //     steps: [
+  //       {
+  //         number: "1",
+  //         title: "Brand Discovery",
+  //         description:
+  //           "We dive deep into your brand's story, challenges, and audience perception.",
+  //         isActive: true,
+  //       },
+  //       {
+  //         number: "2",
+  //         title: "Creative Foundation",
+  //         description:
+  //           "We craft the visual and verbal language your brand needs to resonate.",
+  //         isActive: false,
+  //       },
+  //       {
+  //         number: "3",
+  //         title: "Audience Alignment",
+  //         description:
+  //           "We shape how your brand speaks across every touch point.",
+  //         isActive: true,
+  //       },
+  //     ],
+  //   },
+  //   faqs: [
+  //     {
+  //       question: "1. What is strategic branding management?",
+  //       answer:
+  //         "Strategic branding management is the process of building, positioning, and maintaining a brand in a way that aligns with business goals and connects meaningfully with your audience. It combines creative identity with data-driven direction.",
+  //     },
+  //     {
+  //       question: "2. How is branding different from marketing?",
+  //       answer:
+  //         "Branding defines who you are, your values, visuals, and voice. Marketing is how you promote your brand. Branding comes first; it sets the foundation for all your marketing efforts.",
+  //     },
+  //     {
+  //       question: "3. Do I need branding if I’m a startup or small business?",
+  //       answer:
+  //         "Absolutely. A clear brand identity helps you build trust early, stand out in crowded markets, and communicate your value clearly from day one.",
+  //     },
+  //     {
+  //       question: "4. How long does a brand identity package take?",
+  //       answer:
+  //         "Most identity packages take 2–6 weeks depending on your scope—this includes discovery sessions, logo design, brand voice development, and guidelines delivery.",
+  //     },
+  //     {
+  //       question: "5. What does a complete brand identity package include?",
+  //       answer:
+  //         "It typically includes a logo suite, color palette, typography, brand voice, messaging framework, and a style guide. We also offer add-ons like business cards and branded email setup, for more information please contact us.",
+  //     },
+  //     {
+  //       question: "5. Can I update my branding without starting from scratch?",
+  //       answer:
+  //         "Yes. We offer brand refresh services that modernize your look and feel while keeping your brand’s core intact.",
+  //     },
+  //   ],
+  // },
 };
 
 export default serviceDetails;

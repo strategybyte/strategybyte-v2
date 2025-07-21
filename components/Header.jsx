@@ -18,8 +18,8 @@ const Header = () => {
 
   const serviceMenuItems = [
     { name: "Web Development", slug: "website-development" },
-    { name: "SEO & Digital Marketing", slug: "digital-marketing" },
-    { name: "Content Marketing ", slug: "content-marketing" },
+    // { name: "SEO & Digital Marketing", slug: "digital-marketing" },
+    // { name: "Content Marketing ", slug: "content-marketing" },
     // { name: "Digital Marketing", slug: "digital-marketing" },
     // { name: "Search Engine Optimization", slug: "seo" },
     // {
@@ -28,10 +28,10 @@ const Header = () => {
     // },
     // { name: "Business Process Setup", slug: "business-process-setup" },
     // { name: "Analytics & Reporting", slug: "analytics-and-reporting" },
-    {
-      name: "Strategic Branding Management",
-      slug: "strategic-branding-management",
-    },
+    // {
+    //   name: "Strategic Branding Management",
+    //   slug: "strategic-branding-management",
+    // },
   ];
 
   // ChevronDownIcon component

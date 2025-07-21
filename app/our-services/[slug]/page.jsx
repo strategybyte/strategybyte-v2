@@ -38,20 +38,20 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
               data-aos-duration="1500"
               data-aos-offset="50"
             >
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <h1 className="text-5xl md:text-7xl font-bold mb-4">
                 {serviceDetails[slug].title.initial}{" "}
                 <span className="text-secondary">
                   {serviceDetails[slug].title.highlight}
                 </span>{" "}
                 {serviceDetails[slug].title.end}
-              </h2>
-              <p className="text-gray-300 text-lg max-w-3xl mx-auto">
+              </h1>
+              <p className="text-gray-300 text-lg max-w-xl leading-10 mb-5">
                 {serviceDetails[slug].description}
               </p>
 
               <Button
                 href={serviceDetails[slug].button.link}
-                className="mt-4"
+                className="mt-4 !text-black"
                 size="small"
               >
                 {serviceDetails[slug].button.text}
@@ -86,10 +86,10 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
                 data-aos-offset="50"
                 data-aos-delay={index * 100}
               >
-                <h3 className={`text-4xl font-bold ${stat.color}`}>
+                <h3 className={`text-4xl font-bold mb-3 ${stat.color}`}>
                   {stat.value}
                 </h3>
-                <p className={`${stat.color}`}>{stat.label}</p>
+                <h3 className={`${stat.color} text-xl`}>{stat.label}</h3>
               </div>
             ))}
           </div>
@@ -102,36 +102,30 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
             data-aos-duration="1500"
             data-aos-offset="50"
           >
-            <h2 className="text-4xl md:text-6xl font-bold mb-4 md:max-w-4xl mx-auto !leading-tight">
-              {serviceDetails[slug].why.title.initial}{" "}
+            <h2 className="text-4xl md:text-6xl font-bold mb-4 md:max-w-7xl mx-auto !leading-tight">
+              {serviceDetails[slug].service.title.initial} <br />
               <span className="text-secondary">
-                {serviceDetails[slug].why.title.highlight}
-              </span>{" "}
-              {serviceDetails[slug].why.title.end}
+                {serviceDetails[slug].service.title.highlight}
+              </span>
             </h2>
-            <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-              {serviceDetails[slug].why.description}
-            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 text-left">
-              {serviceDetails[slug].why.cards.map((card, index) => (
+              {serviceDetails[slug].service.cards.map((card, index) => (
                 <div
-                  className="bg-white/15 backdrop-blur-md border border-white/20 rounded-lg p-6 lg:p-8 xl:p-10 transition-all duration-500 hover:bg-white/20 hover:border-white/30 group shadow-lg"
+                  className="bg-white/15 backdrop-blur-md border border-white/20 rounded-lg transition-all duration-500 hover:bg-white/20 hover:border-white/30 group shadow-lg"
                   key={index}
                   data-aos="fade-up"
                   data-aos-duration="1500"
                   data-aos-offset="50"
                   data-aos-delay={index * 100}
                 >
-                  <div className="size-16 p-4 rounded-full bg-[#2F3F61]/50">
-                    <Image
-                      src={card.image}
-                      alt={card.title}
-                      width={100}
-                      height={100}
-                    />
-                  </div>
-                  <div>
+                  <Image
+                    src={card.image}
+                    alt={card.title}
+                    width={1000}
+                    height={1000}
+                  />
+                  <div className="p-6">
                     <h3 className="text-2xl font-bold mt-4">{card.title}</h3>
                     <p className="text-gray-300 mt-4">{card.description}</p>
                     <ul className="text-gray-300 mt-4 list-disc list-inside">
@@ -234,9 +228,9 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
                         <h6 className="accordion-header">
                           <button
                             className={`accordion-button ${
-                              activeIndex === index ? "" : "collapsed"
+                              activeIndex === index + 1 ? "" : "collapsed"
                             }`}
-                            onClick={() => toggleAccordion(index)}
+                            onClick={() => toggleAccordion(index + 1)}
                             type="button"
                           >
                             {faq.question}
@@ -244,10 +238,10 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
                         </h6>
                         <div
                           className={`accordion-collapse ${
-                            activeIndex === index ? "show" : ""
+                            activeIndex === index + 1 ? "show" : ""
                           }`}
                         >
-                          {activeIndex === index && (
+                          {activeIndex === index + 1 && (
                             <div className="accordion-body">
                               <p className="text-gray-300">{faq.answer}</p>
                             </div>
