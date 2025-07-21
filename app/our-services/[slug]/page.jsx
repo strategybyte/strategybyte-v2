@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { Button } from "@/components/common";
@@ -95,9 +96,62 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
           </div>
         </div>
 
-        <div className="container px-4 py-16 mx-auto">
+        <div className="container px-4 pt-16 mx-auto space-y-10">
+          <div className="flex items-center justify-between gap-10">
+            <div className="w-[40%]">
+              <Image
+                src={serviceDetails[slug].about.image}
+                alt="about"
+                width={1000}
+                height={1000}
+              />
+            </div>
+            <div className="w-[60%]">
+              <h2 className="text-4xl md:text-6xl font-bold mb-4 md:max-w-7xl mx-auto !leading-tight">
+                {serviceDetails[slug].about.title}
+              </h2>
+              <p className="text-gray-300 text-lg max-w-xl leading-10 mb-5">
+                {serviceDetails[slug].about.description}
+              </p>
+              <Button
+                href={serviceDetails[slug].about.link}
+                className="mt-4 !text-black"
+                size="small"
+              >
+                {serviceDetails[slug].about.button}
+              </Button>
+            </div>
+          </div>
+          <div className="flex items-center justify-between gap-10">
+            <div className="w-[60%]">
+              <h2 className="text-4xl md:text-6xl font-bold mb-4 md:max-w-7xl mx-auto !leading-tight">
+                {serviceDetails[slug].why.title}
+              </h2>
+              <p className="text-gray-300 text-lg max-w-xl leading-10 mb-5">
+                {serviceDetails[slug].why.description}
+              </p>
+              <Button
+                href={serviceDetails[slug].why.link}
+                className="mt-4 !text-black"
+                size="small"
+              >
+                {serviceDetails[slug].why.button}
+              </Button>
+            </div>
+            <div className="w-[40%]">
+              <Image
+                src={serviceDetails[slug].why.image}
+                alt="about"
+                width={1000}
+                height={1000}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="container px-4 pt-16 mx-auto">
           <div
-            className="text-center mb-16"
+            className="text-center"
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-offset="50"
@@ -140,7 +194,7 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
           </div>
         </div>
 
-        <div className="bg-black py-16">
+        <div className="bg-black pt-16">
           <div className="container mx-auto px-4">
             <div
               className="text-center mb-16"
@@ -196,7 +250,7 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
         </div>
 
         {serviceDetails[slug].faqs ? (
-          <section className="faq-area bgc-black text-white relative z-10">
+          <section className="faq-area bgc-black text-white relative z-10 pt-16">
             <div className="container mx-auto px-4 bordered-x">
               <div className="row mx-xl-4 justify-center">
                 <div className="w-full xl:w-3/4 lg:w-11/12">

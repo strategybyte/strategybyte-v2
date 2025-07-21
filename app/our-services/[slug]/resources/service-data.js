@@ -34,6 +34,22 @@ export const serviceDetails = {
         color: "text-white",
       },
     ],
+    about: {
+      image: "/assets/service/website-development/about.png",
+      title: "Why choose Our Web Development Services",
+      description:
+        "We build scalable, high-performance websites with SEO, mobile responsiveness, and great UX—so your site loads fast, ranks higher, and supports your business goals.",
+      button: "About Strategybyte",
+      link: "/about",
+    },
+    why: {
+      title: "Why Web development Matters for Your Business",
+      description:
+        "Your website is your brand’s first impression. A fast, mobile-friendly, SEO-optimized site builds trust, attracts customers, and helps you compete in today’s digital world.",
+      button: "Download our FREE guide",
+      link: "",
+      image: "/assets/service/website-development/why.png",
+    },
     service: {
       title: {
         initial: "Drive success with our expert",
