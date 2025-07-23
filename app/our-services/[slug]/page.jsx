@@ -49,6 +49,7 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
 
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -411,7 +412,7 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
           </div>
         </div>
 
-        <div className="flex items-center gap-8 mt-20 px-4 container mx-auto px-4">
+        <div className="flex items-center gap-8 mt-20 px-4 container mx-auto">
           {blogPosts.map((post, i) => (
             <div
               key={i}
