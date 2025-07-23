@@ -5,6 +5,15 @@ import { Button } from "@/components/common";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import serviceDetails from "./resources/service-data";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const ServiceDetailsPage = ({ params: { slug } }) => {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -157,7 +166,8 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
             data-aos-offset="50"
           >
             <h2 className="text-4xl md:text-6xl font-bold mb-4 md:max-w-7xl mx-auto !leading-tight">
-              {serviceDetails[slug].service.title.initial} <br />
+              {serviceDetails[slug].service.title.initial}{" "}
+              <br className="hidden lg:block" />
               <span className="text-secondary">
                 {serviceDetails[slug].service.title.highlight}
               </span>
@@ -193,6 +203,108 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
             </div>
           </div>
         </div>
+
+        {/* Industry Expertise Carousel Section */}
+        <section className="container px-4 pt-16 mx-auto">
+          <div>
+            {/* Header */}
+            <div className="mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-6">
+                {serviceDetails[slug].experts.title}
+              </h2>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                {serviceDetails[slug].experts.description}
+              </p>
+            </div>
+
+            {/* Carousel */}
+            <div className="relative">
+              <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                spaceBetween={24}
+                slidesPerView={3}
+                navigation={{
+                  prevEl: ".swiper-button-prev-custom",
+                  nextEl: ".swiper-button-next-custom",
+                }}
+                pagination={{
+                  clickable: true,
+                  bulletClass: "swiper-pagination-bullet-custom",
+                  bulletActiveClass: "swiper-pagination-bullet-active-custom",
+                }}
+                autoplay={{
+                  delay: 4000,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+                }}
+                loop={true}
+                speed={800}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 16,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                  },
+                }}
+                className="industry-expertise-swiper"
+              >
+                {serviceDetails[slug].experts.cards.map((card, index) => (
+                  <SwiperSlide key={index}>
+                    <div
+                      className="relative w-full h-96 rounded-2xl overflow-hidden border border-gray-600 mx-auto"
+                      style={{
+                        backgroundImage: `url(${card.image})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                      }}
+                    >
+                      {/* Content - always visible */}
+                      <div className="absolute inset-0 py-14 px-16 flex flex-col justify-center text-white">
+                        {/* Top content */}
+                        <div>
+                          <h3 className="text-white text-2xl font-bold mb-4">
+                            {card.title}
+                          </h3>
+                          <p className="text-gray-200 text-base leading-relaxed">
+                            {card.description}
+                          </p>
+                        </div>
+
+                        {/* Key features */}
+                        <div>
+                          <ul className="text-gray-300 mt-4 list-disc list-inside">
+                            {card.keyFeatures.map((item, index) => (
+                              <li key={index} className="list-inside">
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+
+              {/* Custom Navigation Buttons */}
+              <button className="swiper-button-prev-custom absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-secondary hover:bg-secondary/80 rounded-full flex items-center justify-center transition-all duration-200 shadow-lg">
+                <ChevronLeft className="w-6 h-6 text-black" />
+              </button>
+
+              <button className="swiper-button-next-custom absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-secondary hover:bg-secondary/80 rounded-full flex items-center justify-center transition-all duration-200 shadow-lg">
+                <ChevronRight className="w-6 h-6 text-black" />
+              </button>
+            </div>
+          </div>
+        </section>
 
         {/* Process section */}
         <div className="bg-black pt-16">
