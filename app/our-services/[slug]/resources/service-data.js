@@ -860,6 +860,267 @@ export const serviceDetails = {
       },
     ],
   },
+
+  "strategic-branding-management": {
+    title: {
+      initial: "Strategic",
+      highlight: "Branding Management",
+      end: "Services",
+    },
+    description:
+      "Our strategic branding services in Australia help you build recognition, trust, and market relevance through data-driven identity, messaging, and design.",
+    image: "/assets/service/strategic-branding-management/banner.png",
+    button: {
+      text: "Schedule a Meeting",
+      link: "/contact",
+    },
+    stats: [
+      {
+        value: "92%",
+        label: "Brand Recognition Boost",
+        color: "text-secondary",
+      },
+      {
+        value: "87%",
+        label: "Satisfaction Rate",
+        color: "text-white",
+      },
+      {
+        value: "68%",
+        label: "Increase in customer trust",
+        color: "text-secondary",
+      },
+      {
+        value: "180+",
+        label: "Brands Built & Refreshed",
+        color: "text-white",
+      },
+    ],
+    about: {
+      image: "/assets/service/strategic-branding-management/about.png",
+      title: "Why choose Our Strategic Brand Management Services",
+      description:
+        "We design and develop websites that do more than look good—they perform. Our solutions are built for speed, SEO, and scalability, helping Australian businesses grow online with confidence.",
+      button: "About Strategybyte",
+      link: "/about",
+    },
+    why: {
+      title: "Why Strategic Brand Management Matters for Your Business",
+      description:
+        "We help Australian businesses build strong, memorable brands. From visual identity to messaging, our strategies boost recognition, trust, and long-term growth.",
+      button: "Download our FREE guide",
+      link: "/contact",
+      image: "/assets/service/strategic-branding-management/why.png",
+    },
+    service: {
+      title: {
+        initial: "Drive success with our expert",
+        highlight: "Strategic Brand Management Services",
+      },
+
+      cards: [
+        {
+          title: "Brand Identity Creation",
+          description:
+            "We craft strong, consistent brand identities that reflect your values and stand out—online and offline.",
+          image: "/assets/service/strategic-branding-management/card-1.png",
+          list: [
+            "Logo, colour palette & typography",
+            "Consistent visual language",
+            "Designed to boost recognition & trust",
+          ],
+        },
+        {
+          title: "Print Materials",
+          description:
+            "We design branded print assets that align with your identity so it leaves a lasting impression—online and offline.",
+          image: "/assets/service/strategic-branding-management/card-2.png",
+          list: [
+            "Brochures, business cards & flyers",
+            "Branded stationery & signage",
+            "Print-ready, high-resolution formats",
+          ],
+        },
+        {
+          title: "Business Email Creation",
+          description:
+            "We set up professional, domain-based emails that strengthen your brand and boost credibility.",
+          image: "/assets/service/strategic-branding-management/card-3.png",
+          list: [
+            "Custom email addresses",
+            "Google Workspace & Microsoft 365 integration",
+            "Secure setup with spam protection",
+          ],
+        },
+        {
+          title: "Brand Guidelines",
+          description:
+            "We document your brand's visual and verbal blueprint to ensure consistency across every channel.",
+          image: "/assets/service/strategic-branding-management/card-4.png",
+          list: [
+            "Logo, colour, and typography rules",
+            "Tone of voice & messaging framework",
+            "Usage examples for print & digital",
+          ],
+        },
+        {
+          title: "Logo Design & Refresh",
+          description:
+            "Modern logos built to match your brand and scale across every platform.",
+          image: "/assets/service/strategic-branding-management/card-5.png",
+          list: [
+            "Custom logo design",
+            "Web & print-ready formats",
+            "Rebrand & update support",
+          ],
+        },
+        {
+          title: "Brand Voice & Messaging",
+          description:
+            "We help define how your brand sounds—so it's clear, consistent, and memorable everywhere it shows up.",
+          image: "/assets/service/strategic-branding-management/card-6.png",
+          list: [
+            "Tone of voice guidelines",
+            "Messaging for web, email & social",
+            "Aligned with your brand values",
+          ],
+        },
+      ],
+    },
+    experts: {
+      title: "Our Industry Expertise",
+      description:
+        "At Strategybyte, we craft tailored digital solutions that meet the unique needs of Australian industries. Whether it’s e-commerce, health tech, or beyond, our deep sector knowledge and user-focused approach deliver impactful results that help businesses thrive in a competitive market.",
+      cards: [
+        {
+          title: "Corporate",
+          description:
+            "Enterprises need consistent branding and scalable digital presence.",
+          image: "/assets/service/strategic-branding-management/expert-1.png",
+          keyFeatures: [
+            "Brand-aligned visual systems",
+            "Enterprise-ready responsive design",
+            "Storytelling that builds authority",
+          ],
+        },
+        {
+          title: "Health Tech",
+          description:
+            "Requires clarity, accessibility, and compliance with sensitive data.",
+          image: "/assets/service/strategic-branding-management/expert-2.png",
+          keyFeatures: [
+            "Clean, compliant interfaces",
+            "Mobile-first, accessible design",
+            "Trust-focused visual storytelling",
+          ],
+        },
+        {
+          title: "SaaS Application",
+          description:
+            "SaaS thrives on usability, clarity, and conversion-focused design.",
+          image: "/assets/service/strategic-branding-management/expert-3.png",
+          keyFeatures: [
+            "High-converting landing pages",
+            "Scalable UI for growth",
+            "Clear visuals for product features",
+          ],
+        },
+      ],
+    },
+    process: {
+      title: {
+        initial: "Our",
+        highlight: "Strategic Brand Management",
+        end: "Process",
+      },
+      description:
+        "A strategic approach to build, refine, and grow a brand that connects and lasts.",
+      steps: [
+        {
+          number: "1",
+          title: "Brand Discovery",
+          description: "Uncover your vision, values, and market position.",
+          isActive: true,
+        },
+        {
+          number: "2",
+          title: "Identity & Messaging",
+          description: "Create visuals and voice that reflect your brand.",
+          isActive: false,
+        },
+        {
+          number: "3",
+          title: "Implementation & Consistency",
+          description: "Apply branding across touchpoints for lasting impact.",
+          isActive: true,
+        },
+      ],
+    },
+    news: {
+      title: {
+        initial: "",
+        highlight: "Brand Management Insights",
+        end: "",
+      },
+      description:
+        "Discover insights on brand strategy, identity, and positioning. From building recognition to maintaining consistency, we help Australian businesses grow stronger, smarter brands.",
+    },
+    faqs: [
+      {
+        question: "What is branding and why is it important for businesses?",
+        question: "What is content marketing and why is it important?",
+        answer:
+          "Content marketing is the process of creating valuable, relevant content—like blog posts, videos, and guides—to attract and engage your audience. It helps build trust, grow your brand visibility, and turn readers into customers. In today's online world, great content sets you apart.",
+      },
+      {
+        question: "How much does content marketing cost?",
+        answer:
+          'Content marketing costs depend on what you need—whether it\'s ongoing blog posts, social media content, or a complete content strategy. One of the most searched questions in Australia is "how much does content marketing cost," and at StrategyByte, we offer flexible pricing based on your goals, channels, and volume. Book a free consultation to get a custom quote.',
+      },
+      {
+        question:
+          "How long does it take to see results from content marketing?",
+        answer:
+          "It usually takes a few weeks to a few months to see steady growth. Content marketing is a long-term strategy, but it builds momentum over time. We track results through traffic, engagement, and conversions, so you can see the impact clearly.",
+      },
+      {
+        question: "Can you create content specific to my industry or audience?",
+        answer:
+          "Yes. Whether you're in health, finance, tech, or retail, we tailor all content to fit your audience, tone, and goals. We dive deep into research to ensure your message resonates with the people you want to reach.",
+      },
+      {
+        question: "Do you write SEO-friendly content that helps my site rank?",
+        answer:
+          "Absolutely. Every piece we create follows SEO best practices—like keyword integration, internal linking, and search intent targeting—so your content helps improve your visibility on Google and drives organic traffic.",
+      },
+      {
+        question: "What types of content do you provide?",
+        answer:
+          "We create blog articles, landing page content, case studies, social media captions, email sequences, and more. Based on your goals, we recommend a mix of formats that work best for your audience and platform.",
+      },
+      {
+        question: "Can you help me plan a content strategy from scratch?",
+        answer:
+          "Yes, we can. Whether you're just starting out or need a fresh approach, we develop full content strategies—including topic planning, calendars, content funnels, and audience mapping—to set you up for success.",
+      },
+      {
+        question: "How do you make sure the content matches our brand voice?",
+        answer:
+          "We start with a discovery session to understand your tone, values, and audience. From there, we build brand-aligned content that sounds like you—and resonates with your customers.",
+      },
+      {
+        question: "Do you offer one-off content or only ongoing packages?",
+        answer:
+          "We offer both. If you just need a few pieces or a full monthly content plan, we can deliver based on your requirements. No long-term commitment unless you want one.",
+      },
+      {
+        question:
+          "How do I get started with StrategyByte's content marketing service?",
+        answer:
+          "Getting started is easy. Reach out for a free content audit or strategy call. We'll review where you're at, what gaps we see, and how we can help you grow through content.",
+      },
+    ],
+  },
 };
 
 export default serviceDetails;

@@ -134,7 +134,7 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
               />
             </div>
             <div className="w-[60%]">
-              <h2 className="text-4xl md:text-6xl font-bold mb-4 md:max-w-7xl mx-auto !leading-tight">
+              <h2 className="text-4xl md:text-6xl font-bold mb-4 md:max-w-7xl mx-auto !leading-tight text-secondary">
                 {serviceDetails[slug].about.title}
               </h2>
               <p className="text-gray-300 text-lg max-w-xl leading-10 mb-5">
@@ -151,7 +151,7 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
           </div>
           <div className="flex items-center justify-between gap-10">
             <div className="w-[60%]">
-              <h2 className="text-4xl md:text-6xl font-bold mb-4 md:max-w-7xl mx-auto !leading-tight">
+              <h2 className="text-4xl md:text-6xl font-bold mb-4 md:max-w-7xl mx-auto !leading-tight text-secondary">
                 {serviceDetails[slug].why.title}
               </h2>
               <p className="text-gray-300 text-lg max-w-xl leading-10 mb-5">
