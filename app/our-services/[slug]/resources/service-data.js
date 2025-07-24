@@ -600,6 +600,266 @@ export const serviceDetails = {
       },
     ],
   },
+
+  "content-marketing": {
+    title: {
+      initial: "",
+      highlight: "Content Marketing",
+      end: "Services",
+    },
+    description:
+      "We help Australian businesses turn words into results through targeted, SEO-driven content that ranks, converts, and connects with the right audience.",
+    image: "/assets/service/content-marketing/banner.png",
+    button: {
+      text: "Schedule a Meeting",
+      link: "/contact",
+    },
+    stats: [
+      {
+        value: "3x",
+        label: "Higher Engagement",
+        color: "text-secondary",
+      },
+      {
+        value: "89%",
+        label: "Client Retention Rate",
+        color: "text-white",
+      },
+      {
+        value: "74%",
+        label: "Organic traffic increase",
+        color: "text-secondary",
+      },
+      {
+        value: "150+",
+        label: "Campaigns Delivered",
+        color: "text-white",
+      },
+    ],
+    about: {
+      image: "/assets/service/content-marketing/about.png",
+      title: "Why choose Our Content Marketing Services",
+      description:
+        "We create content that builds trust, boosts visibility, and drives growth. From blog strategies to SEO-optimized pages, we help Australian brands reach the right audience at the right time.",
+      button: "About Strategybyte",
+      link: "/about",
+    },
+    why: {
+      title: "Why Content Marketing Matters for Your Business",
+      description:
+        "Great content turns visibility into value. It helps your business rank higher, build trust, and drive consistent, qualified leads—especially in Australia's competitive digital space.",
+      button: "Download our FREE guide",
+      link: "/contact",
+      image: "/assets/service/content-marketing/why.png",
+    },
+    service: {
+      title: {
+        initial: "Drive success with our expert",
+        highlight: "Content Marketing Services",
+      },
+
+      cards: [
+        {
+          title: "Social Media Management",
+          description:
+            "We keep your brand visible and engaging across key platforms with content that connects and converts.",
+          image: "/assets/service/content-marketing/card-1.png",
+          list: [
+            "Content planning",
+            "Consistent posting",
+            "Performance tracking",
+          ],
+        },
+        {
+          title: "Blog Writing",
+          description:
+            "We create SEO-friendly blog content that builds authority, drives traffic, and supports your sales funnel.",
+          image: "/assets/service/content-marketing/card-2.png",
+          list: [
+            "Conversion-focused structure",
+            "Optimized CTAs & internal links",
+            "CRM & lead capture integration",
+          ],
+        },
+        {
+          title: "Content Strategy Development",
+          description:
+            "We build data-backed strategies to grow your visibility, rank for the right keywords, and convert traffic over time.",
+          image: "/assets/service/content-marketing/card-3.png",
+          list: [
+            "SEO-focused content planning",
+            "Audience & keyword targeting",
+            "Long-term growth framework",
+          ],
+        },
+        {
+          title: "Website & Landing Page Copy",
+          description:
+            "We craft keyword-rich copy that's built for search engines and designed to convert visitors into leads.",
+          image: "/assets/service/content-marketing/card-4.png",
+          list: [
+            "SEO-friendly structure & metadata",
+            "Targeted keyword placement",
+            "Optimized headings & image tags",
+          ],
+        },
+        {
+          title: "Email Marketing Content",
+          description:
+            "We create email content that drives clicks, nurtures leads, and fits your brand.",
+          image: "/assets/service/content-marketing/card-5.png",
+          list: [
+            "Engaging, branded emails",
+            "Mobile-friendly templates",
+            "Support & performance tracking",
+          ],
+        },
+        {
+          title: "Content Performance Reporting",
+          description:
+            "Track how your content performs with integrated tools built for clarity and results.",
+          image: "/assets/service/content-marketing/card-6.png",
+          list: [
+            "Connects with analytics & email tools",
+            "Supports bookings",
+            "Monthly reports on content performance",
+          ],
+        },
+      ],
+    },
+    experts: {
+      title: "Our Industry Expertise",
+      description:
+        "At Strategybyte, we craft tailored digital solutions that meet the unique needs of Australian industries. Whether it’s e-commerce, health tech, or beyond, our deep sector knowledge and user-focused approach deliver impactful results that help businesses thrive in a competitive market.",
+      cards: [
+        {
+          title: "Corporate",
+          description:
+            "Enterprises need consistent branding and scalable digital presence.",
+          image: "/assets/service/content-marketing/expert-1.png",
+          keyFeatures: [
+            "Brand-aligned visual systems",
+            "Enterprise-ready responsive design",
+            "Storytelling that builds authority",
+          ],
+        },
+        {
+          title: "Health Tech",
+          description:
+            "Requires clarity, accessibility, and compliance with sensitive data.",
+          image: "/assets/service/content-marketing/expert-2.png",
+          keyFeatures: [
+            "Clean, compliant interfaces",
+            "Mobile-first, accessible design",
+            "Trust-focused visual storytelling",
+          ],
+        },
+        {
+          title: "SaaS Application",
+          description:
+            "SaaS thrives on usability, clarity, and conversion-focused design.",
+          image: "/assets/service/content-marketing/expert-3.png",
+          keyFeatures: [
+            "High-converting landing pages",
+            "Scalable UI for growth",
+            "Clear visuals for product features",
+          ],
+        },
+      ],
+    },
+    process: {
+      title: {
+        initial: "Our",
+        highlight: "Content Marketing",
+        end: "Process",
+      },
+      description:
+        "A structured approach to plan, create, and optimise content that drives engagement, traffic, and long-term value.",
+      steps: [
+        {
+          number: "1",
+          title: "Strategy & Research",
+          description: "Identify goals, audience, and high-impact topics.",
+          isActive: true,
+        },
+        {
+          number: "2",
+          title: "Content Creation",
+          description: "Craft SEO-friendly content in your brand voice.",
+          isActive: false,
+        },
+        {
+          number: "3",
+          title: "Distribution & Optimization",
+          description: "Publish, promote, and improve performance.",
+          isActive: true,
+        },
+      ],
+    },
+    news: {
+      title: {
+        initial: "",
+        highlight: "Content Marketing Insights",
+        end: "",
+      },
+      description:
+        "Dive into expert articles on content strategy, creation, and performance. Our insights help Australian brands craft compelling content that drives traffic, engagement, and results.",
+    },
+    faqs: [
+      {
+        question: "What is content marketing and why is it important?",
+        answer:
+          "Content marketing is the process of creating valuable, relevant content—like blog posts, videos, and guides—to attract and engage your audience. It helps build trust, grow your brand visibility, and turn readers into customers. In today's online world, great content sets you apart.",
+      },
+      {
+        question: "How much does content marketing cost?",
+        answer:
+          'Content marketing costs depend on what you need—whether it\'s ongoing blog posts, social media content, or a complete content strategy. One of the most searched questions in Australia is "how much does content marketing cost," and at StrategyByte, we offer flexible pricing based on your goals, channels, and volume. Book a free consultation to get a custom quote.',
+      },
+      {
+        question:
+          "How long does it take to see results from content marketing?",
+        answer:
+          "It usually takes a few weeks to a few months to see steady growth. Content marketing is a long-term strategy, but it builds momentum over time. We track results through traffic, engagement, and conversions, so you can see the impact clearly.",
+      },
+      {
+        question: "Can you create content specific to my industry or audience?",
+        answer:
+          "Yes. Whether you're in health, finance, tech, or retail, we tailor all content to fit your audience, tone, and goals. We dive deep into research to ensure your message resonates with the people you want to reach.",
+      },
+      {
+        question: "Do you write SEO-friendly content that helps my site rank?",
+        answer:
+          "Absolutely. Every piece we create follows SEO best practices—like keyword integration, internal linking, and search intent targeting—so your content helps improve your visibility on Google and drives organic traffic.",
+      },
+      {
+        question: "What types of content do you provide?",
+        answer:
+          "We create blog articles, landing page content, case studies, social media captions, email sequences, and more. Based on your goals, we recommend a mix of formats that work best for your audience and platform.",
+      },
+      {
+        question: "Can you help me plan a content strategy from scratch?",
+        answer:
+          "Yes, we can. Whether you're just starting out or need a fresh approach, we develop full content strategies—including topic planning, calendars, content funnels, and audience mapping—to set you up for success.",
+      },
+      {
+        question: "How do you make sure the content matches our brand voice?",
+        answer:
+          "We start with a discovery session to understand your tone, values, and audience. From there, we build brand-aligned content that sounds like you—and resonates with your customers.",
+      },
+      {
+        question: "Do you offer one-off content or only ongoing packages?",
+        answer:
+          "We offer both. If you just need a few pieces or a full monthly content plan, we can deliver based on your requirements. No long-term commitment unless you want one.",
+      },
+      {
+        question:
+          "How do I get started with StrategyByte's content marketing service?",
+        answer:
+          "Getting started is easy. Reach out for a free content audit or strategy call. We'll review where you're at, what gaps we see, and how we can help you grow through content.",
+      },
+    ],
+  },
 };
 
 export default serviceDetails;
