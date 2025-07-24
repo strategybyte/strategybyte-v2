@@ -28,7 +28,7 @@ const Header = () => {
 
   const serviceMenuItems = [
     { name: "Web Development", slug: "website-development" },
-    { name: "SEO & Digital Marketing", slug: "digital-marketing" },
+    { name: "Digital Marketing & SEO Services", slug: "digital-marketing" },
     { name: "Content Marketing ", slug: "content-marketing" },
     {
       name: "Strategic Branding Management",
