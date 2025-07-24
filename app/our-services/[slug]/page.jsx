@@ -123,21 +123,22 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
           </div>
         </div>
 
-        <div className="container px-4 pt-16 mx-auto space-y-10">
-          <div className="flex items-center justify-between gap-10">
-            <div className="w-[40%]">
+        <div className="container px-4 pt-16 mx-auto space-y-10 md:space-y-20">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10">
+            <div className="w-full md:w-[40%] order-2 md:order-1">
               <Image
                 src={serviceDetails[slug].about.image}
                 alt="about"
                 width={1000}
                 height={1000}
+                className="w-full h-auto"
               />
             </div>
-            <div className="w-[60%]">
-              <h2 className="text-4xl md:text-6xl font-bold mb-4 md:max-w-7xl mx-auto !leading-tight text-secondary">
+            <div className="w-full md:w-[60%] order-1 md:order-2 text-center md:text-left">
+              <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:max-w-7xl mx-auto !leading-tight text-secondary">
                 {serviceDetails[slug].about.title}
               </h2>
-              <p className="text-gray-300 text-lg max-w-xl leading-10 mb-5">
+              <p className="text-gray-300 text-base md:text-lg max-w-xl leading-7 md:leading-10 mb-5 mx-auto md:mx-0">
                 {serviceDetails[slug].about.description}
               </p>
               <Button
@@ -149,12 +150,12 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
               </Button>
             </div>
           </div>
-          <div className="flex items-center justify-between gap-10">
-            <div className="w-[60%]">
-              <h2 className="text-4xl md:text-6xl font-bold mb-4 md:max-w-7xl mx-auto !leading-tight text-secondary">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10">
+            <div className="w-full md:w-[60%] order-1 md:order-1 text-center md:text-left">
+              <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:max-w-7xl mx-auto !leading-tight text-secondary">
                 {serviceDetails[slug].why.title}
               </h2>
-              <p className="text-gray-300 text-lg max-w-xl leading-10 mb-5">
+              <p className="text-gray-300 text-base md:text-lg max-w-xl leading-7 md:leading-10 mb-5 mx-auto md:mx-0">
                 {serviceDetails[slug].why.description}
               </p>
               <Button
@@ -165,12 +166,13 @@ const ServiceDetailsPage = ({ params: { slug } }) => {
                 {serviceDetails[slug].why.button}
               </Button>
             </div>
-            <div className="w-[40%]">
+            <div className="w-full md:w-[40%] order-2 md:order-2">
               <Image
                 src={serviceDetails[slug].why.image}
                 alt="about"
                 width={1000}
                 height={1000}
+                className="w-full h-auto"
               />
             </div>
           </div>
