@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useState } from "react";
@@ -16,16 +17,19 @@ const Header = () => {
     setIsServicesDropdownOpen(!isServicesDropdownOpen);
   };
 
+  // { name: "Digital Marketing", slug: "digital-marketing" },
+  // { name: "Search Engine Optimization", slug: "seo" },
+  // {
+  //   name: "Participant Portal Development",
+  //   slug: "participant-portal-development",
+  // },
+  // { name: "Business Process Setup", slug: "business-process-setup" },
+  // { name: "Analytics & Reporting", slug: "analytics-and-reporting" },
+
   const serviceMenuItems = [
-    { name: "Digital Marketing", slug: "digital-marketing" },
-    { name: "Search Engine Optimization", slug: "seo" },
-    { name: "Website Development", slug: "website-development" },
-    {
-      name: "Participant Portal Development",
-      slug: "participant-portal-development",
-    },
-    { name: "Business Process Setup", slug: "business-process-setup" },
-    { name: "Analytics & Reporting", slug: "analytics-and-reporting" },
+    { name: "Web Development", slug: "website-development" },
+    { name: "Digital Marketing & SEO Services", slug: "digital-marketing" },
+    { name: "Content Marketing ", slug: "content-marketing" },
     {
       name: "Strategic Branding Management",
       slug: "strategic-branding-management",

@@ -41,37 +41,25 @@ export default function sitemap() {
 
     // Services
     {
-      url: "https://www.strategybyte.com.au/our-services/digital-marketing",
-      lastModified: now,
-      changeFrequency: "yearly",
-      priority: 0.7,
-    },
-    {
-      url: "https://www.strategybyte.com.au/our-services/seo",
-      lastModified: now,
-      changeFrequency: "yearly",
-      priority: 0.7,
-    },
-    {
       url: "https://www.strategybyte.com.au/our-services/website-development",
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.7,
     },
     {
-      url: "https://www.strategybyte.com.au/our-services/participant-portal-development",
+      url: "https://www.strategybyte.com.au/our-services/digital-marketing",
       lastModified: now,
       changeFrequency: "yearly",
-      priority: 0.6,
+      priority: 0.7,
     },
     {
-      url: "https://www.strategybyte.com.au/our-services/business-process-setup",
+      url: "https://www.strategybyte.com.au/our-services/content-marketing",
       lastModified: now,
       changeFrequency: "yearly",
-      priority: 0.6,
+      priority: 0.7,
     },
     {
-      url: "https://www.strategybyte.com.au/our-services/analytics-and-reporting",
+      url: "https://www.strategybyte.com.au/our-services/strategic-branding-management",
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.6,
