@@ -30,6 +30,9 @@ export const metadata = {
   robots: "index, follow",
   authors: [{ name: "StrategyByte" }],
   metadataBase: new URL("https://www.strategybyte.com.au"),
+  alternates: {
+    canonical: "/", // This will resolve to https://www.strategybyte.com.au/
+  },
   other: {
     "google-site-verification": "6KrExW695KwVxpue3F1Dx2gbRivzs5AhNTCSb3Ukyxo",
   },
@@ -39,7 +42,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://www.strategybyte.com.au" />
         <link
           rel="stylesheet"
           type="text/css"

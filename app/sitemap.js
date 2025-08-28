@@ -3,9 +3,15 @@ export default function sitemap() {
 
   return [
     {
-      url: "https://www.strategybyte.com.au/",
+      url: "https://strategybyte.com.au",
       lastModified: now,
-      changeFrequency: "monthly",
+      changeFrequency: "daily",
+      priority: 1,
+    },
+    {
+      url: "https://www.strategybyte.com.au",
+      lastModified: now,
+      changeFrequency: "daily",
       priority: 1,
     },
     {
