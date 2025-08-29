@@ -6,6 +6,7 @@ const images1 = [
   "/images/quote/care_around_you.webp",
   "/images/quote/disacare_solution.webp",
   "/images/quote/ecs.webp",
+  "/images/quote/p2f.webp",
 ];
 
 const images2 = [
@@ -13,12 +14,14 @@ const images2 = [
   "/images/quote/gelatissimo.webp",
   "/images/quote/jeep.webp",
   "/images/quote/peugeot.webp",
+  "/images/quote/wyha.webp",
 ];
 
 const images3 = [
   "/images/quote/red_bull.webp",
   "/images/quote/slu_softball.webp",
   "/images/quote/the_daily_star.webp",
+  "/images/quote/dudley_lai.webp",
 ];
 
 export default function Quote() {
