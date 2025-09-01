@@ -9,37 +9,37 @@ export default function sitemap() {
       priority: 1,
     },
     {
-      url: "https://www.strategybyte.com.au",
+      url: "https://strategybyte.com.au",
       lastModified: now,
       changeFrequency: "daily",
       priority: 1,
     },
     {
-      url: "https://www.strategybyte.com.au/about",
+      url: "https://strategybyte.com.au/about",
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.9,
     },
     {
-      url: "https://www.strategybyte.com.au/news",
+      url: "https://strategybyte.com.au/news",
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     // {
-    //   url: "https://www.strategybyte.com.au/ndis-marketing",
+    //   url: "https://strategybyte.com.au/ndis-marketing",
     //   lastModified: now,
     //   changeFrequency: "yearly",
     //   priority: 0.9,
     // },
     {
-      url: "https://www.strategybyte.com.au/contact",
+      url: "https://strategybyte.com.au/contact",
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.9,
     },
     // {
-    //   url: "https://www.strategybyte.com.au/career",
+    //   url: "https://strategybyte.com.au/career",
     //   lastModified: now,
     //   changeFrequency: "monthly",
     //   priority: 0.8,
@@ -47,25 +47,25 @@ export default function sitemap() {
 
     // Services
     {
-      url: "https://www.strategybyte.com.au/our-services/website-development",
+      url: "https://strategybyte.com.au/our-services/website-development",
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.7,
     },
     {
-      url: "https://www.strategybyte.com.au/our-services/digital-marketing",
+      url: "https://strategybyte.com.au/our-services/digital-marketing",
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.7,
     },
     {
-      url: "https://www.strategybyte.com.au/our-services/content-marketing",
+      url: "https://strategybyte.com.au/our-services/content-marketing",
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.7,
     },
     {
-      url: "https://www.strategybyte.com.au/our-services/strategic-branding-management",
+      url: "https://strategybyte.com.au/our-services/strategic-branding-management",
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.6,
