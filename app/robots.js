@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.strategybyte.com.au/sitemap.xml",
+    sitemap: "https://strategybyte.com.au/sitemap.xml",
   };
 }
