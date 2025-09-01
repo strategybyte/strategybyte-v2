@@ -26,26 +26,12 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 0.8,
     },
-    // {
-    //   url: "https://strategybyte.com.au/ndis-marketing",
-    //   lastModified: now,
-    //   changeFrequency: "yearly",
-    //   priority: 0.9,
-    // },
     {
       url: "https://strategybyte.com.au/contact",
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.9,
     },
-    // {
-    //   url: "https://strategybyte.com.au/career",
-    //   lastModified: now,
-    //   changeFrequency: "monthly",
-    //   priority: 0.8,
-    // },
-
-    // Services
     {
       url: "https://strategybyte.com.au/our-services/website-development",
       lastModified: now,
